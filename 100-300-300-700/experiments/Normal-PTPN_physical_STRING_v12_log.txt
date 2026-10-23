@@ -1,0 +1,91 @@
+=== Protein Pathway Simulator (STRING API v12.5) Run Log ===
+Input file: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/experiments/Normal-PTPN_physical.json
+Network type: physical
+Start time: 2026-10-09 12:59:02
+============================================================
+
+[12:59:07] [STRING] Official v12.5 pinned: https://version-12-5.string-db.org/api | physical
+[12:59:07] [PhosphoSite] Loading site information from JSON...
+[12:59:07] [PhosphoSite] Input schema: Temporal v2 interval model
+[12:59:07] [PhosphoSite] 586 proteins, 946 sites loaded
+[12:59:07] [PhosphoSite] 946 site combinations tracked
+[12:59:07] [Cell Context] Cell line requested: MDA-MB-468
+[12:59:07] [Cell Context] Identity aliases resolved from metadata: MDAMB468, SIDM00628
+[12:59:07] [Cell Context] Official model-specific data: SIDM00628. The RNA/proteomics file is already scoped to one SIDM; a cell-line-name column inside the table is therefore not required.
+[12:59:07] [Cell Context] RNA parser columns: gene=gene_symbol, value=rsem_tpm, cell/model=model_name
+[12:59:08] [Cell Context] RNA loaded: expressed=13762, below-threshold=22676; source={'layout': 'cmp_model_specific_long', 'cell_column': 'model_name', 'gene_column': 'gene_symbol', 'value_column': 'rsem_tpm', 'matched_rows': 36439}
+[12:59:08] [Cell Context] Proteomics loaded: detected=5475, explicit-negative=0; source={'layout': 'cmp_model_specific_long', 'cell_column': 'model_id', 'gene_column': 'symbol', 'value_column': 'protein_intensity', 'matched_rows': 5475}
+[12:59:08] [Cell Context] Mode=conservative_union; RNA threshold=1; UNKNOWN bridge candidates are retained in conservative mode.
+[12:59:08] [Start] Start proteins loaded from JSON: 1 loaded
+[12:59:08] [Input Schema] Temporal v2 interval model
+[12:59:08] === Start TEMPORAL interval pathway tracing ===
+[12:59:08]   [Temporal] Target mode: measured
+[12:59:08]   [Temporal] Bridge Depth D=1 means intermediate bridge nodes; max edges/interval=2
+[12:59:08]   [Temporal] Baseline availability is NOT treated as activation.
+[12:59:08]   [Temporal] D resets independently for every interval.
+[12:59:08]   [FINAL] No drug-name hard blocking; target-preserving adaptive temporal beam enabled.
+[12:59:09] [Cell Context] Experimental-anchor protection list: 586 genes.
+[12:59:09]   [Baseline Bridge Pool] 586 baseline-available genes loaded; used only as first-interval bridge candidates (not activation targets).
+[12:59:09]   [Q-Pool] No pretreatment baseline contrast; no condition-specific Q exclusion applied.
+[12:59:09] --- Temporal Start 1/1: EGFR ---
+[12:59:09] --- Interval 1/3: 0min-5min ---
+[12:59:09]   Measured=371, supporting=28, opposing=32, unresolved=341, mixed=6
+[12:59:09]   Q-low opposing-only this interval=26; condition-pool excluded=0
+[12:59:09]   Eligible targets (measured)=345, incoming source paths=1
+[12:59:09]   [Estimate] 1 source paths x 345 target genes = 345 pairs
+[12:59:18]   [Adaptive Temporal Beam] Base K=300 expanded to K_eff=387 because 157 target genes were reached and 387 protected target/baseline histories were required.
+[12:59:18]   [Target-Preserving Temporal Beam] 477 unique routes -> 387 propagated states; targets preserved=157/157; K_base=300, K_eff=387, protected_union=387, routes/target quota=3, segment routes/pair=5.
+[12:59:18]   [Interval Done] reached genes=157, endpoint candidates=477, unique propagating routes=387
+[12:59:18]   [Speed Cache] ranked-neighbor hit/miss=31685/98, direct-lookup hit/miss=23624/69, segment hit/miss=0/344
+[12:59:18] --- Interval 2/3: 5min-10min ---
+[12:59:18]   Measured=138, supporting=7, opposing=11, unresolved=121, mixed=0
+[12:59:18]   Q-low opposing-only this interval=11; condition-pool excluded=0
+[12:59:18]   Eligible targets (measured)=127, incoming source paths=387
+[12:59:18]   [Estimate] 387 source paths x 127 target genes = 49149 pairs
+[13:06:39]   [Exact Dedupe] 21925 candidate paths -> 21732 unique gene chains.
+[13:06:39]   [Target-Preserving Temporal Beam] 21732 unique routes -> 300 propagated states; targets preserved=115/115; K_base=300, K_eff=300, protected_union=115, routes/target quota=3, segment routes/pair=5.
+[13:06:40]   [Interval Done] reached genes=115, endpoint candidates=21925, unique propagating routes=300
+[13:06:40]   [Speed Cache] ranked-neighbor hit/miss=2448064/2731, direct-lookup hit/miss=23624/69, segment hit/miss=0/49366
+[13:06:40] --- Interval 3/3: 10min-30min ---
+[13:06:40]   Measured=142, supporting=8, opposing=9, unresolved=130, mixed=1
+[13:06:40]   Q-low opposing-only this interval=8; condition-pool excluded=0
+[13:06:40]   Eligible targets (measured)=134, incoming source paths=300
+[13:06:40]   [Estimate] 300 source paths x 134 target genes = 40200 pairs
+[13:10:53]   [Exact Dedupe] 10730 candidate paths -> 10621 unique gene chains.
+[13:10:53]   [Target-Preserving Temporal Beam] 10621 unique routes -> 300 propagated states; targets preserved=117/117; K_base=300, K_eff=300, protected_union=117, routes/target quota=3, segment routes/pair=5.
+[13:10:53]   [Interval Done] reached genes=117, endpoint candidates=10730, unique propagating routes=300
+[13:10:53]   [Speed Cache] ranked-neighbor hit/miss=3730402/3349, direct-lookup hit/miss=23624/69, segment hit/miss=0/89411
+[13:10:53] === Temporal tracing completed: 300 unique complete paths, 648 intermediate paths ===
+[13:10:53]   - Temporal structured results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/experiments\Normal-PTPN_physical_STRING_v12_temporal_results.json
+[13:10:53]   - Interval summary: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/experiments\Normal-PTPN_physical_STRING_v12_interval_summary.csv
+[13:10:53]   - Node roles: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/experiments\Normal-PTPN_physical_STRING_v12_node_roles.csv
+[13:10:53]   - Edges: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/experiments\Normal-PTPN_physical_STRING_v12_edges.csv
+[13:10:53]   - Cell-context bridge audit: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/experiments\Normal-PTPN_physical_STRING_v12_cell_context_audit.csv
+[13:10:53] [Cell Context Summary] checked=165500406, allowed=165500406, blocked=0, unknown-retained=24416533
+[13:10:56] [Snapshot] C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/experiments\Normal-PTPN_physical_STRING_v12_5_snapshot_physical_20261009_131053_590414800: 3352 queries, 148687 neighbor records
+[13:11:32] [Cache] STRING cache saved.
+[13:11:32] 
+============================================================
+STRING API v12.5 Statistics (Network Type: physical):
+  API Base URL: https://version-12-5.string-db.org/api
+  Total API calls: 2
+  Cache hits: 13675
+  Cache misses: 2
+  Cache hit rate: 100.0%
+  Total API time: 1.02 sec
+  Retrieved edges: 0
+  Average Combined Score: 0.0/1000
+============================================================
+[13:11:33] 
+[Phospho] Generating phosphorylation-site path results...
+[13:11:33] [Phospho FINAL] Temporal endpoint annotation mode; Cartesian site expansion disabled.
+[13:11:33] [Phospho] Complete path variants: 300, Intermediate path variants: 0 generated
+[13:11:33] Simulation complete.
+[13:11:33]   - Complete path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/experiments\Normal-PTPN_physical_STRING_v12_results.txt
+[13:11:33]   - All path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/experiments\Normal-PTPN_physical_STRING_v12_all_results.txt
+[13:11:33]   - Phospho path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/experiments\Normal-PTPN_physical_STRING_v12_all_Phospho_results.txt
+[13:11:33]   - Run log: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/experiments\Normal-PTPN_physical_STRING_v12_log.txt
+
+============================================================
+End time: 2026-10-09 13:11:33
+=== End of log ===

@@ -1,0 +1,366 @@
+*** Stage 4 Validation Input ***
+Purpose: shared input for PPI Cell-Type Validator and PPI Phosphosite Validator
+Only Stage-4-retained temporal routes are included.
+Observed phosphosites are temporal target-anchor measurements; bridge proteins are not assigned synthetic sites.
+
+*** Protein Name to Gene Mapping Table ***
+| Original Name | Gene Symbol |
+|---------------|-------------|
+| ARHGEF7@S694 | ARHGEF7 |
+| BCAR1@Y249 | BCAR1 |
+| BCAR1@Y387 | BCAR1 |
+| CBL@S553 | CBL |
+| CBL@S558 | CBL |
+| CBL@T698 | CBL |
+| CBL@Y674 | CBL |
+| CBL@Y700 | CBL |
+| CCNL2@S348 | CCNL2 |
+| CRK@Y136 | CRK |
+| CRKL@S222 | CRKL |
+| CRKL@Y207 | CRKL |
+| CRKL@Y251 | CRKL |
+| DPYSL2@S27 | DPYSL2 |
+| EGFR@Y1069 | EGFR |
+| EGFR@Y1172 | EGFR |
+| EGFR@Y1197 | EGFR |
+| EGFR@Y869 | EGFR |
+| EGFR@Y998 | EGFR |
+| EZH2@T487 | EZH2 |
+| FYN@T421 | FYN |
+| FYN@Y420 | FYN |
+| GAB1@Y259 | GAB1 |
+| GAB1@Y406 | GAB1 |
+| GAB1@Y659 | GAB1 |
+| GRB2@Y209 | GRB2 |
+| GSK3A@Y279 | GSK3A |
+| HSP90AA1@S263 | HSP90AA1 |
+| IRS4@S1231 | IRS4 |
+| IRS4@Y291 | IRS4 |
+| IRS4@Y808 | IRS4 |
+| IRS4@Y847 | IRS4 |
+| JUN@S243 | JUN |
+| KHDRBS1@S20 | KHDRBS1 |
+| LCK@T501 | LCK |
+| MAP2K7@S60 | MAP2K7 |
+| MAPK13@Y182 | MAPK13 |
+| MARCKS@S101 | MARCKS |
+| MARCKS@S46 | MARCKS |
+| MARCKS@S81 | MARCKS |
+| MARCKS@T120 | MARCKS |
+| PARD3@S143 | PARD3 |
+| PARD3@S695 | PARD3 |
+| PTK2@Y570 | PTK2 |
+| PTPN11@Y546 | PTPN11 |
+| PTPN11@Y584 | PTPN11 |
+| PTPN11@Y62 | PTPN11 |
+| PXN@S103 | PXN |
+| PXN@Y118 | PXN |
+| RB1@S249 | RB1 |
+| ROCK1@S1105 | ROCK1 |
+| SYK@Y323 | SYK |
+| TBC1D4@S588 | TBC1D4 |
+| WASL@Y256 | WASL |
+
+*** Complete Path Results ***
+Total 300 Stage-4-clean paths.
+
+Path #1: EGFR -> CRK
+Path #2: EGFR -> PTPN11 -> PTK2 -> CRK
+Path #3: EGFR -> GAB1 -> CRK
+Path #4: EGFR -> SRC -> BCAR1 -> CRK
+Path #5: EGFR -> CRK -> PXN
+Path #6: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK
+Path #7: EGFR -> PTK2 -> CRK
+Path #8: EGFR -> PTPN11 -> PTK2 -> BCAR1 -> CRK
+Path #9: EGFR -> JAK2 -> PTPN11 -> PTK2 -> CRK
+Path #10: EGFR -> JAK1 -> PTPN11 -> PTK2 -> CRK
+Path #11: EGFR -> CRK -> ABL1 -> CRKL
+Path #12: EGFR -> PTPN11 -> PTK2 -> SRC -> BCAR1 -> CRK
+Path #13: EGFR -> PTPN11 -> PTK2 -> PXN -> BCAR1 -> CRK
+Path #14: EGFR -> PTPN11 -> PTK2 -> PXN -> CRK
+Path #15: EGFR -> PTK2 -> BCAR1 -> CRK
+Path #16: EGFR -> JAK2 -> PTPN11 -> SRC -> BCAR1 -> CRK
+Path #17: EGFR -> JAK1 -> PTPN11 -> SRC -> BCAR1 -> CRK
+Path #18: EGFR -> JAK2 -> PTPN11 -> PTK2 -> BCAR1 -> CRK
+Path #19: EGFR -> PTK2 -> SRC -> BCAR1 -> CRK
+Path #20: EGFR -> JAK1 -> PTPN11 -> PTK2 -> BCAR1 -> CRK
+Path #21: EGFR -> PTK2 -> PXN -> BCAR1 -> CRK
+Path #22: EGFR -> PTK2 -> PXN -> CRK
+Path #23: EGFR -> CRK -> PTK2 -> PXN
+Path #24: EGFR -> PTPN11 -> PTK2 -> CTTN -> CRK
+Path #25: EGFR -> CBL -> SRC -> BCAR1 -> CRK
+Path #26: EGFR -> CRK -> PTK2 -> SRC -> PXN
+Path #27: EGFR -> PTPN11 -> GAB1 -> CRK
+Path #28: EGFR -> CRK -> PTK2 -> GRB2
+Path #29: EGFR -> PTK2 -> CTTN -> CRK
+Path #30: EGFR -> STAT3 -> HSP90AA1 -> AKT1 -> TBC1D4
+Path #31: EGFR -> GRB2 -> GAB1 -> CRK
+Path #32: EGFR -> STAT3 -> HSP90AA1 -> AKT1 -> GSK3A
+Path #33: EGFR -> CRK -> PXN -> CDC42 -> WASL
+Path #34: EGFR -> CRK -> PTK2 -> SRC -> GRB2
+Path #35: EGFR -> CRK -> PTK2 -> SRC -> KHDRBS1
+Path #36: EGFR -> PTPN11 -> PTK2 -> CRK -> PXN
+Path #37: EGFR -> CRK -> PTK2 -> WASL
+Path #38: EGFR -> GAB1 -> CRK -> PXN
+Path #39: EGFR -> SRC -> BCAR1 -> CRK -> PXN
+Path #40: EGFR -> PTPN11 -> GRB2 -> GAB1 -> CRK
+Path #41: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK -> PXN
+Path #42: EGFR -> PTK2 -> CRK -> PXN
+Path #43: EGFR -> PTPN11 -> PTK2 -> CRK -> ABL1 -> CRKL
+Path #44: EGFR -> CRK -> ABL1 -> CBL
+Path #45: EGFR -> CRK -> PXN -> CRKL
+Path #46: EGFR -> GAB1 -> CRK -> ABL1 -> CRKL
+Path #47: EGFR -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> PXN
+Path #48: EGFR -> SRC -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #49: EGFR -> SHC3 -> GRB2 -> GAB1 -> CRK
+Path #50: EGFR -> JAK2 -> PTPN11 -> PTK2 -> CRK -> PXN
+Path #51: EGFR -> STAT3 -> HSP90AA1 -> AKT1 -> JUN
+Path #52: EGFR -> PTPN11 -> IRS1 -> GRB2 -> GAB1 -> CRK
+Path #53: EGFR -> SRC -> GRB2 -> GAB1 -> CRK
+Path #54: EGFR -> CRK -> PTK2 -> PXN -> CDC42 -> WASL
+Path #55: EGFR -> CRK -> ABL1 -> GRB2
+Path #56: EGFR -> STAT3 -> HSP90AA1 -> ERBB2 -> GRB2
+Path #57: EGFR -> JAK1 -> PTPN11 -> PTK2 -> CRK -> PXN
+Path #58: EGFR -> PTPN11 -> PTK2 -> SRC -> BCAR1 -> CRK -> PXN
+Path #59: EGFR -> PTPN11 -> LCK -> LAT -> GRB2
+Path #60: EGFR -> CBL -> MET -> GRB2 -> GAB1 -> CRK
+Path #61: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #62: EGFR -> PTK2 -> CRK -> ABL1 -> CRKL
+Path #63: EGFR -> PTPN11 -> PTK2 -> GRB2 -> GAB1 -> CRK
+Path #64: EGFR -> PTPN11 -> SRC -> GRB2 -> GAB1 -> CRK
+Path #65: EGFR -> CRK -> PXN -> BCAR1 -> CRKL
+Path #66: EGFR -> CRK -> ABL1 -> CRKL -> PXN
+Path #67: EGFR -> PTK2 -> BCAR1 -> CRK -> PXN
+Path #68: EGFR -> JAK2 -> PTPN11 -> GRB2 -> GAB1 -> CRK
+Path #69: EGFR -> JAK2 -> PTPN11 -> SRC -> BCAR1 -> CRK -> PXN
+Path #70: EGFR -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #71: EGFR -> JAK2 -> PTPN11 -> PTK2 -> CRK -> ABL1 -> CRKL
+Path #72: EGFR -> CRK -> PTK2 -> GRB2 -> CBL
+Path #73: EGFR -> JAK1 -> PTPN11 -> GRB2 -> GAB1 -> CRK
+Path #74: EGFR -> JAK1 -> PTPN11 -> SRC -> BCAR1 -> CRK -> PXN
+Path #75: EGFR -> JAK2 -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> PXN
+Path #76: EGFR -> JAK1 -> PTPN11 -> PTK2 -> CRK -> ABL1 -> CRKL
+Path #77: EGFR -> GAB1 -> CRK -> PTK2 -> PXN
+Path #78: EGFR -> PTK2 -> SRC -> BCAR1 -> CRK -> PXN
+Path #79: EGFR -> SRC -> BCAR1 -> CRK -> PTK2 -> PXN
+Path #80: EGFR -> PTPN11 -> PTK2 -> SRC -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #81: EGFR -> JAK1 -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> PXN
+Path #82: EGFR -> PTPN11 -> PTK2 -> PXN -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #83: EGFR -> PTPN11 -> PTK2 -> PXN -> CRK -> ABL1 -> CRKL
+Path #84: EGFR -> CRK -> PTK2 -> CRKL
+Path #85: EGFR -> CRK -> PTK2 -> MAPK13
+Path #86: EGFR -> PTK2 -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #87: EGFR -> JAK2 -> PTPN11 -> LCK -> LAT -> GRB2
+Path #88: EGFR -> JAK2 -> PTPN11 -> SRC -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #89: EGFR -> PTPN11 -> PTK2 -> CTTN -> CRK -> PXN
+Path #90: EGFR -> CRK -> MAP3K1 -> MAP2K7 -> MAPK9 -> IRS4
+Path #91: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK -> PTK2 -> PXN
+Path #92: EGFR -> CBL -> SRC -> BCAR1 -> CRK -> PXN
+Path #93: EGFR -> CBL -> LCK -> LAT -> GRB2
+Path #94: EGFR -> GAB1 -> CRK -> PTK2 -> SRC -> PXN
+Path #95: EGFR -> JAK1 -> PTPN11 -> LCK -> LAT -> GRB2
+Path #96: EGFR -> JAK1 -> PTPN11 -> SRC -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #97: EGFR -> CRK -> PTK2 -> PTK2B -> PXN
+Path #98: EGFR -> CRK -> PTK2 -> PXN -> CRKL
+Path #99: EGFR -> JAK2 -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #100: EGFR -> PTK2 -> SRC -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #101: EGFR -> GAB1 -> CRK -> PTK2 -> GRB2
+Path #102: EGFR -> CRK -> MAP3K1 -> MAP2K7 -> MAPK8 -> IRS4
+Path #103: EGFR -> JAK1 -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #104: EGFR -> CRK -> PTK2 -> BCAR1 -> CRKL
+Path #105: EGFR -> CRK -> PTK2 -> BCAR1 -> PXN
+Path #106: EGFR -> SRC -> BCAR1 -> CRK -> PTK2 -> GRB2
+Path #107: EGFR -> PTK2 -> PXN -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #108: EGFR -> PTPN11 -> GAB1 -> CRK -> PXN
+Path #109: EGFR -> PTK2 -> PXN -> CRK -> ABL1 -> CRKL
+Path #110: EGFR -> CRK -> PTK2 -> SHC3 -> GRB2
+Path #111: EGFR -> PTK2 -> CTTN -> CRK -> PXN
+Path #112: EGFR -> PTPN11 -> PTK2 -> CRK -> PXN -> CDC42 -> WASL
+Path #113: EGFR -> PTPN11 -> PTK2 -> CTTN -> CRK -> ABL1 -> CRKL
+Path #114: EGFR -> CBL -> SRC -> BCAR1 -> CRK -> ABL1 -> CRKL
+Path #115: EGFR -> CRK -> PTK2 -> CTTN -> CRKL
+Path #116: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK -> PTK2 -> GRB2
+Path #117: EGFR -> GAB1 -> CRK -> PXN -> CDC42 -> WASL
+Path #118: EGFR -> STAT3 -> HSP90AA1 -> AKT2 -> TBC1D4
+Path #119: EGFR -> GRB2 -> GAB1 -> CRK -> PXN
+Path #120: EGFR -> SRC -> BCAR1 -> CRK -> PXN -> CDC42 -> WASL
+Path #121: EGFR -> PTPN11 -> LCK -> SHC1 -> GRB2
+Path #122: EGFR -> GAB1 -> CRK -> PTK2 -> SRC -> GRB2
+Path #123: EGFR -> JAK2 -> PTPN11 -> SRC -> BCAR1 -> CRK -> PTK2 -> PXN
+Path #124: EGFR -> CRK -> PXN -> CDC42 -> PARD3
+Path #125: EGFR -> PTPN11 -> CD247 -> FYN -> RHOA -> ROCK1 -> PTEN -> PTK2 -> PXN
+Path #126: EGFR -> CRK -> PXN -> CDC42 -> MAPK13
+Path #127: EGFR -> STAT3 -> HSP90AA1 -> AKT2 -> GSK3A
+Path #128: EGFR -> STAT3 -> HSP90AA1 -> ERBB2 -> PTK2 -> PXN
+Path #129: EGFR -> JAK1 -> PTPN11 -> SRC -> BCAR1 -> CRK -> PTK2 -> PXN
+Path #130: EGFR -> PTPN11 -> GAB1 -> CRK -> ABL1 -> CRKL
+Path #131: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK -> PXN -> CDC42 -> WASL
+Path #132: EGFR -> PTK2 -> CRK -> PXN -> CDC42 -> WASL
+Path #133: EGFR -> PTK2 -> CTTN -> CRK -> ABL1 -> CRKL
+Path #134: EGFR -> GAB1 -> CRK -> PTK2 -> SRC -> KHDRBS1
+Path #135: EGFR -> STAT3 -> HSP90AA1 -> NR3C1 -> JUN
+Path #136: EGFR -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> PXN -> CDC42 -> WASL
+Path #137: EGFR -> PTPN11 -> LCK -> LCP2 -> GRB2
+Path #138: EGFR -> PTPN11 -> CD247 -> FYN -> RHOA -> ROCK1 -> PTEN -> PTK2 -> SRC -> PXN
+Path #139: EGFR -> CRK -> ABL1 -> GRB2 -> CBL
+Path #140: EGFR -> GAB1 -> CRK -> PTK2 -> WASL
+Path #141: EGFR -> GRB2 -> GAB1 -> CRK -> ABL1 -> CRKL
+Path #142: EGFR -> STAT3 -> HSP90AA1 -> ERBB2 -> GRB2 -> CBL
+Path #143: EGFR -> JAK2 -> PTPN11 -> PTK2 -> CRK -> PXN -> CDC42 -> WASL
+Path #144: EGFR -> SRC -> BCAR1 -> CRK -> PTK2 -> WASL
+Path #145: EGFR -> PTPN11 -> LCK -> CD28 -> GRB2
+Path #146: EGFR -> STAT3 -> HSP90AA1 -> ERBB2 -> PTK2 -> SRC -> PXN
+Path #147: EGFR -> JAK2 -> PTPN11 -> SRC -> BCAR1 -> CRK -> PTK2 -> GRB2
+Path #148: EGFR -> CBL -> SRC -> BCAR1 -> CRK -> PTK2 -> PXN
+Path #149: EGFR -> PTPN11 -> CD247 -> FYN -> RHOA -> ROCK1 -> PTEN -> PTK2 -> GRB2
+Path #150: EGFR -> JAK1 -> PTPN11 -> PTK2 -> CRK -> PXN -> CDC42 -> WASL
+Path #151: EGFR -> JAK2 -> PTPN11 -> LCK -> SHC1 -> GRB2
+Path #152: EGFR -> PTPN11 -> LCK -> LAT -> GRB2 -> CBL
+Path #153: EGFR -> STAT3 -> HSP90AA1 -> ERBB2 -> PTK2 -> GRB2
+Path #154: EGFR -> JAK1 -> PTPN11 -> SRC -> BCAR1 -> CRK -> PTK2 -> GRB2
+Path #155: EGFR -> PTPN11 -> PTK2 -> SRC -> BCAR1 -> CRK -> PXN -> CDC42 -> WASL
+Path #156: EGFR -> PTPN11 -> PTK2 -> FYN -> LCK -> LAT -> GRB2
+Path #157: EGFR -> CBL -> LCK -> SHC1 -> GRB2
+Path #158: EGFR -> JAK1 -> PTPN11 -> LCK -> SHC1 -> GRB2
+Path #159: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK -> PTK2 -> WASL
+Path #160: EGFR -> PTPN11 -> PTK2 -> CRK -> ABL1 -> CBL
+Path #161: EGFR -> PTPN11 -> PTK2 -> CRK -> PXN -> CRKL
+Path #162: EGFR -> CRK -> ABL1 -> CRKL -> PXN -> CDC42 -> WASL
+Path #163: EGFR -> PTPN11 -> GAB1 -> CRK -> PTK2 -> PXN
+Path #164: EGFR -> PTK2 -> BCAR1 -> CRK -> PXN -> CDC42 -> WASL
+Path #165: EGFR -> GAB1 -> CRK -> ABL1 -> CBL
+Path #166: EGFR -> GAB1 -> CRK -> PXN -> CRKL
+Path #167: EGFR -> JAK2 -> PTPN11 -> SRC -> BCAR1 -> CRK -> PXN -> CDC42 -> WASL
+Path #168: EGFR -> SRC -> BCAR1 -> CRK -> ABL1 -> CBL
+Path #169: EGFR -> SRC -> BCAR1 -> CRK -> PXN -> CRKL
+Path #170: EGFR -> PTPN11 -> CD247 -> FYN -> RHOA -> ROCK1 -> PTEN -> PTK2 -> SRC -> GRB2
+Path #171: EGFR -> PTPN11 -> GRB2 -> GAB1 -> CRK -> PXN
+Path #172: EGFR -> PTPN11 -> PTK2 -> CRK -> ABL1 -> GRB2
+Path #173: EGFR -> JAK1 -> PTPN11 -> SRC -> BCAR1 -> CRK -> PXN -> CDC42 -> WASL
+Path #174: EGFR -> JAK2 -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> PXN -> CDC42 -> WASL
+Path #175: EGFR -> JAK2 -> PTPN11 -> LCK -> LCP2 -> GRB2
+Path #176: EGFR -> CBL -> SRC -> BCAR1 -> CRK -> PTK2 -> GRB2
+Path #177: EGFR -> GAB1 -> CRK -> PTK2 -> PXN -> CDC42 -> WASL
+Path #178: EGFR -> STAT3 -> HSP90AA1 -> ERBB2 -> PTK2 -> SRC -> GRB2
+Path #179: EGFR -> GAB1 -> CRK -> ABL1 -> GRB2
+Path #180: EGFR -> CRK -> PTK2 -> CDC42 -> WASL
+Path #181: EGFR -> GRB2 -> GAB1 -> CRK -> PTK2 -> PXN
+Path #182: EGFR -> PTK2 -> SRC -> BCAR1 -> CRK -> PXN -> CDC42 -> WASL
+Path #183: EGFR -> SRC -> BCAR1 -> CRK -> PTK2 -> PXN -> CDC42 -> WASL
+Path #184: EGFR -> SRC -> BCAR1 -> CRK -> ABL1 -> GRB2
+Path #185: EGFR -> CRK -> PTK2 -> MAPK12 -> JUN
+Path #186: EGFR -> JAK1 -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> PXN -> CDC42 -> WASL
+Path #187: EGFR -> CRK -> PTK2 -> PXN -> CDC42 -> PARD3
+Path #188: EGFR -> CRK -> PTK2 -> PXN -> CDC42 -> MAPK13
+Path #189: EGFR -> CRK -> PTK2 -> GRB2 -> MAPK3 -> JUN
+Path #190: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK -> ABL1 -> CBL
+Path #191: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK -> PXN -> CRKL
+Path #192: EGFR -> SHC3 -> GRB2 -> GAB1 -> CRK -> PXN
+Path #193: EGFR -> PTPN11 -> GAB1 -> CRK -> PTK2 -> SRC -> PXN
+Path #194: EGFR -> JAK2 -> PTPN11 -> LCK -> LAT -> GRB2 -> CBL
+Path #195: EGFR -> PTK2 -> CRK -> ABL1 -> CBL
+Path #196: EGFR -> PTK2 -> CRK -> PXN -> CRKL
+Path #197: EGFR -> CRK -> PTK2 -> MAPK11 -> JUN
+Path #198: EGFR -> PTPN11 -> IRS1 -> GRB2 -> GAB1 -> CRK -> PXN
+Path #199: EGFR -> SRC -> GRB2 -> GAB1 -> CRK -> PXN
+Path #200: EGFR -> PTPN11 -> PTK2 -> CRK -> PXN -> BCAR1 -> CRKL
+Path #201: EGFR -> PTPN11 -> PTK2 -> CRK -> ABL1 -> CRKL -> PXN
+Path #202: EGFR -> PTPN11 -> CD247 -> FYN -> RHOA -> ROCK1 -> PTEN -> PTK2 -> SRC -> KHDRBS1
+Path #203: EGFR -> GAB1 -> CRK -> PXN -> BCAR1 -> CRKL
+Path #204: EGFR -> JAK1 -> PTPN11 -> LCK -> LAT -> GRB2 -> CBL
+Path #205: EGFR -> GAB1 -> CRK -> ABL1 -> CRKL -> PXN
+Path #206: EGFR -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> ABL1 -> CBL
+Path #207: EGFR -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> PXN -> CRKL
+Path #208: EGFR -> PTPN11 -> GAB1 -> CRK -> PTK2 -> GRB2
+Path #209: EGFR -> STAT3 -> HSP90AA1 -> AKT3 -> GSK3A
+Path #210: EGFR -> PTPN11 -> PTK2 -> CTTN -> CRK -> PXN -> CDC42 -> WASL
+Path #211: EGFR -> JAK2 -> PTPN11 -> SRC -> BCAR1 -> CRK -> PTK2 -> WASL
+Path #212: EGFR -> SRC -> BCAR1 -> CRK -> ABL1 -> CRKL -> PXN
+Path #213: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK -> PTK2 -> PXN -> CDC42 -> WASL
+Path #214: EGFR -> PTPN11 -> CD247 -> FYN -> RHOA -> ROCK1 -> PTEN -> PTK2 -> WASL
+Path #215: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK -> ABL1 -> GRB2
+Path #216: EGFR -> STAT3 -> HSP90AA1 -> ERBB2 -> PTK2 -> SRC -> KHDRBS1
+Path #217: EGFR -> CBL -> SRC -> BCAR1 -> CRK -> PXN -> CDC42 -> WASL
+Path #218: EGFR -> JAK2 -> PTPN11 -> PTK2 -> CRK -> ABL1 -> CBL
+Path #219: EGFR -> JAK2 -> PTPN11 -> PTK2 -> CRK -> PXN -> CRKL
+Path #220: EGFR -> CRK -> PTK2 -> MAPK13 -> JUN
+Path #221: EGFR -> PTK2 -> CRK -> ABL1 -> GRB2
+Path #222: EGFR -> PTPN11 -> GRB2 -> GAB1 -> CRK -> ABL1 -> CRKL
+Path #223: EGFR -> GAB1 -> CRK -> PTK2 -> GRB2 -> CBL
+Path #224: EGFR -> CBL -> MET -> GRB2 -> GAB1 -> CRK -> PXN
+Path #225: EGFR -> GRB2 -> GAB1 -> CRK -> PTK2 -> SRC -> PXN
+Path #226: EGFR -> STAT3 -> HSP90AA1 -> ERBB2 -> PTK2 -> WASL
+Path #227: EGFR -> JAK1 -> PTPN11 -> SRC -> BCAR1 -> CRK -> PTK2 -> WASL
+Path #228: EGFR -> SRC -> BCAR1 -> CRK -> PTK2 -> GRB2 -> CBL
+Path #229: EGFR -> STAT3 -> HSP90AA1 -> AKT3 -> TBC1D4
+Path #230: EGFR -> PTPN11 -> PTK2 -> GRB2 -> GAB1 -> CRK -> PXN
+Path #231: EGFR -> JAK1 -> PTPN11 -> PTK2 -> CRK -> ABL1 -> CBL
+Path #232: EGFR -> JAK1 -> PTPN11 -> PTK2 -> CRK -> PXN -> CRKL
+Path #233: EGFR -> PTPN11 -> SRC -> GRB2 -> GAB1 -> CRK -> PXN
+Path #234: EGFR -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> ABL1 -> GRB2
+Path #235: EGFR -> JAK2 -> PTPN11 -> GRB2 -> GAB1 -> CRK -> PXN
+Path #236: EGFR -> PTPN11 -> PTK2 -> SRC -> BCAR1 -> CRK -> ABL1 -> CBL
+Path #237: EGFR -> PTPN11 -> PTK2 -> SRC -> BCAR1 -> CRK -> PXN -> CRKL
+Path #238: EGFR -> JAK2 -> PTPN11 -> PTK2 -> CRK -> ABL1 -> GRB2
+Path #239: EGFR -> CRK -> PTK2 -> BCAR1 -> PXN -> CDC42 -> WASL
+Path #240: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK -> ABL1 -> CRKL -> PXN
+Path #241: EGFR -> SHC3 -> GRB2 -> GAB1 -> CRK -> ABL1 -> CRKL
+Path #242: EGFR -> PTPN11 -> PTK2 -> PXN -> BCAR1 -> CRK -> ABL1 -> CBL
+Path #243: EGFR -> PTPN11 -> GAB1 -> CRK -> PXN -> CDC42 -> WASL
+Path #244: EGFR -> PTK2 -> CRK -> PXN -> BCAR1 -> CRKL
+Path #245: EGFR -> PTK2 -> CRK -> ABL1 -> CRKL -> PXN
+Path #246: EGFR -> JAK1 -> PTPN11 -> GRB2 -> GAB1 -> CRK -> PXN
+Path #247: EGFR -> PTPN11 -> IRS1 -> GRB2 -> GAB1 -> CRK -> ABL1 -> CRKL
+Path #248: EGFR -> JAK1 -> PTPN11 -> PTK2 -> CRK -> ABL1 -> GRB2
+Path #249: EGFR -> PTPN11 -> PTK2 -> PXN -> CRK -> ABL1 -> CBL
+Path #250: EGFR -> SRC -> GRB2 -> GAB1 -> CRK -> ABL1 -> CRKL
+Path #251: EGFR -> PTPN11 -> LCK -> CD247 -> SYK -> LAT -> GRB2
+Path #252: EGFR -> PTPN11 -> LCK -> CD247 -> SYK -> SHC3 -> GRB2
+Path #253: EGFR -> GAB1 -> CRK -> PTK2 -> CRKL
+Path #254: EGFR -> GAB1 -> CRK -> PTK2 -> MAPK13
+Path #255: EGFR -> PTPN11 -> GAB1 -> CRK -> PTK2 -> SRC -> GRB2
+Path #256: EGFR -> PTK2 -> BCAR1 -> CRK -> ABL1 -> CBL
+Path #257: EGFR -> PTK2 -> BCAR1 -> CRK -> PXN -> CRKL
+Path #258: EGFR -> PTPN11 -> SRC -> BCAR1 -> CRK -> PTK2 -> GRB2 -> CBL
+Path #259: EGFR -> PTPN11 -> PTK2 -> SRC -> BCAR1 -> CRK -> ABL1 -> GRB2
+Path #260: EGFR -> SRC -> BCAR1 -> CRK -> PTK2 -> CRKL
+Path #261: EGFR -> SRC -> BCAR1 -> CRK -> PTK2 -> MAPK13
+Path #262: EGFR -> PTPN11 -> LCK -> CD247 -> SYK -> LCP2 -> GRB2
+Path #263: EGFR -> JAK2 -> PTPN11 -> SRC -> BCAR1 -> CRK -> ABL1 -> CBL
+Path #264: EGFR -> JAK2 -> PTPN11 -> SRC -> BCAR1 -> CRK -> PXN -> CRKL
+Path #265: EGFR -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> ABL1 -> CRKL -> PXN
+Path #266: EGFR -> PTPN11 -> PTK2 -> CRK -> MAP3K1 -> MAP2K7 -> MAPK9 -> IRS4
+Path #267: EGFR -> PTK2 -> CTTN -> CRK -> PXN -> CDC42 -> WASL
+Path #268: EGFR -> PTPN11 -> CD247 -> FYN -> RHOA -> ROCK1 -> PTEN -> PTK2 -> CRK
+Path #269: EGFR -> PTPN11 -> LCK -> SHC1 -> GRB2 -> CBL
+Path #270: EGFR -> JAK2 -> PTPN11 -> PTK2 -> CRK -> PXN -> BCAR1 -> CRKL
+Path #271: EGFR -> PTPN11 -> PTK2 -> PXN -> BCAR1 -> CRK -> ABL1 -> GRB2
+Path #272: EGFR -> JAK2 -> PTPN11 -> PTK2 -> CRK -> ABL1 -> CRKL -> PXN
+Path #273: EGFR -> CBL -> SRC -> BCAR1 -> CRK -> PTK2 -> WASL
+Path #274: EGFR -> PTPN11 -> PTK2 -> PXN -> CRK -> ABL1 -> GRB2
+Path #275: EGFR -> STAT3 -> HSP90AA1 -> ERBB2 -> PTK2 -> CRK
+Path #276: EGFR -> PTPN11 -> LCK -> CD247 -> SYK -> LAT2 -> GRB2
+Path #277: EGFR -> JAK1 -> PTPN11 -> SRC -> BCAR1 -> CRK -> ABL1 -> CBL
+Path #278: EGFR -> JAK1 -> PTPN11 -> SRC -> BCAR1 -> CRK -> PXN -> CRKL
+Path #279: EGFR -> CBL -> MET -> GRB2 -> GAB1 -> CRK -> ABL1 -> CRKL
+Path #280: EGFR -> GRB2 -> GAB1 -> CRK -> PXN -> CDC42 -> WASL
+Path #281: EGFR -> JAK2 -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> ABL1 -> CBL
+Path #282: EGFR -> JAK2 -> PTPN11 -> PTK2 -> BCAR1 -> CRK -> PXN -> CRKL
+Path #283: EGFR -> PTK2 -> BCAR1 -> CRK -> ABL1 -> GRB2
+Path #284: EGFR -> JAK1 -> PTPN11 -> PTK2 -> CRK -> PXN -> BCAR1 -> CRKL
+Path #285: EGFR -> PTPN11 -> PTK2 -> GRB2 -> GAB1 -> CRK -> ABL1 -> CRKL
+Path #286: EGFR -> JAK1 -> PTPN11 -> PTK2 -> CRK -> ABL1 -> CRKL -> PXN
+Path #287: EGFR -> GAB1 -> CRK -> PTK2 -> PTK2B -> PXN
+Path #288: EGFR -> CRK -> PXN -> ARHGEF7 -> CDC42 -> PARD3
+Path #289: EGFR -> CRK -> PTK2 -> FYN -> PRKCD -> MARCKS
+Path #290: EGFR -> PTPN11 -> LCK -> CD247 -> FYN -> PRKCD -> MARCKS
+Path #291: EGFR -> STAT3 -> HSP90AA1 -> AKT1 -> EZH2 -> CDKN1A -> RB1
+Path #292: EGFR -> JAK2 -> PTPN11 -> LCK -> CD247 -> FYN -> PRKCD -> MARCKS
+Path #293: EGFR -> CRK -> PXN -> ARHGEF7 -> CDC42 -> PARD3 -> GSK3B -> DPYSL2
+Path #294: EGFR -> STAT3 -> HSP90AA1 -> AKT1 -> EZH2 -> CDKN1A -> CCNL2
+Path #295: EGFR -> CRK -> PTK2 -> FYN -> CDC42 -> PARD3 -> GSK3B -> DPYSL2
+Path #296: EGFR -> PTPN11 -> LCK -> CD247 -> FYN -> CDC42 -> PARD3 -> GSK3B -> DPYSL2
+Path #297: EGFR -> STAT3 -> HSP90AA1 -> AKT2 -> GSK3A -> AKT1 -> EZH2 -> CDKN1A -> RB1
+Path #298: EGFR -> STAT3 -> HSP90AA1 -> AKT3 -> GSK3A -> AKT1 -> EZH2 -> CDKN1A -> RB1
+Path #299: EGFR -> STAT3 -> HSP90AA1 -> AKT2 -> GSK3A -> AKT1 -> EZH2 -> CDKN1A -> CCNL2
+Path #300: EGFR -> STAT3 -> HSP90AA1 -> AKT3 -> GSK3A -> AKT1 -> EZH2 -> CDKN1A -> CCNL2

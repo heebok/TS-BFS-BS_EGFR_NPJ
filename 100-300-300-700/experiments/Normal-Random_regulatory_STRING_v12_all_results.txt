@@ -1,0 +1,588 @@
+*** All Path Results (Complete + Intermediate) - STRING API v12.5 (regulatory) ***
+======================================================================
+  RUN CONFIGURATION
+======================================================================
+  Run Date/Time        : 2026-10-09 14:42:22
+  Input File           : C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/experiments/Normal-Random_regulatory.json
+  Network Type         : regulatory
+  STRING API Base      : https://version-12-5.string-db.org/api
+  Bridge Depth D       : 1 (intermediate nodes; max edges/interval=2)
+  Species ID           : 9606
+  Min STRING Score     : 700
+  Degree Cap H         : 100
+  Segment Beam K       : 300 BFS frontier
+  Max Paths/Target N   : 300 (legacy/non-temporal)
+  Temporal Seg Routes  : 5 per source-target pair
+  Temporal Base K      : 300
+  Temporal Adaptive K  : max(Base K, reached target genes)
+  Target Preservation  : >=1 route per reached target
+  Temporal Routes/Tgt  : 3
+  Temporal Full Dedupe : True
+  Regulatory Wt Bonus  : 0.0
+  Hub Blacklist        : (none)
+  Collapse by Gene     : True
+  No Backtracking      : True
+  Dedupe Genes in Path : True
+  Verbose Logging      : False
+  Cell Context Filter  : True
+  Cell Context Mode    : conservative_union
+  Cell Line            : MDA-MB-468
+  RNA Bulk File        : D:\Gihoon_Research\cell_context_data\SIDM00628\SIDM00628_rnaseq.csv.zip
+  Proteomics Bulk File : D:\Gihoon_Research\cell_context_data\SIDM00628\SIDM00628_proteomics.csv.zip
+  RNA Threshold        : 1.0
+  Start Proteins       : EGFR
+  Input Schema         : Temporal v2 interval model
+  Temporal Target Mode : measured
+  Time Points/Intervals: 3
+  Inhibitor Drugs      : (none)
+  Total Elapsed Time   : 160.6 sec
+======================================================================
+
+(Total elapsed time: 160.6 sec)
+
+=== Complete Paths (300 items) ===
+(Paths that reached the end through all time points)
+
+Complete Path #1 (Length 3): EGFR ──▶ JAK2 ──▶ PLCG2
+Complete Path #2 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ CDC42 ──▶ PAK2 ──→ MAP2K1 ──▶ MAPK1
+Complete Path #3 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ RAC1 ──▶ PAK2 ──→ MAP2K1 ──▶ MAPK1
+Complete Path #4 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ TRAF2 ──▶ TAB1
+Complete Path #5 (Length 4): EGFR ──▶ STAT3 ──▶ MYC ──▶ HNRNPA2B1
+Complete Path #6 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ TRAF2 ──▶ TAB1
+Complete Path #7 (Length 6): EGFR ──▶ SRC ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11
+Complete Path #8 (Length 6): EGFR ──▶ STAT3 ──→ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ IFNAR1
+Complete Path #9 (Length 6): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT4 ──⊣ LMNB1
+Complete Path #10 (Length 3): EGFR ──▶ SRC ──▶ OCLN
+Complete Path #11 (Length 4): EGFR ──→ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #12 (Length 5): EGFR ──▶ STAT5B ──→ STAT5A ──▶ SOCS3 ──⊣ TYK2
+Complete Path #13 (Length 5): EGFR ──▶ JAK2 ──▶ STAT3 ──→ ICAM1 ──▶ PLCG2
+Complete Path #14 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK3 ──▶ CALD1
+Complete Path #15 (Length 6): EGFR ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT3 ──→ MUC1
+Complete Path #16 (Length 4): EGFR ──▶ STAT3 ──▶ IL6 ──⊣ OCLN
+Complete Path #17 (Length 4): EGFR ──▶ SRC ──▶ PRKCD ──→ SHC1
+Complete Path #18 (Length 6): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ IFNAR1
+Complete Path #19 (Length 5): EGFR ──▶ SRC ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2
+Complete Path #20 (Length 4): EGFR ──▶ SRC ──▶ STAT3 ──→ STAT6
+Complete Path #21 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ TP53 ──⊣ G6PD
+Complete Path #22 (Length 4): EGFR ──→ VAV2 ──▶ RAC1 ──⊣ ABI2
+Complete Path #23 (Length 5): EGFR ──▶ SRC ──▶ IQGAP1 ──⊣ CDC42 ──▶ PAK4
+Complete Path #24 (Length 7): EGFR ──▶ JAK2 ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT3 ──→ HSP90AA1
+Complete Path #25 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ CDC42 ──▶ PAK2 ──→ MAP2K1 ──▶ MAPK3
+Complete Path #26 (Length 5): EGFR ──▶ SRC ──▶ STAT3 ──▶ IL6 ──⊣ OCLN
+Complete Path #27 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ CDC42 ──▶ PAK2 ──⊣ MYC ──▶ PKM
+Complete Path #28 (Length 5): EGFR ──▶ STAT3 ──→ STAT6 ──▶ SOCS1 ──⊣ TYK2
+Complete Path #29 (Length 4): EGFR ──→ VAV2 ──▶ RHOA ──▶ ROCK2
+Complete Path #30 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ RAC1 ──▶ PAK2 ──→ MAP2K1 ──▶ MAPK3
+Complete Path #31 (Length 4): EGFR ──→ CRK ──▶ ABL1 ──▶ SHC2
+Complete Path #32 (Length 7): EGFR ──▶ JAK2 ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT1 ──→ STAT6
+Complete Path #33 (Length 5): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2
+Complete Path #34 (Length 6): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──⊣ GAB2
+Complete Path #35 (Length 5): EGFR ──▶ SRC ──▶ STAT3 ──→ STAT1 ──→ STAT6
+Complete Path #36 (Length 5): EGFR ──▶ STAT3 ──→ STAT5A ──▶ SOCS3 ──⊣ TYK2
+Complete Path #37 (Length 4): EGFR ──→ VAV2 ──▶ CDC42 ──→ IQGAP1
+Complete Path #38 (Length 5): EGFR ──▶ SRC ──▶ CRK ──▶ PTK2 ──→ TLN1
+Complete Path #39 (Length 3): EGFR ──▶ SRC ──→ CDCP1
+Complete Path #40 (Length 6): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS1 ──⊣ TYK2 ──▶ IFNAR1
+Complete Path #41 (Length 5): EGFR ──▶ SRC ──▶ VAV2 ──▶ CDC42 ──▶ BAIAP2
+Complete Path #42 (Length 7): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT4 ──⊣ ANXA2
+Complete Path #43 (Length 6): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT6
+Complete Path #44 (Length 6): EGFR ──▶ SRC ──▶ STAT3 ──▶ SOCS1 ──⊣ TYK2 ──▶ IFNAR1
+Complete Path #45 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──▶ SHC1
+Complete Path #46 (Length 5): EGFR ──▶ CBL ──▶ PIK3R2 ──▶ PRKCZ ──▶ PARD3
+Complete Path #47 (Length 5): EGFR ──▶ JAK2 ──▶ STAT3 ──→ STAT1 ──→ STAT6
+Complete Path #48 (Length 5): EGFR ──▶ PLCG2 ──▶ PRKCD ──▶ SRC ──▶ ARHGAP35
+Complete Path #49 (Length 6): EGFR ──▶ STAT3 ──→ ICOS ──▶ PIK3R1 ──▶ PRKCZ ──→ WWC1
+Complete Path #50 (Length 5): EGFR ──▶ SRC ──▶ STAT3 ──▶ IL10 ──▶ TYK2
+Complete Path #51 (Length 6): EGFR ──▶ JAK2 ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT3
+Complete Path #52 (Length 5): EGFR ──▶ PLCG2 ──▶ PRKCD ──▶ TRAF2 ──▶ TAB1
+Complete Path #53 (Length 4): EGFR ──▶ PIK3CA ──▶ PRKCD ──⊣ MARCKS
+Complete Path #54 (Length 5): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ CISH ──⊣ STAT6
+Complete Path #55 (Length 4): EGFR ──▶ SRC ──▶ PRKCD ──▶ PRKD2
+Complete Path #56 (Length 5): EGFR ──▶ JAK2 ──▶ STAT5A ──▶ CISH ──⊣ STAT6
+Complete Path #57 (Length 7): EGFR ──▶ JAK2 ──▶ STAT5A ──▶ CISH ──⊣ STAT6 ──▶ SOCS1 ──⊣ STAT3
+Complete Path #58 (Length 5): EGFR ──▶ SRC ──▶ ARHGAP35 ──⊣ RHOA ──→ PFN1
+Complete Path #59 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK1 ──▶ CALD1
+Complete Path #60 (Length 7): EGFR ──▶ PLCG2 ──▶ PRKCD ──▶ SRC ──▶ ARHGAP35 ──⊣ RHOA ──→ PFN1
+Complete Path #61 (Length 6): EGFR ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ STAT4 ──⊣ LMNB1
+Complete Path #62 (Length 5): EGFR ──▶ PLCG2 ──▶ PRKCD ──▶ SRC ──▶ CTNND1
+Complete Path #63 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK1 ──→ STMN1
+Complete Path #64 (Length 6): EGFR ──▶ SRC ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT3
+Complete Path #65 (Length 7): EGFR ──▶ JAK2 ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT3 ──⊣ PTPN6
+Complete Path #66 (Length 5): EGFR ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ PTPN11
+Complete Path #67 (Length 5): EGFR ──▶ SRC ──▶ ARHGAP35 ──⊣ RHOA ──▶ ROCK2
+Complete Path #68 (Length 7): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──→ SRC
+Complete Path #69 (Length 6): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK8 ──▶ APP ──⊣ GAPDH
+Complete Path #70 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──▶ ARHGAP35
+Complete Path #71 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ CDC42 ──▶ PAK2 ──⊣ MYC ──▶ SLC1A5
+Complete Path #72 (Length 6): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──▶ GRB2
+Complete Path #73 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ PRKCI ──⊣ EPB41L4B
+Complete Path #74 (Length 5): EGFR ──▶ CBL ──▶ PIK3R2 ──▶ HRAS ──▶ AFDN
+Complete Path #75 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ CDC42 ──→ IQGAP1 ──▶ MAPK3 ──▶ CALD1
+Complete Path #76 (Length 5): EGFR ──▶ STAT3 ──▶ FOXO3 ──→ APP ──⊣ GAPDH
+Complete Path #77 (Length 4): EGFR ──→ CRK ──▶ ABL1 ──▶ STAT5A
+Complete Path #78 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──▶ CTNND1
+Complete Path #79 (Length 5): EGFR ──▶ SRC ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #80 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAP2K1 ──▶ MAPK1
+Complete Path #81 (Length 3): EGFR ──▶ GAB1 ──▶ CRK
+Complete Path #82 (Length 6): EGFR ──▶ JAK2 ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ IFNAR1
+Complete Path #83 (Length 5): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11
+Complete Path #84 (Length 3): EGFR ──▶ SRC ──▶ ARHGAP35
+Complete Path #85 (Length 5): EGFR ──▶ PTPN11 ──⊣ VAV2 ──▶ RHOA ──▶ ROCK2
+Complete Path #86 (Length 6): EGFR ──▶ STAT5B ──→ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ IFNAR1
+Complete Path #87 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK1 ──→ ATP1A1
+Complete Path #88 (Length 6): EGFR ──▶ STAT3 ──→ ICOS ──▶ PIK3R1 ──▶ AKT1 ──→ CYCS
+Complete Path #89 (Length 5): EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──→ TLN1
+Complete Path #90 (Length 5): EGFR ──▶ SRC ──▶ STAT3 ──▶ SOCS1 ──⊣ TYK2
+Complete Path #91 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK3 ──→ STMN1
+Complete Path #92 (Length 6): EGFR ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ PTPN11 ──⊣ GAB2
+Complete Path #93 (Length 4): EGFR ──▶ STAT3 ──▶ CISH ──⊣ STAT6
+Complete Path #94 (Length 5): EGFR ──▶ SRC ──▶ STAT3 ──▶ MYC ──▶ HNRNPA2B1
+Complete Path #95 (Length 4): EGFR ──▶ STAT5A ──▶ CISH ──⊣ STAT6
+Complete Path #96 (Length 5): EGFR ──▶ CBL ──▶ PIK3R2 ──▶ CDC42 ──▶ VASP
+Complete Path #97 (Length 6): EGFR ──▶ STAT3 ──→ ICOS ──▶ PIK3R1 ──▶ AKT1 ──→ ACLY
+Complete Path #98 (Length 6): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──→ MAPK3
+Complete Path #99 (Length 4): EGFR ──→ CRK ──▶ ABL2 ──▶ PRKD2
+Complete Path #100 (Length 4): EGFR ──▶ STAT3 ──▶ IL10 ──▶ TYK2
+Complete Path #101 (Length 6): EGFR ──▶ SRC ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ IFNAR1
+Complete Path #102 (Length 5): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS1 ──⊣ TYK2
+Complete Path #103 (Length 5): EGFR ──▶ PLCG2 ──▶ PRKCD ──▶ SRC ──→ CTTN
+Complete Path #104 (Length 6): EGFR ──▶ STAT5B ──→ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ IFNAR1
+Complete Path #105 (Length 2): EGFR ──▶ EPS15
+Complete Path #106 (Length 5): EGFR ──▶ SRC ──▶ STAT3 ──▶ CISH ──⊣ STAT6
+Complete Path #107 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAP2K1 ──▶ MAPK3
+Complete Path #108 (Length 7): EGFR ──▶ SRC ──▶ ARHGAP35 ──⊣ RHOA ──▶ ROCK2 ──▶ CTNNB1 ──▶ MAGI1
+Complete Path #109 (Length 5): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT5A
+Complete Path #110 (Length 6): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ STAT5A
+Complete Path #111 (Length 6): EGFR ──▶ SRC ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT5A
+Complete Path #112 (Length 7): EGFR ──▶ JAK2 ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT3 ──→ MUC1
+Complete Path #113 (Length 5): EGFR ──▶ STAT5B ──→ STAT3 ──▶ CISH ──⊣ STAT6
+Complete Path #114 (Length 6): EGFR ──▶ STAT3 ──→ ICOS ──▶ PIK3R1 ──▶ AKT1 ──→ ZFP36L1
+Complete Path #115 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK8 ──▶ APP
+Complete Path #116 (Length 4): EGFR ──▶ SRC ──▶ PRKCD ──▶ STAT3
+Complete Path #117 (Length 5): EGFR ──▶ STAT3 ──▶ IL22 ──▶ TYK2 ──▶ IFNAR1
+Complete Path #118 (Length 6): EGFR ──▶ SRC ──▶ ARHGAP35 ──⊣ RHOA ──▶ ROCK2 ──→ PPP1CA
+Complete Path #119 (Length 7): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──⊣ GAB1
+Complete Path #120 (Length 5): EGFR ──▶ PIK3CB ──▶ PRKCD ──▶ SRC ──▶ CTNND1
+Complete Path #121 (Length 5): EGFR ──▶ SRC ──▶ CRK ──▶ ABL1 ──▶ SHC2
+Complete Path #122 (Length 5): EGFR ──▶ STAT5B ──→ STAT3 ──▶ IL10 ──▶ TYK2
+Complete Path #123 (Length 6): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT4 ──⊣ ANXA2
+Complete Path #124 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──→ CTTN
+Complete Path #125 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ STAT3 ──⊣ PTPN6
+Complete Path #126 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ CDC42 ──▶ VASP
+Complete Path #127 (Length 5): EGFR ──▶ SRC ──▶ STAT3 ──▶ IL22 ──▶ TYK2
+Complete Path #128 (Length 5): EGFR ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #129 (Length 6): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11
+Complete Path #130 (Length 5): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ IL10 ──▶ TYK2
+Complete Path #131 (Length 5): EGFR ──▶ SRC ──▶ STAT5A ──▶ CISH ──⊣ STAT6
+Complete Path #132 (Length 7): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──▶ GRB2
+Complete Path #133 (Length 7): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT4 ──⊣ LMNB1
+Complete Path #134 (Length 5): EGFR ──▶ CBL ──▶ PIK3R2 ──▶ PRKCZ ──→ WWC1
+Complete Path #135 (Length 5): EGFR ──▶ CBL ──▶ PIK3R2 ──▶ KRAS ──▶ AFDN
+Complete Path #136 (Length 5): EGFR ──▶ PLCG2 ──▶ PRKCD ──▶ SRC ──▶ TJP1
+Complete Path #137 (Length 5): EGFR ──▶ CBL ──▶ PIK3R2 ──▶ NRAS ──▶ AFDN
+Complete Path #138 (Length 4): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2
+Complete Path #139 (Length 6): EGFR ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ STAT1 ──→ STAT6
+Complete Path #140 (Length 3): EGFR ──▶ SRC ──▶ IQGAP1
+Complete Path #141 (Length 4): EGFR ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2
+Complete Path #142 (Length 5): EGFR ──▶ PLCG2 ──▶ PRKCD ──▶ SRC ──▶ PTPRA
+Complete Path #143 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ PRKCZ ──▶ PARD3
+Complete Path #144 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──▶ SHC2
+Complete Path #145 (Length 3): EGFR ──▶ SRC ──▶ PRKCD
+Complete Path #146 (Length 4): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK3
+Complete Path #147 (Length 5): EGFR ──▶ SRC ──▶ STAT3 ──→ ICAM1 ──▶ PLCG2
+Complete Path #148 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ AKT1 ──▶ MAPK3
+Complete Path #149 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──→ NFE2L2 ──→ TKT
+Complete Path #150 (Length 4): EGFR ──▶ STAT3 ──▶ SOCS1 ──⊣ TYK2
+Complete Path #151 (Length 5): EGFR ──▶ STAT5A ──→ STAT3 ──▶ SOCS3 ──⊣ TYK2
+Complete Path #152 (Length 6): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──→ MAPK1
+Complete Path #153 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ CDC42 ──→ IQGAP1 ──▶ MAPK3 ──→ STMN1
+Complete Path #154 (Length 5): EGFR ──▶ CBL ──▶ PIK3R2 ──▶ CDC42 ──▶ PAK4
+Complete Path #155 (Length 4): EGFR ──▶ STAT3 ──→ STAT1 ──→ STAT6
+Complete Path #156 (Length 5): EGFR ──▶ PTPN11 ──⊣ VAV2 ──▶ CDC42 ──→ IQGAP1
+Complete Path #157 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ CDC42 ──→ IQGAP1 ──▶ MAPK1 ──→ ATP1A1
+Complete Path #158 (Length 4): EGFR ──▶ CBL ──▶ PIK3R2 ──▶ PRKCI
+Complete Path #159 (Length 4): EGFR ──▶ STAT3 ──⊣ PTPN6 ──⊣ TYK2
+Complete Path #160 (Length 6): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──→ PAG1
+Complete Path #161 (Length 5): EGFR ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #162 (Length 5): EGFR ──▶ JAK2 ──▶ STAT5A ──▶ IL4R ──▶ STAT6
+Complete Path #163 (Length 6): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT1 ──→ STAT6
+Complete Path #164 (Length 5): EGFR ──▶ STAT5B ──→ STAT3 ──▶ SOCS3 ──⊣ TYK2
+Complete Path #165 (Length 5): EGFR ──▶ SRC ──▶ VAV2 ──▶ RHOA ──▶ ROCK2
+Complete Path #166 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──▶ TJP1
+Complete Path #167 (Length 3): EGFR ──▶ CBL ──▶ PIK3R2
+Complete Path #168 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ PRKCZ ──→ WWC1
+Complete Path #169 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──▶ PTPRA
+Complete Path #170 (Length 3): EGFR ──▶ GAB1 ──▶ PIK3R2
+Complete Path #171 (Length 6): EGFR ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ PTPN11 ──→ MAPK3
+Complete Path #172 (Length 4): EGFR ──▶ STAT3 ──▶ FOXO3 ──→ APP
+Complete Path #173 (Length 5): EGFR ──▶ SRC ──▶ VAV2 ──▶ CDC42 ──→ IQGAP1
+Complete Path #174 (Length 5): EGFR ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ STAT5A
+Complete Path #175 (Length 5): EGFR ──▶ PIK3CB ──▶ PRKCD ──▶ SRC ──→ CTTN
+Complete Path #176 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ STAT3 ──→ HSP90AA1
+Complete Path #177 (Length 4): EGFR ──→ CRK ──▶ PTK2 ──→ TLN1
+Complete Path #178 (Length 5): EGFR ──▶ STAT5B ──→ STAT3 ──▶ SOCS1 ──⊣ TYK2
+Complete Path #179 (Length 2): EGFR ──→ CRK
+Complete Path #180 (Length 6): EGFR ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ STAT4 ──⊣ ANXA2
+Complete Path #181 (Length 5): EGFR ──▶ STAT5B ──→ STAT3 ──→ STAT1 ──→ STAT6
+Complete Path #182 (Length 7): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──⊣ GAB2
+Complete Path #183 (Length 5): EGFR ──▶ PTPN11 ──⊣ VAV2 ──▶ RAC1 ──▶ BAIAP2
+Complete Path #184 (Length 3): EGFR ──▶ PTPN11 ──→ PAG1
+Complete Path #185 (Length 5): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ IFNAR1
+Complete Path #186 (Length 6): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ IFNAR1
+Complete Path #187 (Length 3): EGFR ──▶ PLCG2 ──▶ PRKCD
+Complete Path #188 (Length 4): EGFR ──▶ SRC ──▶ PRKCD ──⊣ MARCKS
+Complete Path #189 (Length 5): EGFR ──▶ SRC ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #190 (Length 7): EGFR ──▶ PTPN11 ──⊣ VAV2 ──▶ CDC42 ──▶ PAK2 ──⊣ MYC ──▶ PKM
+Complete Path #191 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ BTK ──▶ PLCG2
+Complete Path #192 (Length 6): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ PRKCI
+Complete Path #193 (Length 4): EGFR ──▶ GAB1 ──▶ CRK ──▶ ABL2
+Complete Path #194 (Length 3): EGFR ──▶ PIK3CA ──▶ PLCG2
+Complete Path #195 (Length 5): EGFR ──▶ SRC ──▶ ARHGAP35 ──⊣ RHOA ──▶ ACTB
+Complete Path #196 (Length 3): EGFR ──▶ PIK3CA ──▶ PRKCD
+Complete Path #197 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ AKT1 ──→ YBX1
+Complete Path #198 (Length 5): EGFR ──▶ SRC ──▶ IQGAP1 ──⊣ CDC42 ──▶ VASP
+Complete Path #199 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ RAC1 ──▶ PAK2 ──⊣ MYC ──▶ PKM
+Complete Path #200 (Length 5): EGFR ──▶ PLCG2 ──▶ PRKCD ──→ NFE2L2 ──→ TKT
+Complete Path #201 (Length 5): EGFR ──▶ SRC ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2
+Complete Path #202 (Length 5): EGFR ──▶ JAK2 ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2
+Complete Path #203 (Length 3): EGFR ──▶ PTPN11 ──⊣ PIK3R2
+Complete Path #204 (Length 7): EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──▶ ARHGAP35 ──⊣ RHOA ──→ PFN1
+Complete Path #205 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ AKT1 ──▶ MAPK1
+Complete Path #206 (Length 4): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK1
+Complete Path #207 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1
+Complete Path #208 (Length 7): EGFR ──▶ SRC ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT1 ──→ STAT6
+Complete Path #209 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK1 ──→ YBX1
+Complete Path #210 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ TRAF2 ──▶ RIPK1
+Complete Path #211 (Length 5): EGFR ──▶ STAT3 ──→ STAT5A ──▶ CISH ──⊣ STAT6
+Complete Path #212 (Length 4): EGFR ──→ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #213 (Length 4): EGFR ──→ CRK ──▶ PXN ──▶ ACTB
+Complete Path #214 (Length 4): EGFR ──▶ STAT5B ──→ STAT3 ──→ STAT6
+Complete Path #215 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ AKT1 ──→ CYCS
+Complete Path #216 (Length 5): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ FOXO3 ──→ APP
+Complete Path #217 (Length 4): EGFR ──→ VAV2 ──▶ RAC1 ──▶ BAIAP2
+Complete Path #218 (Length 6): EGFR ──▶ SRC ──▶ VAV2 ──▶ RHOA ──▶ ROCK2 ──→ PPP1CA
+Complete Path #219 (Length 6): EGFR ──▶ PTPN11 ──⊣ VAV2 ──▶ RHOA ──▶ ROCK2 ──→ PPP1CA
+Complete Path #220 (Length 6): EGFR ──▶ SRC ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT6
+Complete Path #221 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──→ NFE2L2 ──→ TKT
+Complete Path #222 (Length 5): EGFR ──▶ PIK3CB ──▶ PRKCD ──▶ SRC ──▶ PTPRA
+Complete Path #223 (Length 5): EGFR ──▶ PIK3CB ──▶ PRKCD ──▶ SRC ──▶ TJP1
+Complete Path #224 (Length 5): EGFR ──▶ PTPN11 ──⊣ VAV2 ──▶ RAC1 ──⊣ ABI2
+Complete Path #225 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ AKT1 ──→ ACLY
+Complete Path #226 (Length 6): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──→ SRC
+Complete Path #227 (Length 5): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ MMP9 ──⊣ OCLN
+Complete Path #228 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ BTK ──▶ PLCG1
+Complete Path #229 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ PIK3CA ──▶ PRKCI
+Complete Path #230 (Length 3): EGFR ──▶ STAT3 ──→ STAT6
+Complete Path #231 (Length 6): EGFR ──▶ SRC ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ STAT5A
+Complete Path #232 (Length 4): EGFR ──→ CRK ──▶ ABL1 ──▶ SHC1
+Complete Path #233 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ TP53 ──→ CYCS
+Complete Path #234 (Length 6): EGFR ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT3 ──→ HSP90AA1
+Complete Path #235 (Length 2): EGFR ──▶ PLCG2
+Complete Path #236 (Length 7): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT1 ──→ STAT6
+Complete Path #237 (Length 3): EGFR ──→ CRK ──▶ ABL2
+Complete Path #238 (Length 7): EGFR ──▶ PTPN11 ──⊣ VAV2 ──▶ CDC42 ──▶ PAK2 ──⊣ MYC ──▶ SLC1A5
+Complete Path #239 (Length 5): EGFR ──▶ SRC ──▶ IQGAP1 ──⊣ CDC42 ──▶ PARD3
+Complete Path #240 (Length 5): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ IL22 ──▶ TYK2
+Complete Path #241 (Length 7): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──→ PAG1
+Complete Path #242 (Length 6): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ FOXO3 ──→ APP ──⊣ GAPDH
+Complete Path #243 (Length 5): EGFR ──▶ CBL ──▶ PIK3R2 ──▶ PRKCZ ──⊣ EPB41L4B
+Complete Path #244 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ AKT1 ──→ ZFP36L1
+Complete Path #245 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ RAC1 ──▶ PAK2 ──⊣ MYC ──▶ SLC1A5
+Complete Path #246 (Length 5): EGFR ──▶ JAK2 ──▶ STAT3 ──→ ICOS ──▶ PIK3R1
+Complete Path #247 (Length 3): EGFR ──▶ PIK3CB ──▶ PLCG2
+Complete Path #248 (Length 3): EGFR ──▶ PIK3CB ──▶ PRKCD
+Complete Path #249 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──▶ PLCG1
+Complete Path #250 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ GRB2
+Complete Path #251 (Length 5): EGFR ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ IFNAR1
+Complete Path #252 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ MAPK1 ──→ ATP1A1
+Complete Path #253 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK3 ──→ YBX1
+Complete Path #254 (Length 7): EGFR ──▶ JAK2 ──▶ STAT3 ──→ ICOS ──▶ PIK3R1 ──▶ AKT1 ──→ ACLY
+Complete Path #255 (Length 4): EGFR ──▶ JAK2 ──▶ STAT3 ──→ STAT6
+Complete Path #256 (Length 5): EGFR ──▶ CBL ──▶ PIK3R2 ──▶ PRKCI ──⊣ EPB41L4B
+Complete Path #257 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──→ NFE2L2 ──→ G6PD
+Complete Path #258 (Length 6): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT5A
+Complete Path #259 (Length 4): EGFR ──▶ SRC ──▶ CRK ──▶ ABL2
+Complete Path #260 (Length 5): EGFR ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT3
+Complete Path #261 (Length 4): EGFR ──▶ PLCG2 ──▶ PRKCA ──⊣ MARCKS
+Complete Path #262 (Length 5): EGFR ──▶ PLCG2 ──▶ PRKCD ──▶ TRAF2 ──▶ RIPK1
+Complete Path #263 (Length 7): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──→ MAPK3
+Complete Path #264 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ MTOR ──▶ STAT3
+Complete Path #265 (Length 6): EGFR ──▶ SRC ──▶ ARHGAP35 ──⊣ RHOA ──▶ ROCK2 ──▶ GAB1
+Complete Path #266 (Length 4): EGFR ──→ CRK ──▶ ABL1 ──▶ PRKD2
+Complete Path #267 (Length 4): EGFR ──▶ STAT3 ──▶ IL22 ──▶ TYK2
+Complete Path #268 (Length 6): EGFR ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT3 ──⊣ PTPN6
+Complete Path #269 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ CDC42 ──→ IQGAP1 ──⊣ CTNNB1 ──▶ MAGI1
+Complete Path #270 (Length 5): EGFR ──▶ SRC ──▶ VAV2 ──▶ RAC1 ──▶ BAIAP2
+Complete Path #271 (Length 7): EGFR ──▶ JAK2 ──▶ STAT3 ──→ ICOS ──▶ PIK3R1 ──▶ AKT1 ──→ ZFP36L1
+Complete Path #272 (Length 3): EGFR ──▶ SRC ──▶ CRK
+Complete Path #273 (Length 7): EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1 ──▶ CDC42 ──▶ PAK4
+Complete Path #274 (Length 7): EGFR ──▶ SRC ──▶ VAV2 ──▶ RHOA ──▶ ROCK2 ──▶ CTNNB1 ──▶ MAGI1
+Complete Path #275 (Length 2): EGFR ──▶ PIK3R2
+Complete Path #276 (Length 4): EGFR ──▶ STAT3 ──▶ MMP9 ──⊣ OCLN
+Complete Path #277 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAP2K2 ──▶ MAPK1
+Complete Path #278 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ STAT3 ──→ MUC1
+Complete Path #279 (Length 5): EGFR ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ STAT6
+Complete Path #280 (Length 5): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ IL6 ──⊣ OCLN
+Complete Path #281 (Length 7): EGFR ──▶ JAK2 ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT1 ──→ STAT3
+Complete Path #282 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──→ NFE2L2 ──→ G6PD
+Complete Path #283 (Length 3): EGFR ──▶ CBLB ──⊣ PIK3R2
+Complete Path #284 (Length 5): EGFR ──▶ JAK2 ──▶ STAT3 ──▶ MYC ──▶ HNRNPA2B1
+Complete Path #285 (Length 4): EGFR ──▶ STAT3 ──→ ICAM1 ──▶ PLCG2
+Complete Path #286 (Length 5): EGFR ──▶ SRC ──▶ STAT3 ──▶ MMP9 ──⊣ OCLN
+Complete Path #287 (Length 6): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ PTPN11 ──⊣ GAB1
+Complete Path #288 (Length 4): EGFR ──▶ PLCG2 ──▶ PRKCA ──▶ PLCG1
+Complete Path #289 (Length 6): EGFR ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ PTPN11 ──→ SRC
+Complete Path #290 (Length 4): EGFR ──▶ STAT3 ──→ ICOS ──▶ PIK3R1
+Complete Path #291 (Length 5): EGFR ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2 ──▶ IFNAR1
+Complete Path #292 (Length 6): EGFR ──▶ SRC ──▶ STAT3 ──▶ IL10 ──▶ TYK2 ──▶ IFNAR1
+Complete Path #293 (Length 5): EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ TRAF2 ──▶ RIPK1
+Complete Path #294 (Length 5): EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2 ──▶ STAT6
+Complete Path #295 (Length 4): EGFR ──▶ EPS15 ──→ MDM2 ──→ DYRK2
+Complete Path #296 (Length 5): EGFR ──▶ SRC ──▶ VAV2 ──▶ RAC1 ──⊣ ABI2
+Complete Path #297 (Length 5): EGFR ──▶ SRC ──▶ VAV2 ──▶ RHOA ──▶ ACTB
+Complete Path #298 (Length 5): EGFR ──▶ SRC ──▶ PRKCD ──▶ MAP2K2 ──▶ MAPK3
+Complete Path #299 (Length 5): EGFR ──▶ SRC ──▶ STAT3 ──→ ICOS ──▶ PIK3R1
+Complete Path #300 (Length 5): EGFR ──▶ STAT3 ──▶ SOCS1 ──⊣ TYK2 ──▶ IFNAR1
+
+
+=== Intermediate Paths (321 items) ===
+
+--- Length 5 (203 items) ---
+  1. EGFR ──▶ STAT5B ──→ STAT3 ──→ ICOS ──▶ PIK3R1
+  2. EGFR ──▶ PLCG2 ──▶ PRKCD ──▶ SRC ──▶ PIK3R1
+  3. EGFR ──▶ SRC ──▶ STAT3 ──→ CASP3 ──⊣ SPTAN1
+  4. EGFR ──▶ SRC ──▶ IQGAP1 ──⊣ CDC42 ──▶ PAK2
+  5. EGFR ──▶ SRC ──▶ STAT3 ──⊣ PTPN6 ──⊣ TYK2
+  6. EGFR ──▶ PLCG2 ──▶ VAV2 ──▶ RHOA ──▶ ROCK2
+  7. EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R2
+  8. EGFR ──▶ SRC ──▶ STAT3 ──→ STAT4 ──→ CFL1
+  9. EGFR ──▶ STAT5B ──→ STAT3 ──→ CASP3 ──▶ PAK2
+  10. EGFR ──▶ CBL ──▶ PIK3R2 ──▶ NRAS ──▶ PIK3R1
+  11. EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK1 ──⊣ ROCK2
+  12. EGFR ──▶ SRC ──▶ ARHGAP35 ──⊣ RAC1 ──→ IQGAP1
+  13. EGFR ──▶ CBL ──▶ PIK3R2 ──▶ BTK ──▶ PLCG2
+  14. EGFR ──▶ PTPN11 ──⊣ VAV2 ──▶ RHOA ──▶ ROCK2
+  15. EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──→ TLN1
+  16. EGFR ──▶ SRC ──▶ STAT3 ──▶ SOCS1 ──⊣ TYK2
+  17. EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS1 ──⊣ TYK2
+  18. EGFR ──▶ SRC ──▶ VAV2 ──▶ RAC1 ──▶ PAK2
+  19. EGFR ──▶ SRC ──▶ STAT3 ──→ CASP3 ──⊣ ACTB
+  20. EGFR ──▶ SRC ──▶ STAT3 ──▶ CISH ──⊣ STAT6
+  21. EGFR ──▶ SRC ──▶ VAV2 ──▶ RAC2 ──→ IQGAP1
+  22. EGFR ──▶ JAK2 ──▶ STAT3 ──⊣ PTPN6 ──⊣ TYK2
+  23. EGFR ──▶ JAK2 ──▶ STAT3 ──⊣ IL2RG ──▶ STAT6
+  24. EGFR ──▶ SRC ──▶ STAT3 ──→ STAT4 ──⊣ HNRNPA2B1
+  25. EGFR ──▶ JAK2 ──▶ STAT5A ──▶ IL4R ──▶ STAT6
+  26. EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK1 ──→ GORASP2
+  27. EGFR ──▶ PLCG2 ──▶ PRKCD ──▶ MAPK8 ──→ DYNLL1
+  28. EGFR ──▶ SRC ──▶ STAT3 ──→ AKT1 ──⊣ PTPN1
+  29. EGFR ──▶ SRC ──▶ VAV2 ──▶ RAC1 ──▶ PIK3R3
+  30. EGFR ──▶ PTPN11 ──⊣ VAV2 ──▶ RAC1 ──⊣ ABI2
+  31. EGFR ──▶ SRC ──▶ STAT3 ──→ ICOS ──▶ PIK3R2
+  32. EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS2 ──▶ PIK3R1
+  33. EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──→ HNRNPK
+  34. EGFR ──▶ SRC ──▶ STAT3 ──⊣ TP53 ──⊣ SLC7A11
+  35. EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──▶ CRK
+  36. EGFR ──▶ PLCG2 ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1
+  37. EGFR ──▶ PLCG2 ──▶ VAV2 ──▶ RHOA ──▶ ACTB
+  38. EGFR ──▶ SRC ──▶ VAV2 ──▶ RAC1 ──▶ BAIAP2
+  39. EGFR ──▶ SRC ──▶ STAT5A ──▶ IL4R ──▶ STAT6
+  40. EGFR ──▶ STAT5B ──→ STAT3 ──→ CASP3 ──→ PRKCD
+  41. EGFR ──▶ JAK2 ──▶ STAT3 ──→ CASP3 ──⊣ ACTB
+  42. EGFR ──▶ SRC ──▶ STAT5A ──▶ SOCS1 ──⊣ TYK2
+  43. EGFR ──▶ JAK2 ──▶ STAT3 ──→ CASP3 ──→ PRKCD
+  44. EGFR ──▶ JAK2 ──▶ STAT3 ──→ AKT1 ──⊣ PTPN1
+  45. EGFR ──▶ STAT5B ──→ STAT5A ──▶ IL4R ──▶ STAT6
+  46. EGFR ──▶ SRC ──▶ STAT3 ──→ ICOS ──▶ PIK3R1
+  47. EGFR ──▶ STAT3 ──→ STAT5A ──▶ IL4R ──▶ STAT6
+  48. EGFR ──▶ SRC ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2
+  49. EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2
+  50. EGFR ──▶ STAT5B ──→ STAT3 ──▶ IL6 ──⊣ OCLN
+  51. EGFR ──▶ SRC ──▶ CRK ──▶ PTK2 ──→ TLN1
+  52. EGFR ──▶ CBL ──▶ PIK3R2 ──▶ SRC ──▶ ARHGAP35
+  53. EGFR ──▶ SRC ──▶ STAT3 ──▶ IL10 ──▶ TYK2
+  54. EGFR ──▶ PTPN11 ──⊣ VAV2 ──▶ RAC2 ──▶ BAIAP2
+  55. EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──▶ ARHGAP35
+  56. EGFR ──▶ JAK2 ──▶ STAT3 ──→ ICOS ──▶ PIK3R2
+  57. EGFR ──▶ SRC ──▶ STAT3 ──→ STAT4 ──⊣ ANXA2
+  58. EGFR ──▶ SRC ──▶ STAT5A ──▶ SOCS2 ──⊣ TYK2
+  59. EGFR ──▶ STAT5B ──→ STAT5A ──▶ CISH ──⊣ STAT6
+  60. EGFR ──▶ PIK3CA ──▶ PRKCD ──▶ SRC ──→ ANXA2
+  61. EGFR ──▶ STAT5B ──→ STAT3 ──▶ MYC ──▶ HNRNPA2B1
+  62. EGFR ──▶ SRC ──▶ PRKCD ──▶ MAPK8 ──▶ APP
+  63. EGFR ──▶ SRC ──▶ STAT3 ──▶ IL22 ──▶ TYK2
+  64. EGFR ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──▶ CBL
+  65. EGFR ──▶ SRC ──▶ STAT5A ──▶ CISH ──⊣ STAT6
+  66. EGFR ──▶ STAT3 ──→ STAT5A ──▶ SOCS2 ──⊣ TYK2
+  67. EGFR ──▶ CBL ──▶ PIK3R2 ──▶ CDC42 ──▶ PAK2
+  68. EGFR ──▶ PLCG2 ──▶ PRKCD ──▶ SRC ──▶ CRK
+  69. EGFR ──▶ SRC ──▶ PRKCD ──→ NFE2L2 ──▶ SLC7A11
+  70. EGFR ──▶ SRC ──▶ STAT3 ──→ ICAM1 ──▶ PLCG2
+  71. EGFR ──▶ JAK2 ──▶ STAT3 ──→ STAT4 ──⊣ ANXA2
+  72. EGFR ──▶ SRC ──▶ VAV2 ──▶ RAC3 ──▶ BAIAP2
+  73. EGFR ──▶ SRC ──▶ VAV2 ──▶ CDC42 ──→ IQGAP1
+  74. EGFR ──▶ STAT5A ──→ STAT3 ──⊣ PTPN6 ──⊣ TYK2
+  75. EGFR ──▶ STAT5B ──→ STAT3 ──▶ SOCS1 ──⊣ TYK2
+  76. EGFR ──▶ STAT5B ──→ STAT3 ──⊣ PTPN6 ──⊣ TYK2
+  77. EGFR ──▶ STAT5A ──→ STAT3 ──▶ IL22 ──▶ TYK2
+  78. EGFR ──▶ STAT5B ──→ STAT3 ──→ STAT4 ──→ CFL1
+  79. EGFR ──▶ SRC ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2
+  80. EGFR ──▶ STAT5A ──→ STAT3 ──▶ MMP9 ──⊣ OCLN
+  81. EGFR ──▶ SRC ──▶ PRKCD ──⊣ IRS1 ──▶ PIK3R1
+  82. EGFR ──▶ JAK2 ──▶ STAT3 ──→ STAT4 ──→ CFL1
+  83. EGFR ──▶ STAT5A ──→ STAT3 ──→ ICAM1 ──▶ PLCG2
+  84. EGFR ──▶ JAK2 ──▶ STAT3 ──▶ FOXO3 ──→ APP
+  85. EGFR ──▶ SRC ──▶ STAT3 ──→ ICOS ──▶ PIK3R3
+  86. EGFR ──▶ JAK2 ──▶ STAT3 ──▶ MMP9 ──⊣ OCLN
+  87. EGFR ──▶ GAB1 ──▶ PIK3R2 ──▶ PRKCZ ──⊣ MAPK7
+  88. EGFR ──▶ CBL ──▶ PIK3R2 ──▶ PRKCZ ──⊣ MAPK7
+  89. EGFR ──▶ STAT5A ──→ STAT3 ──→ CASP3 ──⊣ SPTAN1
+  90. EGFR ──▶ JAK2 ──▶ STAT3 ──▶ IL22 ──▶ TYK2
+  91. EGFR ──▶ STAT5A ──→ STAT3 ──▶ SOCS1 ──⊣ TYK2
+  92. EGFR ──▶ STAT5B ──→ STAT3 ──→ CASP3 ──⊣ SPTAN1
+  93. EGFR ──▶ SRC ──▶ VAV2 ──▶ RHOA ──▶ CFL1
+  94. EGFR ──▶ SRC ──▶ ARHGAP35 ──⊣ RAC1 ──▶ BAIAP2
+  95. EGFR ──▶ STAT5A ──→ STAT3 ──▶ CISH ──⊣ STAT6
+  96. EGFR ──▶ SRC ──▶ VAV2 ──▶ CDC42 ──▶ ACTB
+  97. EGFR ──▶ JAK2 ──▶ STAT3 ──→ CASP3 ──⊣ SPTAN1
+  98. EGFR ──▶ PTPN11 ──⊣ VAV2 ──▶ CDC42 ──▶ PAK2
+  99. EGFR ──▶ JAK2 ──▶ STAT5A ──▶ SOCS1 ──⊣ TYK2
+  100. EGFR ──▶ SRC ──▶ VAV2 ──▶ RAC2 ──▶ BAIAP2
+  ... additional 103 more
+
+--- Length 4 (73 items) ---
+  1. EGFR ──▶ SRC ──▶ STAT3 ──→ STAT6
+  2. EGFR ──→ VAV2 ──▶ RHOA ──▶ ROCK2
+  3. EGFR ──▶ STAT3 ──→ IL6R ──▶ PLCG2
+  4. EGFR ──▶ STAT3 ──→ STAT4 ──⊣ HNRNPA2B1
+  5. EGFR ──▶ STAT3 ──▶ CISH ──⊣ STAT6
+  6. EGFR ──▶ STAT5A ──▶ CISH ──⊣ STAT6
+  7. EGFR ──▶ STAT3 ──→ IFNG ──⊣ OCLN
+  8. EGFR ──▶ STAT5A ──▶ SOCS2 ──⊣ TYK2
+  9. EGFR ──▶ STAT3 ──⊣ TP53 ──⊣ SLC7A11
+  10. EGFR ──▶ STAT3 ──→ STAT1 ──→ STAT6
+  11. EGFR ──→ CRK ──▶ PTK2 ──→ TLN1
+  12. EGFR ──→ CRK ──▶ ABL1 ──▶ CBL
+  13. EGFR ──→ VAV2 ──▶ RAC2 ──▶ BAIAP2
+  14. EGFR ──▶ STAT3 ──→ STAT4 ──⊣ PAK2
+  15. EGFR ──▶ JAK2 ──▶ STAT3 ──→ STAT6
+  16. EGFR ──▶ NRAS ──▶ AFDN ──▶ ACTB
+  17. EGFR ──▶ STAT3 ──→ ICOS ──▶ PIK3R1
+  18. EGFR ──→ ERRFI1 ──⊣ ERBB2 ──▶ PIK3R1
+  19. EGFR ──▶ STAT3 ──→ CASP3 ──▶ PAK2
+  20. EGFR ──▶ SRC ──▶ TJP1 ──→ OCLN
+  21. EGFR ──▶ STAT3 ──▶ IL1B ──▶ APP
+  22. EGFR ──→ VAV2 ──▶ CDC42 ──▶ PAK2
+  23. EGFR ──▶ CBL ──▶ PIK3R2 ──▶ PLCG2
+  24. EGFR ──→ VAV2 ──▶ RAC2 ──▶ PAK2
+  25. EGFR ──▶ STAT3 ──→ ICOS ──▶ PIK3R3
+  26. EGFR ──▶ PLCG2 ──▶ PRKCA ──▶ ACTB
+  27. EGFR ──▶ STAT3 ──→ CASP3 ──→ PRKCD
+  28. EGFR ──▶ STAT3 ──⊣ ZAP70 ──▶ PIK3R1
+  29. EGFR ──→ VAV2 ──▶ CDC42 ──▶ BAIAP2
+  30. EGFR ──→ VAV2 ──▶ RAC2 ──→ IQGAP1
+  31. EGFR ──▶ STAT3 ──▶ MYC ──▶ HNRNPA2B1
+  32. EGFR ──▶ STAT3 ──▶ IL6 ──⊣ OCLN
+  33. EGFR ──→ VAV2 ──▶ RAC1 ──⊣ ABI2
+  34. EGFR ──▶ STAT3 ──▶ SOCS1 ──⊣ TYK2
+  35. EGFR ──▶ STAT3 ──⊣ PTPN6 ──⊣ TYK2
+  36. EGFR ──▶ STAT3 ──⊣ IL2RG ──▶ STAT6
+  37. EGFR ──▶ STAT3 ──→ STAT4 ──→ CFL1
+  38. EGFR ──▶ STAT5B ──→ STAT3 ──→ STAT6
+  39. EGFR ──→ VAV2 ──▶ RAC1 ──▶ BAIAP2
+  40. EGFR ──▶ STAT5A ──▶ IL4R ──▶ STAT6
+  41. EGFR ──▶ STAT3 ──→ CASP3 ──⊣ SPTAN1
+  42. EGFR ──▶ HRAS ──▶ AFDN ──▶ ACTB
+  43. EGFR ──→ CRK ──▶ PTK2 ──▶ PIK3R1
+  44. EGFR ──▶ KRAS ──▶ AFDN ──▶ ACTB
+  45. EGFR ──▶ STAT3 ──→ CASP3 ──⊣ ACTB
+  46. EGFR ──▶ STAT3 ──→ AKT1 ──⊣ PTPN1
+  47. EGFR ──→ VAV2 ──▶ CDC42 ──→ IQGAP1
+  48. EGFR ──▶ CBL ──▶ PIK3R2 ──▶ PRKCD
+  49. EGFR ──→ VAV2 ──▶ RHOA ──▶ CFL1
+  50. EGFR ──▶ STAT3 ──→ CASP3 ──→ OCLN
+  51. EGFR ──▶ STAT3 ──▶ IL10 ──▶ TYK2
+  52. EGFR ──▶ PIK3R2 ──▶ PRKCZ ──⊣ MAPK7
+  53. EGFR ──→ VAV2 ──▶ CDC42 ──▶ ACTB
+  54. EGFR ──▶ PIK3CB ──▶ PLCG2 ──▶ PRKCD
+  55. EGFR ──▶ STAT3 ──→ IFNG ──⊣ SLC7A11
+  56. EGFR ──▶ STAT3 ──→ ICOS ──▶ PIK3R2
+  57. EGFR ──→ VAV2 ──▶ RAC1 ──▶ PAK2
+  58. EGFR ──▶ STAT3 ──▶ SOCS3 ──⊣ TYK2
+  59. EGFR ──▶ STAT5A ──▶ SOCS3 ──⊣ TYK2
+  60. EGFR ──→ VAV2 ──▶ RHOA ──▶ ACTB
+  61. EGFR ──▶ STAT3 ──▶ FOXO3 ──→ APP
+  62. EGFR ──▶ SRC ──▶ IQGAP1 ──▶ ACTB
+  63. EGFR ──▶ PIK3CA ──▶ PLCG2 ──▶ PRKCD
+  64. EGFR ──▶ STAT3 ──▶ IL1B ──⊣ OCLN
+  65. EGFR ──→ CRK ──▶ PXN ──▶ ACTB
+  66. EGFR ──▶ STAT3 ──→ STAT4 ──⊣ ANXA2
+  67. EGFR ──▶ JAK2 ──▶ PLCG2 ──▶ PRKCD
+  68. EGFR ──▶ STAT5A ──▶ SOCS1 ──⊣ TYK2
+  69. EGFR ──▶ STAT3 ──▶ IL22 ──▶ TYK2
+  70. EGFR ──→ VAV2 ──▶ RAC1 ──→ IQGAP1
+  71. EGFR ──▶ STAT3 ──▶ MMP9 ──⊣ OCLN
+  72. EGFR ──▶ STAT3 ──→ ICAM1 ──▶ PLCG2
+  73. EGFR ──▶ STAT5A ──→ STAT3 ──→ STAT6
+
+--- Length 3 (37 items) ---
+  1. EGFR ──▶ PTPN11 ──⊣ VAV2
+  2. EGFR ──▶ SRC ──▶ VAV2
+  3. EGFR ──▶ SRC ──▶ PRKCD
+  4. EGFR ──▶ PLCG2 ──▶ VAV2
+  5. EGFR ──▶ PLCG2 ──▶ PRKCD
+  6. EGFR ──▶ PIK3CA ──▶ PLCG2
+  7. EGFR ──▶ JAK2 ──▶ STAT3
+  8. EGFR ──▶ PIK3CB ──▶ PRKCD
+  9. EGFR ──▶ SRC ──▶ CRK
+  10. EGFR ──▶ CBLB ──⊣ PIK3R2
+  11. EGFR ──▶ GAB1 ──▶ CRK
+  12. EGFR ──▶ SRC ──▶ ARHGAP35
+  13. EGFR ──▶ HRAS ──▶ AFDN
+  14. EGFR ──▶ MYC ──▶ HNRNPA2B1
+  15. EGFR ──▶ SRC ──▶ IQGAP1
+  16. EGFR ──▶ PTPN11 ──⊣ PIK3R2
+  17. EGFR ──▶ STAT3 ──→ STAT6
+  18. EGFR ──▶ PIK3CB ──▶ PLCG2
+  19. EGFR ──▶ PIK3R2 ──▶ PRKCD
+  20. EGFR ──▶ JAK2 ──▶ STAT5A
+  21. EGFR ──▶ JAK2 ──▶ PLCG2
+  22. EGFR ──▶ SRC ──▶ OCLN
+  23. EGFR ──▶ SRC ──→ CDCP1
+  24. EGFR ──▶ NRAS ──▶ AFDN
+  25. EGFR ──▶ STAT3 ──→ STAT5A
+  26. EGFR ──▶ STAT5A ──→ STAT3
+  27. EGFR ──▶ SRC ──▶ TJP1
+  28. EGFR ──▶ SRC ──▶ STAT5A
+  29. EGFR ──▶ PIK3R2 ──▶ PLCG2
+  30. EGFR ──▶ SRC ──▶ STAT3
+  31. EGFR ──▶ STAT5B ──→ STAT5A
+  32. EGFR ──▶ STAT5B ──→ STAT3
+  33. EGFR ──▶ KRAS ──▶ AFDN
+  34. EGFR ──▶ CBL ──▶ PIK3R2
+  35. EGFR ──▶ GAB1 ──▶ PIK3R2
+  36. EGFR ──▶ PTPN11 ──→ PAG1
+  37. EGFR ──▶ PIK3CA ──▶ PRKCD
+
+--- Length 2 (8 items) ---
+  1. EGFR ──▶ EPS15
+  2. EGFR ──→ ERRFI1
+  3. EGFR ──▶ STAT5A
+  4. EGFR ──▶ PLCG2
+  5. EGFR ──→ CRK
+  6. EGFR ──→ VAV2
+  7. EGFR ──▶ STAT3
+  8. EGFR ──▶ PIK3R2
+
+
+*** Path Statistics Summary ***
+Network type: regulatory
+Complete path count: 300
+Intermediate path count: 321
+Total path count: 621
+
+*** Regulatory Relationship Statistics ***
+Collected regulatory relationships: 4857
+Activation edges: 3344
+Inhibition edges: 885
+Directional edges: 4857

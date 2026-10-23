@@ -1,0 +1,713 @@
+*** PPI BFS-BS Analysis Statistics ***
+*** Generated from: 50-600-600-700.json ***
+
+======================================================================
+  METADATA (from JSON input)
+======================================================================
+  source_file                             : Supplementary Data 2_Dataset_1
+  condition                               : Block1
+  conversion_method                       : Adaptive tanh
+  baseline_mode_legacy                    : normalize
+  baseline_semantics                      : availability_not_activation
+  interval_semantics                      : independent_consecutive_change
+  state_persistence                       : False
+  polarity_applied                        : True
+  sigma_robust                            : 0.511743
+  mad                                     : 0.345166
+  cutoff_phi                              : 0.5
+  effective_threshold_pct                 : 47.65
+  n_proteins                              : 958
+  n_site_tokens                           : 958
+  n_timepoints                            : 4
+  n_intervals                             : 3
+  generated_at                            : 2026-08-31 20:36:32
+  converter_version                       : 2.1-stage1-fixed
+  site_split_applied                      : True
+  residue_letter_resolution_applied       : True
+  response_state_semantics                : interval_specific_no_persistence
+  response_anchor_rule                    : Any significant interval-specific increased/decreased phosphosite, independent of functional polarity
+  response_supporting_rule                : Activating+increase OR Inhibitory+decrease
+  response_opposing_rule                  : Activating+decrease OR Inhibitory+increase
+  response_unresolved_rule                : Unknown or dual/feedback polarity with significant interval change
+  baseline_activation_inference           : False
+  stage2_1_design                         : measured response anchors retained independently from functional sign classification
+  stage2_generated_at                     : 2026-08-31T20:52:17.705072
+  stage2_version                          : 2.1-temporal
+======================================================================
+
+
+======================================================================
+  RUN CONFIGURATION
+======================================================================
+  Run Date/Time        : 2026-10-08 02:04:58
+  Input File           : C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/Additional_parameters_check/50-600-600-700.json
+  Network Type         : functional
+  STRING API Base      : https://version-12-5.string-db.org/api
+  Bridge Depth D       : 1 (intermediate nodes; max edges/interval=2)
+  Species ID           : 9606
+  Min STRING Score     : 700
+  Degree Cap H         : 50
+  Segment Beam K       : 600 BFS frontier
+  Max Paths/Target N   : 600 (legacy/non-temporal)
+  Temporal Seg Routes  : 5 per source-target pair
+  Temporal Base K      : 600
+  Temporal Adaptive K  : max(Base K, reached target genes)
+  Target Preservation  : >=1 route per reached target
+  Temporal Routes/Tgt  : 3
+  Temporal Full Dedupe : True
+  Regulatory Wt Bonus  : 0.0
+  Hub Blacklist        : (none)
+  Collapse by Gene     : True
+  No Backtracking      : True
+  Dedupe Genes in Path : True
+  Verbose Logging      : False
+  Cell Context Filter  : True
+  Cell Context Mode    : conservative_union
+  Cell Line            : MDA-MB-468
+  RNA Bulk File        : D:\Gihoon_Research\cell_context_data\SIDM00628\SIDM00628_rnaseq.csv.zip
+  Proteomics Bulk File : D:\Gihoon_Research\cell_context_data\SIDM00628\SIDM00628_proteomics.csv.zip
+  RNA Threshold        : 1.0
+  Start Proteins       : EGFR
+  Input Schema         : Temporal v2 interval model
+  Temporal Target Mode : measured
+  Time Points/Intervals: 3
+  Inhibitor Drugs      : (none)
+  Total Elapsed Time   : 1105.7 sec
+======================================================================
+
+======================================================================
+  TOPOLOGY RESULTS (full content)
+======================================================================
+
+*** Stage 4 Drawing Topology Results ***
+
+*** Unique Topology Paths (Stage-4 validated; flattened gene-chain view) ***
+(Validated clean paths 600 | Unique topologies 600)
+Generated: 2026-10-08 07:25:39
+
+NOTE: Drawing export only. Stage-4 validation remains interval-aware; cross-interval recurrence is not cycle-truncated.
+
+Top 10 protein frequencies:
+  EGFR: 600 (100.0%)
+  CBL: 222 (37.0%)
+  CRK: 146 (24.3%)
+  PIK3R1: 114 (19.0%)
+  UBC: 88 (14.7%)
+  SRC: 88 (14.7%)
+  GRB2: 81 (13.5%)
+  PIK3R2: 80 (13.3%)
+  HGS: 79 (13.2%)
+  CRKL: 72 (12.0%)
+
+Top 1st-hop frequencies:
+  CBL: 125 (20.8%)
+  CRK: 64 (10.7%)
+  EPS15: 56 (9.3%)
+  CRKL: 51 (8.5%)
+  SRC: 38 (6.3%)
+  HGS: 32 (5.3%)
+  HSP90AA1: 30 (5.0%)
+  GRB2: 29 (4.8%)
+  PIK3R2: 17 (2.8%)
+  PIK3R1: 14 (2.3%)
+
+Unique Path #1 (Original #1): EGFR -> CRK
+Unique Path #2 (Original #2): EGFR -> EPS15
+Unique Path #3 (Original #3): EGFR -> HGS
+Unique Path #4 (Original #4): EGFR -> PIK3R2
+Unique Path #5 (Original #5): EGFR -> TNK2
+Unique Path #6 (Original #6): EGFR -> CAV1 -> CAVIN1
+Unique Path #7 (Original #7): EGFR -> CBL -> CRK
+Unique Path #8 (Original #8): EGFR -> CBL -> PIK3R2
+Unique Path #9 (Original #9): EGFR -> CBL -> UBC
+Unique Path #10 (Original #10): EGFR -> CRK -> CBL
+Unique Path #11 (Original #11): EGFR -> CRK -> PIK3R1
+Unique Path #12 (Original #12): EGFR -> CRKL -> CRK
+Unique Path #13 (Original #13): EGFR -> CSK -> PAG1
+Unique Path #14 (Original #14): EGFR -> CTNNB1 -> CSNK1A1
+Unique Path #15 (Original #15): EGFR -> EPS15 -> EPN1
+Unique Path #16 (Original #16): EGFR -> EPS15 -> HGS
+Unique Path #17 (Original #17): EGFR -> EPS15 -> UBC
+Unique Path #18 (Original #18): EGFR -> ERBB2 -> PIK3R2
+Unique Path #19 (Original #19): EGFR -> GRB2 -> TNK2
+Unique Path #20 (Original #20): EGFR -> HGS -> EPS15
+Unique Path #21 (Original #21): EGFR -> HGS -> STAM2
+Unique Path #22 (Original #22): EGFR -> HGS -> UBC
+Unique Path #23 (Original #23): EGFR -> HSPA1B -> DNAJB1
+Unique Path #24 (Original #24): EGFR -> HSPA4 -> DNAJB1
+Unique Path #25 (Original #25): EGFR -> PIK3R1 -> CRK
+Unique Path #26 (Original #26): EGFR -> PIK3R1 -> PIK3R2
+Unique Path #27 (Original #27): EGFR -> PIK3R2 -> CBL
+Unique Path #28 (Original #28): EGFR -> PIK3R2 -> PIK3R1
+Unique Path #29 (Original #29): EGFR -> PIK3R2 -> PIK3R3
+Unique Path #30 (Original #30): EGFR -> SRC -> CRK
+Unique Path #31 (Original #31): EGFR -> CBL -> CRK -> PIK3R1
+Unique Path #32 (Original #32): EGFR -> CBL -> CRKL -> CRK
+Unique Path #33 (Original #33): EGFR -> CBL -> GRB2 -> TNK2
+Unique Path #34 (Original #34): EGFR -> CBL -> PIK3R1 -> CRK
+Unique Path #35 (Original #35): EGFR -> CBL -> PIK3R1 -> PIK3R2
+Unique Path #36 (Original #36): EGFR -> CBL -> PIK3R2 -> PIK3R1
+Unique Path #37 (Original #37): EGFR -> CBL -> PIK3R2 -> PIK3R3
+Unique Path #38 (Original #38): EGFR -> CBL -> SRC -> CRK
+Unique Path #39 (Original #39): EGFR -> CBL -> UBC -> EPS15
+Unique Path #40 (Original #40): EGFR -> CBL -> UBC -> HGS
+Unique Path #41 (Original #41): EGFR -> CBL -> UBC -> RABGEF1
+Unique Path #42 (Original #42): EGFR -> CBL -> UBC -> STAM2
+Unique Path #43 (Original #43): EGFR -> CBLB -> GRB2 -> TNK2
+Unique Path #44 (Original #44): EGFR -> CRK -> ABL1 -> ABI2
+Unique Path #45 (Original #45): EGFR -> CRK -> ABL1 -> CBL
+Unique Path #46 (Original #46): EGFR -> CRK -> CBL -> PIK3R1
+Unique Path #47 (Original #47): EGFR -> CRK -> CBL -> PIK3R2
+Unique Path #48 (Original #48): EGFR -> CRK -> CBL -> UBC
+Unique Path #49 (Original #49): EGFR -> CRK -> CRKL -> CBL
+Unique Path #50 (Original #50): EGFR -> CRK -> CRKL -> PIK3R1
+Unique Path #51 (Original #51): EGFR -> CRK -> PIK3R1 -> CBL
+Unique Path #52 (Original #52): EGFR -> CRK -> PIK3R1 -> GAB2
+Unique Path #53 (Original #53): EGFR -> CRK -> PIK3R1 -> PIK3R2
+Unique Path #54 (Original #54): EGFR -> CRK -> PIK3R1 -> PIK3R3
+Unique Path #55 (Original #55): EGFR -> CRK -> PTK2 -> TLN1
+Unique Path #56 (Original #56): EGFR -> CRK -> PXN -> TLN1
+Unique Path #57 (Original #57): EGFR -> CRK -> SRC -> PTPN1
+Unique Path #58 (Original #58): EGFR -> CRKL -> CBL -> CRK
+Unique Path #59 (Original #59): EGFR -> CRKL -> CBL -> PIK3R2
+Unique Path #60 (Original #60): EGFR -> CRKL -> CBL -> UBC
+Unique Path #61 (Original #61): EGFR -> CRKL -> CRK -> CBL
+Unique Path #62 (Original #62): EGFR -> CRKL -> CRK -> PIK3R1
+Unique Path #63 (Original #63): EGFR -> CRKL -> PIK3R1 -> CRK
+Unique Path #64 (Original #64): EGFR -> CRKL -> PIK3R1 -> PIK3R2
+Unique Path #65 (Original #65): EGFR -> EPS15 -> AP2A1 -> AP2B1
+Unique Path #66 (Original #66): EGFR -> EPS15 -> AP2A2 -> AP2B1
+Unique Path #67 (Original #67): EGFR -> EPS15 -> AP2M1 -> AP2B1
+Unique Path #68 (Original #68): EGFR -> EPS15 -> AP2S1 -> AP2B1
+Unique Path #69 (Original #69): EGFR -> EPS15 -> HGS -> STAM2
+Unique Path #70 (Original #70): EGFR -> EPS15 -> HGS -> UBC
+Unique Path #71 (Original #71): EGFR -> EPS15 -> UBC -> CBL
+Unique Path #72 (Original #72): EGFR -> EPS15 -> UBC -> HGS
+Unique Path #73 (Original #73): EGFR -> EPS15 -> UBC -> RABGEF1
+Unique Path #74 (Original #74): EGFR -> EPS15 -> UBC -> STAM2
+Unique Path #75 (Original #75): EGFR -> ERBB2 -> PIK3R2 -> CBL
+Unique Path #76 (Original #76): EGFR -> ERBB2 -> PIK3R2 -> PIK3R1
+Unique Path #77 (Original #77): EGFR -> ERBB2 -> PIK3R2 -> PIK3R3
+Unique Path #78 (Original #78): EGFR -> ERRFI1 -> GRB2 -> CBL
+Unique Path #79 (Original #79): EGFR -> ERRFI1 -> GRB2 -> CBLB
+Unique Path #80 (Original #80): EGFR -> ERRFI1 -> GRB2 -> GAB2
+Unique Path #81 (Original #81): EGFR -> ERRFI1 -> GRB2 -> PIK3R1
+Unique Path #82 (Original #82): EGFR -> ERRFI1 -> GRB2 -> TNK2
+Unique Path #83 (Original #83): EGFR -> GAB1 -> CRKL -> CRK
+Unique Path #84 (Original #84): EGFR -> GAB1 -> GRB2 -> TNK2
+Unique Path #85 (Original #85): EGFR -> GAB1 -> PIK3R1 -> CRK
+Unique Path #86 (Original #86): EGFR -> GAB1 -> PIK3R1 -> PIK3R2
+Unique Path #87 (Original #87): EGFR -> GRB2 -> CBL -> CRK
+Unique Path #88 (Original #88): EGFR -> GRB2 -> CBL -> PIK3R2
+Unique Path #89 (Original #89): EGFR -> GRB2 -> CBL -> UBC
+Unique Path #90 (Original #90): EGFR -> GRB2 -> PIK3R1 -> CRK
+Unique Path #91 (Original #91): EGFR -> GRB2 -> PIK3R1 -> PIK3R2
+Unique Path #92 (Original #92): EGFR -> HGS -> EPS15 -> EPN1
+Unique Path #93 (Original #93): EGFR -> HGS -> EPS15 -> UBC
+Unique Path #94 (Original #94): EGFR -> HGS -> STAM -> STAM2
+Unique Path #95 (Original #95): EGFR -> HGS -> STAM -> UBC
+Unique Path #96 (Original #96): EGFR -> HGS -> STAM2 -> UBC
+Unique Path #97 (Original #97): EGFR -> HGS -> TSG101 -> UBC
+Unique Path #98 (Original #98): EGFR -> HGS -> UBC -> CBL
+Unique Path #99 (Original #99): EGFR -> HGS -> UBC -> EPS15
+Unique Path #100 (Original #100): EGFR -> HGS -> UBC -> RABGEF1
+Unique Path #101 (Original #101): EGFR -> HGS -> UBC -> STAM2
+Unique Path #102 (Original #102): EGFR -> HSP90AA1 -> SRC -> CRK
+Unique Path #103 (Original #103): EGFR -> NCK2 -> PAK1 -> PAK2
+Unique Path #104 (Original #104): EGFR -> PIK3R1 -> CBL -> CRK
+Unique Path #105 (Original #105): EGFR -> PIK3R1 -> CBL -> PIK3R2
+Unique Path #106 (Original #106): EGFR -> PIK3R1 -> CBL -> UBC
+Unique Path #107 (Original #107): EGFR -> PIK3R1 -> CRK -> CBL
+Unique Path #108 (Original #108): EGFR -> PIK3R1 -> CRKL -> CRK
+Unique Path #109 (Original #109): EGFR -> PIK3R1 -> GRB2 -> TNK2
+Unique Path #110 (Original #110): EGFR -> PIK3R1 -> PIK3R2 -> CBL
+Unique Path #111 (Original #111): EGFR -> PIK3R1 -> PIK3R2 -> PIK3R3
+Unique Path #112 (Original #112): EGFR -> PIK3R1 -> SRC -> CRK
+Unique Path #113 (Original #113): EGFR -> PIK3R2 -> CBL -> CRK
+Unique Path #114 (Original #114): EGFR -> PIK3R2 -> CBL -> PIK3R1
+Unique Path #115 (Original #115): EGFR -> PIK3R2 -> CBL -> UBC
+Unique Path #116 (Original #116): EGFR -> PIK3R2 -> ERBB2 -> PIK3R1
+Unique Path #117 (Original #117): EGFR -> PIK3R2 -> PIK3CA -> PIK3R1
+Unique Path #118 (Original #118): EGFR -> PIK3R2 -> PIK3CA -> PIK3R3
+Unique Path #119 (Original #119): EGFR -> PIK3R2 -> PIK3CB -> PIK3R1
+Unique Path #120 (Original #120): EGFR -> PIK3R2 -> PIK3CB -> PIK3R3
+Unique Path #121 (Original #121): EGFR -> PIK3R2 -> PIK3R1 -> CBL
+Unique Path #122 (Original #122): EGFR -> PIK3R2 -> PIK3R1 -> CRK
+Unique Path #123 (Original #123): EGFR -> PIK3R2 -> PIK3R1 -> GAB2
+Unique Path #124 (Original #124): EGFR -> PIK3R2 -> PIK3R1 -> PIK3R3
+Unique Path #125 (Original #125): EGFR -> PLCG1 -> CBL -> CRK
+Unique Path #126 (Original #126): EGFR -> PLCG1 -> CBL -> PIK3R2
+Unique Path #127 (Original #127): EGFR -> PLCG1 -> CBL -> UBC
+Unique Path #128 (Original #128): EGFR -> PLCG1 -> GRB2 -> TNK2
+Unique Path #129 (Original #129): EGFR -> PTPN11 -> GRB2 -> TNK2
+Unique Path #130 (Original #130): EGFR -> PTPN11 -> PIK3R1 -> CRK
+Unique Path #131 (Original #131): EGFR -> PTPN11 -> PIK3R1 -> PIK3R2
+Unique Path #132 (Original #132): EGFR -> SHC1 -> CBL -> CRK
+Unique Path #133 (Original #133): EGFR -> SHC1 -> CBL -> PIK3R2
+Unique Path #134 (Original #134): EGFR -> SHC1 -> CBL -> UBC
+Unique Path #135 (Original #135): EGFR -> SHC1 -> GRB2 -> TNK2
+Unique Path #136 (Original #136): EGFR -> SHC1 -> PIK3R1 -> CRK
+Unique Path #137 (Original #137): EGFR -> SHC1 -> PIK3R1 -> PIK3R2
+Unique Path #138 (Original #138): EGFR -> SHC1 -> SRC -> CRK
+Unique Path #139 (Original #139): EGFR -> SRC -> CBL -> CRK
+Unique Path #140 (Original #140): EGFR -> SRC -> CBL -> PIK3R2
+Unique Path #141 (Original #141): EGFR -> SRC -> CBL -> UBC
+Unique Path #142 (Original #142): EGFR -> SRC -> CRK -> CBL
+Unique Path #143 (Original #143): EGFR -> SRC -> CRK -> PIK3R1
+Unique Path #144 (Original #144): EGFR -> SRC -> PIK3R1 -> CRK
+Unique Path #145 (Original #145): EGFR -> SRC -> PIK3R1 -> PIK3R2
+Unique Path #146 (Original #146): EGFR -> STAT3 -> SRC -> CBL
+Unique Path #147 (Original #147): EGFR -> STAT3 -> SRC -> CRK
+Unique Path #148 (Original #148): EGFR -> STAT3 -> SRC -> PIK3R1
+Unique Path #149 (Original #149): EGFR -> STAT3 -> SRC -> PTPN1
+Unique Path #150 (Original #150): EGFR -> TNK2 -> CDC42 -> BAIAP2
+Unique Path #151 (Original #151): EGFR -> TNK2 -> CDC42 -> IQGAP1
+Unique Path #152 (Original #152): EGFR -> TNK2 -> CDC42 -> PAK2
+Unique Path #153 (Original #153): EGFR -> TNK2 -> GRB2 -> CBL
+Unique Path #154 (Original #154): EGFR -> TNK2 -> GRB2 -> CBLB
+Unique Path #155 (Original #155): EGFR -> TNK2 -> GRB2 -> GAB2
+Unique Path #156 (Original #156): EGFR -> TNK2 -> GRB2 -> PIK3R1
+Unique Path #157 (Original #157): EGFR -> EPS15 -> AP2B1
+Unique Path #158 (Original #158): EGFR -> GRB2 -> CRK
+Unique Path #159 (Original #159): EGFR -> CBL -> CD2AP -> SH3KBP1 -> UBC
+Unique Path #160 (Original #160): EGFR -> CBL -> CRK -> ABL1 -> ABI2
+Unique Path #161 (Original #161): EGFR -> CBL -> CRK -> CRKL -> PIK3R1
+Unique Path #162 (Original #162): EGFR -> CBL -> CRK -> PIK3R1 -> GAB2
+Unique Path #163 (Original #163): EGFR -> CBL -> CRK -> PIK3R1 -> PIK3R2
+Unique Path #164 (Original #164): EGFR -> CBL -> CRK -> PIK3R1 -> PIK3R3
+Unique Path #165 (Original #165): EGFR -> CBL -> CRK -> PTK2 -> PIK3R1
+Unique Path #166 (Original #166): EGFR -> CBL -> CRK -> PTK2 -> TLN1
+Unique Path #167 (Original #167): EGFR -> CBL -> CRK -> PXN -> TLN1
+Unique Path #168 (Original #168): EGFR -> CBL -> CRK -> SRC -> PTPN1
+Unique Path #169 (Original #169): EGFR -> CBL -> CRKL -> ABL1 -> ABI2
+Unique Path #170 (Original #170): EGFR -> CBL -> CRKL -> ABL1 -> CRK
+Unique Path #171 (Original #171): EGFR -> CBL -> CRKL -> CRK -> PIK3R1
+Unique Path #172 (Original #172): EGFR -> CBL -> CRKL -> PIK3R1 -> CRK
+Unique Path #173 (Original #173): EGFR -> CBL -> CRKL -> PIK3R1 -> PIK3R2
+Unique Path #174 (Original #174): EGFR -> CBL -> CRKL -> RAPGEF1 -> CRK
+Unique Path #175 (Original #175): EGFR -> CBL -> GRB2 -> ABL1 -> ABI2
+Unique Path #176 (Original #176): EGFR -> CBL -> GRB2 -> ABL1 -> CRK
+Unique Path #177 (Original #177): EGFR -> CBL -> GRB2 -> ERBB2 -> PIK3R2
+Unique Path #178 (Original #178): EGFR -> CBL -> GRB2 -> STAMBP -> STAM2
+Unique Path #179 (Original #179): EGFR -> CBL -> GRB2 -> STAMBP -> UBC
+Unique Path #180 (Original #180): EGFR -> CBL -> LYN -> SRC -> CRK
+Unique Path #181 (Original #181): EGFR -> CBL -> LYN -> SRC -> PIK3R1
+Unique Path #182 (Original #182): EGFR -> CBL -> LYN -> SRC -> PTPN1
+Unique Path #183 (Original #183): EGFR -> CBL -> PIK3R1 -> CRKL -> CRK
+Unique Path #184 (Original #184): EGFR -> CBL -> PIK3R1 -> ERBB2 -> PIK3R2
+Unique Path #185 (Original #185): EGFR -> CBL -> PIK3R1 -> GRB2 -> TNK2
+Unique Path #186 (Original #186): EGFR -> CBL -> PIK3R1 -> PIK3R2 -> PIK3R3
+Unique Path #187 (Original #187): EGFR -> CBL -> PIK3R2 -> ERBB2 -> PIK3R1
+Unique Path #188 (Original #188): EGFR -> CBL -> PIK3R2 -> PIK3CA -> PIK3R1
+Unique Path #189 (Original #189): EGFR -> CBL -> PIK3R2 -> PIK3CA -> PIK3R3
+Unique Path #190 (Original #190): EGFR -> CBL -> PIK3R2 -> PIK3CB -> PIK3R1
+Unique Path #191 (Original #191): EGFR -> CBL -> PIK3R2 -> PIK3CB -> PIK3R3
+Unique Path #192 (Original #192): EGFR -> CBL -> PIK3R2 -> PIK3R1 -> CRK
+Unique Path #193 (Original #193): EGFR -> CBL -> PIK3R2 -> PIK3R1 -> GAB2
+Unique Path #194 (Original #194): EGFR -> CBL -> PIK3R2 -> PIK3R1 -> PIK3R3
+Unique Path #195 (Original #195): EGFR -> CBL -> PIK3R2 -> PIK3R3 -> PIK3R1
+Unique Path #196 (Original #196): EGFR -> CBL -> PLCG1 -> GRB2 -> TNK2
+Unique Path #197 (Original #197): EGFR -> CBL -> SHC1 -> ABL1 -> ABI2
+Unique Path #198 (Original #198): EGFR -> CBL -> SHC1 -> ABL1 -> CRK
+Unique Path #199 (Original #199): EGFR -> CBL -> SHC1 -> ERBB2 -> PIK3R2
+Unique Path #200 (Original #200): EGFR -> CBL -> SHC1 -> GRB2 -> TNK2
+Unique Path #201 (Original #201): EGFR -> CBL -> SRC -> BCAR1 -> CRK
+Unique Path #202 (Original #202): EGFR -> CBL -> SRC -> CRK -> PIK3R1
+Unique Path #203 (Original #203): EGFR -> CBL -> SRC -> ERBB2 -> PIK3R2
+Unique Path #204 (Original #204): EGFR -> CBL -> UBC -> EPS15 -> EPN1
+Unique Path #205 (Original #205): EGFR -> CBL -> UBC -> EPS15 -> HGS
+Unique Path #206 (Original #206): EGFR -> CBL -> UBC -> HGS -> EPS15
+Unique Path #207 (Original #207): EGFR -> CBL -> UBC -> HGS -> STAM2
+Unique Path #208 (Original #208): EGFR -> CBL -> UBC -> OPTN -> MYO6
+Unique Path #209 (Original #209): EGFR -> CBL -> UBC -> STAM -> HGS
+Unique Path #210 (Original #210): EGFR -> CBL -> UBC -> STAM -> STAM2
+Unique Path #211 (Original #211): EGFR -> CBL -> UBC -> STAM2 -> HGS
+Unique Path #212 (Original #212): EGFR -> CBL -> UBC -> STAMBP -> STAM2
+Unique Path #213 (Original #213): EGFR -> CBL -> UBC -> TSG101 -> HGS
+Unique Path #214 (Original #214): EGFR -> CBL -> UBC -> USP7 -> TRIP12
+Unique Path #215 (Original #215): EGFR -> CBLB -> GRB2 -> ABL1 -> ABI2
+Unique Path #216 (Original #216): EGFR -> CBLB -> GRB2 -> ABL1 -> CRK
+Unique Path #217 (Original #217): EGFR -> CBLB -> GRB2 -> CBL -> CRK
+Unique Path #218 (Original #218): EGFR -> CBLB -> GRB2 -> CBL -> PIK3R2
+Unique Path #219 (Original #219): EGFR -> CBLB -> GRB2 -> CBL -> UBC
+Unique Path #220 (Original #220): EGFR -> CBLB -> GRB2 -> ERBB2 -> PIK3R2
+Unique Path #221 (Original #221): EGFR -> CBLB -> GRB2 -> STAMBP -> STAM2
+Unique Path #222 (Original #222): EGFR -> CBLB -> GRB2 -> STAMBP -> UBC
+Unique Path #223 (Original #223): EGFR -> CRK -> CBL -> ABL1 -> ABI2
+Unique Path #224 (Original #224): EGFR -> CRK -> CBL -> GRB2 -> TNK2
+Unique Path #225 (Original #225): EGFR -> CRK -> CBL -> PIK3R2 -> PIK3R1
+Unique Path #226 (Original #226): EGFR -> CRK -> CBL -> PIK3R2 -> PIK3R3
+Unique Path #227 (Original #227): EGFR -> CRK -> CBL -> SH3KBP1 -> UBC
+Unique Path #228 (Original #228): EGFR -> CRK -> CBL -> UBC -> EPS15
+Unique Path #229 (Original #229): EGFR -> CRK -> CBL -> UBC -> HGS
+Unique Path #230 (Original #230): EGFR -> CRK -> CBL -> UBC -> RABGEF1
+Unique Path #231 (Original #231): EGFR -> CRK -> CBL -> UBC -> STAM2
+Unique Path #232 (Original #232): EGFR -> CRK -> CBL -> UBE2D2 -> UBC
+Unique Path #233 (Original #233): EGFR -> CRK -> CRKL -> ABL1 -> ABI2
+Unique Path #234 (Original #234): EGFR -> CRK -> CRKL -> CBL -> PIK3R2
+Unique Path #235 (Original #235): EGFR -> CRK -> CRKL -> CBL -> UBC
+Unique Path #236 (Original #236): EGFR -> CRK -> CRKL -> PIK3R1 -> PIK3R2
+Unique Path #237 (Original #237): EGFR -> CRK -> PIK3R1 -> CBL -> PIK3R2
+Unique Path #238 (Original #238): EGFR -> CRK -> PIK3R1 -> CBL -> UBC
+Unique Path #239 (Original #239): EGFR -> CRK -> PIK3R1 -> ERBB2 -> PIK3R2
+Unique Path #240 (Original #240): EGFR -> CRK -> PIK3R1 -> GRB2 -> TNK2
+Unique Path #241 (Original #241): EGFR -> CRK -> PIK3R1 -> PIK3R2 -> CBL
+Unique Path #242 (Original #242): EGFR -> CRK -> PIK3R1 -> PIK3R2 -> PIK3R3
+Unique Path #243 (Original #243): EGFR -> CRK -> SRC -> CBL -> PIK3R2
+Unique Path #244 (Original #244): EGFR -> CRK -> SRC -> CBL -> UBC
+Unique Path #245 (Original #245): EGFR -> CRK -> SRC -> ERBB2 -> PIK3R2
+Unique Path #246 (Original #246): EGFR -> CRK -> SRC -> LYN -> CBL
+Unique Path #247 (Original #247): EGFR -> CRKL -> CBL -> ABL1 -> ABI2
+Unique Path #248 (Original #248): EGFR -> CRKL -> CBL -> ABL1 -> CRK
+Unique Path #249 (Original #249): EGFR -> CRKL -> CBL -> CRK -> PIK3R1
+Unique Path #250 (Original #250): EGFR -> CRKL -> CBL -> GRB2 -> TNK2
+Unique Path #251 (Original #251): EGFR -> CRKL -> CBL -> PIK3R2 -> PIK3R1
+Unique Path #252 (Original #252): EGFR -> CRKL -> CBL -> PIK3R2 -> PIK3R3
+Unique Path #253 (Original #253): EGFR -> CRKL -> CBL -> SH3KBP1 -> UBC
+Unique Path #254 (Original #254): EGFR -> CRKL -> CBL -> UBC -> EPS15
+Unique Path #255 (Original #255): EGFR -> CRKL -> CBL -> UBC -> HGS
+Unique Path #256 (Original #256): EGFR -> CRKL -> CBL -> UBC -> RABGEF1
+Unique Path #257 (Original #257): EGFR -> CRKL -> CBL -> UBC -> STAM2
+Unique Path #258 (Original #258): EGFR -> CRKL -> CBL -> UBE2D2 -> UBC
+Unique Path #259 (Original #259): EGFR -> CRKL -> CRK -> ABL1 -> ABI2
+Unique Path #260 (Original #260): EGFR -> CRKL -> CRK -> ABL1 -> CBL
+Unique Path #261 (Original #261): EGFR -> CRKL -> CRK -> CBL -> PIK3R1
+Unique Path #262 (Original #262): EGFR -> CRKL -> CRK -> CBL -> PIK3R2
+Unique Path #263 (Original #263): EGFR -> CRKL -> CRK -> CBL -> UBC
+Unique Path #264 (Original #264): EGFR -> CRKL -> CRK -> PIK3R1 -> CBL
+Unique Path #265 (Original #265): EGFR -> CRKL -> CRK -> PIK3R1 -> GAB2
+Unique Path #266 (Original #266): EGFR -> CRKL -> CRK -> PIK3R1 -> PIK3R2
+Unique Path #267 (Original #267): EGFR -> CRKL -> CRK -> PIK3R1 -> PIK3R3
+Unique Path #268 (Original #268): EGFR -> CRKL -> CRK -> PTK2 -> PIK3R1
+Unique Path #269 (Original #269): EGFR -> CRKL -> CRK -> PTK2 -> TLN1
+Unique Path #270 (Original #270): EGFR -> CRKL -> CRK -> PXN -> TLN1
+Unique Path #271 (Original #271): EGFR -> CRKL -> CRK -> SRC -> PTPN1
+Unique Path #272 (Original #272): EGFR -> CRKL -> GAB1 -> GRB2 -> TNK2
+Unique Path #273 (Original #273): EGFR -> CRKL -> GAB1 -> PIK3R1 -> CRK
+Unique Path #274 (Original #274): EGFR -> CRKL -> GAB1 -> PIK3R1 -> PIK3R2
+Unique Path #275 (Original #275): EGFR -> CRKL -> PIK3R1 -> CBL -> CRK
+Unique Path #276 (Original #276): EGFR -> CRKL -> PIK3R1 -> CBL -> PIK3R2
+Unique Path #277 (Original #277): EGFR -> CRKL -> PIK3R1 -> CBL -> UBC
+Unique Path #278 (Original #278): EGFR -> CRKL -> PIK3R1 -> CRK -> CBL
+Unique Path #279 (Original #279): EGFR -> CRKL -> PIK3R1 -> ERBB2 -> PIK3R2
+Unique Path #280 (Original #280): EGFR -> CRKL -> PIK3R1 -> GRB2 -> TNK2
+Unique Path #281 (Original #281): EGFR -> CRKL -> PIK3R1 -> PIK3R2 -> CBL
+Unique Path #282 (Original #282): EGFR -> CRKL -> PIK3R1 -> PIK3R2 -> PIK3R3
+Unique Path #283 (Original #283): EGFR -> EPS15 -> HGS -> STAM -> STAM2
+Unique Path #284 (Original #284): EGFR -> EPS15 -> HGS -> STAM -> UBC
+Unique Path #285 (Original #285): EGFR -> EPS15 -> HGS -> STAM2 -> UBC
+Unique Path #286 (Original #286): EGFR -> EPS15 -> HGS -> TSG101 -> UBC
+Unique Path #287 (Original #287): EGFR -> EPS15 -> HGS -> UBC -> CBL
+Unique Path #288 (Original #288): EGFR -> EPS15 -> HGS -> UBC -> RABGEF1
+Unique Path #289 (Original #289): EGFR -> EPS15 -> HGS -> UBC -> STAM2
+Unique Path #290 (Original #290): EGFR -> EPS15 -> UBC -> CBL -> CRK
+Unique Path #291 (Original #291): EGFR -> EPS15 -> UBC -> CBL -> PIK3R1
+Unique Path #292 (Original #292): EGFR -> EPS15 -> UBC -> CBL -> PIK3R2
+Unique Path #293 (Original #293): EGFR -> EPS15 -> UBC -> HGS -> STAM2
+Unique Path #294 (Original #294): EGFR -> EPS15 -> UBC -> OPTN -> MYO6
+Unique Path #295 (Original #295): EGFR -> EPS15 -> UBC -> STAM -> HGS
+Unique Path #296 (Original #296): EGFR -> EPS15 -> UBC -> USP7 -> TRIP12
+Unique Path #297 (Original #297): EGFR -> GRB2 -> TNK2 -> CDC42 -> BAIAP2
+Unique Path #298 (Original #298): EGFR -> GRB2 -> TNK2 -> CDC42 -> IQGAP1
+Unique Path #299 (Original #299): EGFR -> GRB2 -> TNK2 -> CDC42 -> PAK2
+Unique Path #300 (Original #300): EGFR -> HGS -> UBC -> OPTN -> MYO6
+Unique Path #301 (Original #301): EGFR -> HGS -> UBC -> USP7 -> TRIP12
+Unique Path #302 (Original #302): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA1B -> DNAJB1
+Unique Path #303 (Original #303): EGFR -> HSP90AA1 -> HSP90AB1 -> MAPT -> PIN1
+Unique Path #304 (Original #304): EGFR -> HSP90AB1 -> HSP90AA1 -> MAPT -> PIN1
+Unique Path #305 (Original #305): EGFR -> SRC -> HSP90AA1 -> MAPT -> PIN1
+Unique Path #306 (Original #306): EGFR -> CRK -> GRB2 -> CBLB
+Unique Path #307 (Original #307): EGFR -> CRK -> SRC -> CSK
+Unique Path #308 (Original #308): EGFR -> SRC -> CSK -> PAG1
+Unique Path #309 (Original #309): EGFR -> STAT3 -> SRC -> CSK
+Unique Path #310 (Original #310): EGFR -> ERBB2 -> PLCG2
+Unique Path #311 (Original #311): EGFR -> STAT1 -> PRKCD
+Unique Path #312 (Original #312): EGFR -> CBL -> GRB2 -> TNK2 -> CDC42 -> BAIAP2
+Unique Path #313 (Original #313): EGFR -> CBL -> GRB2 -> TNK2 -> CDC42 -> IQGAP1
+Unique Path #314 (Original #314): EGFR -> CBL -> CRK -> SRC -> CSK
+Unique Path #315 (Original #315): EGFR -> CBL -> SRC -> CSK -> PAG1
+Unique Path #316 (Original #316): EGFR -> PIK3R2 -> ERBB2 -> PLCG2
+Unique Path #317 (Original #317): EGFR -> STAT3 -> JAK1 -> STAT6
+Unique Path #318 (Original #318): EGFR -> STAT3 -> STAT1 -> PRKCD
+Unique Path #319 (Original #319): EGFR -> STAT3 -> STAT1 -> TYK2
+Unique Path #320 (Original #320): EGFR -> GAB1 -> PTPN11 -> JAK1 -> IFNAR1 -> TYK2
+Unique Path #321 (Original #321): EGFR -> GRB2 -> PTPN11 -> JAK1 -> IFNAR1 -> TYK2
+Unique Path #322 (Original #322): EGFR -> CBL -> GRB2 -> ERBB2 -> PLCG2
+Unique Path #323 (Original #323): EGFR -> CBL -> SRC -> CAV1 -> CAVIN1
+Unique Path #324 (Original #324): EGFR -> CRK -> SRC -> CAV1 -> CAVIN1
+Unique Path #325 (Original #325): EGFR -> SRC -> STAT3 -> JAK1 -> STAT6
+Unique Path #326 (Original #326): EGFR -> SRC -> STAT3 -> STAT1 -> PRKCD
+Unique Path #327 (Original #327): EGFR -> TRAF2 -> RIPK1 -> TLR3 -> UNC93B1
+Unique Path #328 (Original #328): EGFR -> STAT3 -> EP300 -> STAT6
+Unique Path #329 (Original #329): EGFR -> CBL -> SRC -> CTNNB1 -> CSNK1A1
+Unique Path #330 (Original #330): EGFR -> CRK -> SRC -> CTNNB1 -> CSNK1A1
+Unique Path #331 (Original #331): EGFR -> CRK -> CBL -> UBE2D2 -> OTUB1 -> SLC7A11
+Unique Path #332 (Original #332): EGFR -> CRKL -> CBL -> UBE2D2 -> OTUB1 -> SLC7A11
+Unique Path #333 (Original #333): EGFR -> GRB2 -> CBL -> UBE2D2 -> OTUB1 -> SLC7A11
+Unique Path #334 (Original #334): EGFR -> GRB2 -> TNK2 -> CDC42 -> IQGAP1 -> ACTB
+Unique Path #335 (Original #335): EGFR -> CBL -> SRC -> RHOA -> ARHGAP35
+Unique Path #336 (Original #336): EGFR -> CRK -> SRC -> RHOA -> ARHGAP35
+Unique Path #337 (Original #337): EGFR -> HSP90AA1 -> HSP90AB1 -> MYH9 -> ACTB
+Unique Path #338 (Original #338): EGFR -> HSP90AA1 -> SRC -> RHOA -> ARHGAP35
+Unique Path #339 (Original #339): EGFR -> ERBB2 -> ERBIN -> PKP4
+Unique Path #340 (Original #340): EGFR -> CBL -> PIK3R1 -> HRAS -> AFDN -> NECTIN2
+Unique Path #341 (Original #341): EGFR -> CRK -> PIK3R1 -> HRAS -> AFDN -> NECTIN2
+Unique Path #342 (Original #342): EGFR -> CRKL -> PIK3R1 -> HRAS -> AFDN -> NECTIN2
+Unique Path #343 (Original #352): EGFR -> GRB2 -> TNK2 -> CDC42 -> IQGAP1 -> ACTB -> CFL1
+Unique Path #344 (Original #343): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> ATXN2 -> DDX6
+Unique Path #345 (Original #344): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> RBM8A -> UPF3B
+Unique Path #346 (Original #345): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> TARDBP -> FUS
+Unique Path #347 (Original #346): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> UPF1 -> UPF3B
+Unique Path #348 (Original #347): EGFR -> HSP90AB1 -> HSP90AA1 -> HSPA8 -> PABPC1 -> ATXN2 -> DDX6
+Unique Path #349 (Original #348): EGFR -> HSP90AB1 -> HSP90AA1 -> HSPA8 -> PABPC1 -> RBM8A -> UPF3B
+Unique Path #350 (Original #349): EGFR -> HSP90AB1 -> HSP90AA1 -> HSPA8 -> PABPC1 -> TARDBP -> FUS
+Unique Path #351 (Original #350): EGFR -> SRC -> HSP90AA1 -> HSPA8 -> PABPC1 -> ATXN2 -> DDX6
+Unique Path #352 (Original #351): EGFR -> SRC -> HSP90AA1 -> HSPA8 -> PABPC1 -> TARDBP -> FUS
+Unique Path #353 (Original #353): EGFR -> HSP90AA1 -> HSP90AB1 -> MYH9 -> ACTB -> CFL1
+Unique Path #354 (Original #354): EGFR -> EPS15 -> AP2A1 -> CLINT1
+Unique Path #355 (Original #355): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> G3BP1 -> CAPRIN1
+Unique Path #356 (Original #356): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1
+Unique Path #357 (Original #357): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA3
+Unique Path #358 (Original #358): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPK
+Unique Path #359 (Original #359): EGFR -> HSP90AB1 -> HSP90AA1 -> HSPA8 -> PABPC1 -> G3BP1 -> CAPRIN1
+Unique Path #360 (Original #360): EGFR -> HSP90AB1 -> HSP90AA1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1
+Unique Path #361 (Original #361): EGFR -> HSP90AB1 -> HSP90AA1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA3
+Unique Path #362 (Original #362): EGFR -> HSP90AB1 -> HSP90AA1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPK
+Unique Path #363 (Original #363): EGFR -> SRC -> HSP90AA1 -> HSPA8 -> PABPC1 -> G3BP1 -> CAPRIN1
+Unique Path #364 (Original #364): EGFR -> SRC -> HSP90AA1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA2B1
+Unique Path #365 (Original #365): EGFR -> SRC -> HSP90AA1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPA3
+Unique Path #366 (Original #366): EGFR -> SRC -> HSP90AA1 -> HSPA8 -> PABPC1 -> HNRNPD -> HNRNPK
+Unique Path #367 (Original #367): EGFR -> HSP90AA1 -> HSP90AB1 -> MYH9 -> ACTB -> ACTC1 -> CFL1
+Unique Path #368 (Original #368): EGFR -> SRC -> CTTN -> ACTR3 -> ACTB
+Unique Path #369 (Original #369): EGFR -> CBL -> GRB2 -> ERBB2 -> ERBIN -> PKP4
+Unique Path #370 (Original #370): EGFR -> CBL -> PIK3R1 -> ERBB2 -> ERBIN -> PKP4
+Unique Path #371 (Original #371): EGFR -> EPS15 -> AP2B1 -> AP1B1 -> CLINT1
+Unique Path #372 (Original #372): EGFR -> HGS -> EPS15 -> AP2A1 -> CLINT1
+Unique Path #373 (Original #373): EGFR -> SRC -> TLN1 -> ITGB1 -> FLNA
+Unique Path #374 (Original #374): EGFR -> VAV2 -> RHOA -> ROCK2
+Unique Path #375 (Original #375): EGFR -> CBL -> PIK3R1 -> HRAS -> AFDN -> TJP1 -> OCLN
+Unique Path #376 (Original #376): EGFR -> CRK -> PIK3R1 -> HRAS -> AFDN -> TJP1 -> OCLN
+Unique Path #377 (Original #377): EGFR -> CRKL -> PIK3R1 -> HRAS -> AFDN -> TJP1 -> OCLN
+Unique Path #378 (Original #378): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> EIF4E -> DDX3X
+Unique Path #379 (Original #379): EGFR -> HSP90AB1 -> HSP90AA1 -> HSPA8 -> PABPC1 -> EIF4E -> DDX3X
+Unique Path #380 (Original #380): EGFR -> SRC -> HSP90AA1 -> HSPA8 -> PABPC1 -> EIF4E -> DDX3X
+Unique Path #381 (Original #381): EGFR -> HSP90AA1 -> HSP90AB1 -> TRAF2 -> RIPK1 -> TLR3 -> UNC93B1
+Unique Path #382 (Original #382): EGFR -> EPS15 -> EPN2
+Unique Path #383 (Original #383): EGFR -> GRB2 -> TNK2 -> CDC42 -> IQGAP1 -> ACTB -> ACTN4
+Unique Path #384 (Original #384): EGFR -> HSP90AA1 -> HSP90AB1 -> MYH9 -> ACTB -> ACTN4
+Unique Path #385 (Original #385): EGFR -> TRAF2 -> TAB1 -> IKBKG -> RIPK1 -> TLR3 -> UNC93B1
+Unique Path #386 (Original #386): EGFR -> HGS -> EPS15 -> EPN2
+Unique Path #387 (Original #387): EGFR -> CBL -> UBC -> EPS15 -> EPN2
+Unique Path #388 (Original #388): EGFR -> NCK2 -> PAK1 -> FLNA
+Unique Path #389 (Original #389): EGFR -> CRK -> CBL -> SYK -> VAV2 -> RHOA -> ROCK2
+Unique Path #390 (Original #390): EGFR -> CRKL -> CBL -> SYK -> VAV2 -> RHOA -> ROCK2
+Unique Path #391 (Original #391): EGFR -> SRC -> CTTN -> ACTR3 -> ACTB -> ACTN4
+Unique Path #392 (Original #392): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> EIF4A1 -> EIF1
+Unique Path #393 (Original #393): EGFR -> HSP90AB1 -> HSP90AA1 -> HSPA8 -> PABPC1 -> EIF4A1 -> EIF1
+Unique Path #394 (Original #394): EGFR -> SRC -> HSP90AA1 -> HSPA8 -> PABPC1 -> EIF4A1 -> EIF1
+Unique Path #395 (Original #395): EGFR -> CBL -> CRK -> ABL1 -> ABI2 -> ABI1 -> EPS8L1
+Unique Path #396 (Original #396): EGFR -> CBL -> CRKL -> ABL1 -> ABI2 -> ABI1 -> EPS8L1
+Unique Path #397 (Original #397): EGFR -> CBL -> GRB2 -> ABL1 -> ABI2 -> ABI1 -> EPS8L1
+Unique Path #398 (Original #398): EGFR -> EPS15 -> HGS -> TSG101 -> CEP55 -> KIF11 -> KIF23
+Unique Path #399 (Original #399): EGFR -> GRB2 -> TNK2 -> CDC42 -> PAK2 -> PAK1 -> FLNA
+Unique Path #400 (Original #400): EGFR -> CBL -> UBC -> RAD18 -> WRNIP1
+Unique Path #401 (Original #401): EGFR -> EPS15 -> UBC -> RAD18 -> WRNIP1
+Unique Path #402 (Original #402): EGFR -> HGS -> UBC -> RAD18 -> WRNIP1
+Unique Path #403 (Original #403): EGFR -> CTNNB1 -> CSNK1A1 -> MDM2 -> TRIM28
+Unique Path #404 (Original #404): EGFR -> GAPDH -> ACTB -> MORF4L1 -> EMSY -> CBX1 -> TRIM28
+Unique Path #405 (Original #405): EGFR -> HGS -> CLTC -> OCRL -> RAB8A -> RAB1A
+Unique Path #406 (Original #406): EGFR -> TNK2 -> CLTC -> OCRL -> RAB8A -> RAB1A
+Unique Path #407 (Original #407): EGFR -> EPS15 -> HGS -> CLTC -> OCRL -> RAB8A -> RAB1A
+Unique Path #408 (Original #408): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA5 -> SEC61A1
+Unique Path #409 (Original #409): EGFR -> SRC -> CDCP1
+Unique Path #410 (Original #410): EGFR -> HGS -> CLTC -> OCRL -> RAB8A -> RAB10
+Unique Path #411 (Original #411): EGFR -> TNK2 -> CLTC -> OCRL -> RAB8A -> RAB10
+Unique Path #412 (Original #412): EGFR -> CBL -> SRC -> CTNNB1 -> CSNK1A1 -> MDM2 -> TRIM28
+Unique Path #413 (Original #413): EGFR -> EPS15 -> HGS -> CLTC -> OCRL -> RAB8A -> RAB10
+Unique Path #414 (Original #414): EGFR -> CBL -> CRK -> ABL1 -> ABI2 -> RAPH1
+Unique Path #415 (Original #415): EGFR -> CBL -> CRKL -> ABL1 -> ABI2 -> RAPH1
+Unique Path #416 (Original #416): EGFR -> CBL -> GRB2 -> ABL1 -> ABI2 -> RAPH1
+Unique Path #417 (Original #417): EGFR -> HGS -> STAM2 -> TSG101 -> CEP55 -> KIF11 -> KIF23
+Unique Path #418 (Original #418): EGFR -> STAT3 -> JAK1 -> SOCS4
+Unique Path #419 (Original #419): EGFR -> SRC -> STAT3 -> JAK1 -> SOCS4
+Unique Path #420 (Original #420): EGFR -> CBL -> SRC -> STAT3 -> JAK1 -> SOCS4
+Unique Path #421 (Original #421): EGFR -> EPS15 -> HGS -> TSG101 -> CEP55 -> KIF23
+Unique Path #422 (Original #422): EGFR -> SRC -> PRKCD -> ELAVL1 -> HNRNPA2B1 -> HNRNPC -> ANXA2
+Unique Path #423 (Original #423): EGFR -> HGS -> SNX1 -> RAB7A
+Unique Path #424 (Original #424): EGFR -> CBL -> LYN -> SHC1 -> DDR1
+Unique Path #425 (Original #425): EGFR -> EPS15 -> HGS -> SNX1 -> RAB7A
+Unique Path #426 (Original #426): EGFR -> CBL -> SRC -> LYN -> SHC1 -> DDR1
+Unique Path #427 (Original #427): EGFR -> CRK -> CBL -> LYN -> SHC1 -> DDR1
+Unique Path #428 (Original #428): EGFR -> CBL -> PIK3R1 -> PTEN -> FRK
+Unique Path #429 (Original #429): EGFR -> CRK -> PIK3R1 -> PTEN -> FRK
+Unique Path #430 (Original #430): EGFR -> CRKL -> PIK3R1 -> PTEN -> FRK
+Unique Path #431 (Original #431): EGFR -> EPS15 -> ITSN2
+Unique Path #432 (Original #432): EGFR -> HGS -> EPS15 -> ITSN2
+Unique Path #433 (Original #433): EGFR -> CRK -> CBL -> UBC -> HGS -> SNX1 -> RAB7A
+Unique Path #434 (Original #434): EGFR -> CBL -> UBC -> EPS15 -> ITSN2
+Unique Path #435 (Original #435): EGFR -> HSPA1B -> DNAJB1 -> SNCA -> APP
+Unique Path #436 (Original #436): EGFR -> HSPA4 -> DNAJB1 -> SNCA -> APP
+Unique Path #437 (Original #437): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> HNRNPA1 -> DDX17
+Unique Path #438 (Original #438): EGFR -> HSP90AB1 -> HSP90AA1 -> HSPA8 -> PABPC1 -> HNRNPA1 -> DDX17
+Unique Path #439 (Original #439): EGFR -> SRC -> HSP90AA1 -> HSPA8 -> PABPC1 -> HNRNPA1 -> DDX17
+Unique Path #440 (Original #440): EGFR -> HSP90AA1 -> HSP90AB1 -> MYH9 -> ACTB -> ACTR1A -> DYNLL1
+Unique Path #441 (Original #441): EGFR -> CTNNB1 -> CSNK1A1 -> MAPT -> APP
+Unique Path #442 (Original #442): EGFR -> GRB2 -> TNK2 -> CDC42 -> PAK2 -> NCK2 -> CASKIN2
+Unique Path #443 (Original #443): EGFR -> CBL -> SHC1 -> ITGB4 -> PLEC
+Unique Path #444 (Original #444): EGFR -> GRB2 -> SHC1 -> ITGB4 -> PLEC
+Unique Path #445 (Original #445): EGFR -> PIK3R1 -> SHC1 -> ITGB4 -> PLEC
+Unique Path #446 (Original #446): EGFR -> EPS15 -> HGS -> SNX1 -> RAB7A -> RAB11A -> RAB11FIP5
+Unique Path #447 (Original #447): EGFR -> SRC -> CTTN -> ACTR3 -> ACTB -> ACTR1A -> DYNLL1
+Unique Path #448 (Original #448): EGFR -> GAPDH -> ACTB -> ACTR1A -> DYNLL1
+Unique Path #449 (Original #449): EGFR -> CBL -> CRK -> ABL1 -> ABI2 -> WASF1 -> FNBP1L
+Unique Path #450 (Original #450): EGFR -> CBL -> CRKL -> ABL1 -> ABI2 -> WASF1 -> FNBP1L
+Unique Path #451 (Original #451): EGFR -> CBL -> GRB2 -> ABL1 -> ABI2 -> WASF1 -> FNBP1L
+Unique Path #452 (Original #452): EGFR -> NCK2 -> PAK1 -> PAK2 -> CASP3 -> SPTAN1
+Unique Path #453 (Original #453): EGFR -> CBL -> CRK -> ABL1 -> ABI2 -> NCK2 -> CASKIN2
+Unique Path #454 (Original #454): EGFR -> CBL -> CRKL -> ABL1 -> ABI2 -> NCK2 -> CASKIN2
+Unique Path #455 (Original #455): EGFR -> HGS -> RAB5A -> VPS45
+Unique Path #456 (Original #456): EGFR -> HGS -> CLTC -> OCRL -> RAB5A -> VPS45
+Unique Path #457 (Original #457): EGFR -> TNK2 -> CLTC -> OCRL -> RAB5A -> VPS45
+Unique Path #458 (Original #458): EGFR -> EPS15 -> HGS -> SNX1 -> RAB7A -> CCZ1 -> RMC1
+Unique Path #459 (Original #459): EGFR -> GRB2 -> TNK2 -> CDC42 -> PAK2 -> CASP3 -> SPTAN1
+Unique Path #460 (Original #460): EGFR -> NCK2 -> ARHGEF7 -> PAK2 -> CASP3 -> SPTAN1
+Unique Path #461 (Original #461): EGFR -> EPS15 -> HGS -> SNX1 -> RAB7A -> MON1A -> RMC1
+Unique Path #462 (Original #462): EGFR -> EPS15 -> HGS -> RAB5A -> RAB7A -> RAB11A -> RAB11FIP5
+Unique Path #463 (Original #463): EGFR -> HSP90AA1 -> RIPK1 -> TNFRSF1A -> HNRNPA2B1 -> HNRNPC -> ANXA2
+Unique Path #464 (Original #464): EGFR -> HGS -> RBSN -> EHD1
+Unique Path #465 (Original #465): EGFR -> EPS15 -> HGS -> RBSN -> EHD1
+Unique Path #466 (Original #466): EGFR -> EPS15 -> HGS -> SNX1 -> RAB7A -> RAB11B -> RAB11FIP5
+Unique Path #467 (Original #467): EGFR -> EPS15 -> HGS -> RAB5A -> RAB7A -> CCZ1 -> RMC1
+Unique Path #468 (Original #468): EGFR -> CRK -> CBL -> UBC -> HGS -> RBSN -> EHD1
+Unique Path #469 (Original #469): EGFR -> HGS -> NF2 -> SPTBN1
+Unique Path #470 (Original #470): EGFR -> EPS15 -> HGS -> NF2 -> SPTBN1
+Unique Path #471 (Original #471): EGFR -> TAB1 -> RIPK1 -> TNFRSF1A -> HNRNPA2B1 -> HNRNPC -> ANXA2
+Unique Path #472 (Original #472): EGFR -> CRK -> CBL -> UBC -> HGS -> NF2 -> SPTBN1
+Unique Path #473 (Original #473): EGFR -> CAV1 -> CAVIN1 -> CAV3 -> SNTA1
+Unique Path #474 (Original #474): EGFR -> PTPN11 -> MAPK3 -> SMAD2 -> ZFYVE9 -> PPP1CC -> PEAK1
+Unique Path #475 (Original #475): EGFR -> STAT3 -> MAPK1 -> SMAD3 -> ZFYVE9 -> PPP1CC -> PEAK1
+Unique Path #476 (Original #476): EGFR -> ERBB2 -> ERBIN -> PPP1CC -> PEAK1
+Unique Path #477 (Original #477): EGFR -> CBL -> SRC -> CAV1 -> CAVIN1 -> CAV3 -> SNTA1
+Unique Path #478 (Original #478): EGFR -> CRK -> SRC -> CAV1 -> CAVIN1 -> CAV3 -> SNTA1
+Unique Path #479 (Original #479): EGFR -> GAPDH -> PKM -> PCBP1 -> PRPF8 -> SRRM2
+Unique Path #480 (Original #480): EGFR -> EPS15 -> HGS -> SNX1 -> RAB7A -> RAB2A -> GORASP2
+Unique Path #481 (Original #481): EGFR -> GRB2 -> HSP90AB1 -> HSPA5 -> SEC61A1
+Unique Path #482 (Original #482): EGFR -> HSP90AA1 -> HSP90AB1 -> MYH9 -> ACTB -> MSN -> CD46
+Unique Path #483 (Original #483): EGFR -> SRC -> CTTN -> ACTR3 -> ACTB -> MSN -> CD46
+Unique Path #484 (Original #484): EGFR -> GAPDH -> ACTB -> MSN -> CD46
+Unique Path #485 (Original #485): EGFR -> ERBB4 -> DLG1 -> DLG3
+Unique Path #486 (Original #486): EGFR -> HSPA1B -> DNAJB1 -> HSPA5 -> SEC61A1
+Unique Path #487 (Original #487): EGFR -> GRB2 -> ANXA2 -> HNRNPC -> PCBP1 -> PRPF8 -> SRRM2
+Unique Path #488 (Original #488): EGFR -> EPS15 -> HGS -> RAB5A -> RAB7A -> RAB2A -> GORASP2
+Unique Path #489 (Original #489): EGFR -> NCK2 -> BAIAP2 -> DLG4 -> DLG3
+Unique Path #490 (Original #490): EGFR -> GAPDH -> ALDOA -> PKM -> PCBP1 -> PRPF8 -> SRRM2
+Unique Path #491 (Original #491): EGFR -> CTNND1 -> AFDN -> TJP1 -> GJA1 -> MAPK7
+Unique Path #492 (Original #492): EGFR -> CBL -> SRC -> RHOA -> ARHGAP35 -> PTK6 -> STAP2
+Unique Path #493 (Original #493): EGFR -> CRK -> SRC -> RHOA -> ARHGAP35 -> PTK6 -> STAP2
+Unique Path #494 (Original #494): EGFR -> HSP90AA1 -> SRC -> RHOA -> ARHGAP35 -> PTK6 -> STAP2
+Unique Path #495 (Original #495): EGFR -> SRC -> CTTN -> TJP1 -> GJA1 -> MAPK7
+Unique Path #496 (Original #496): EGFR -> ERBB4 -> DLG1 -> GRIN2B -> DLG3
+Unique Path #497 (Original #497): EGFR -> ERBB2 -> PLCG2 -> GNAQ -> GNAI3
+Unique Path #498 (Original #498): EGFR -> CBL -> GRB2 -> ERBB2 -> PLCG2 -> GNAQ -> GNAI3
+Unique Path #499 (Original #499): EGFR -> CBL -> PIK3R1 -> ERBB2 -> PLCG2 -> GNAQ -> GNAI3
+Unique Path #500 (Original #500): EGFR -> UBC -> OTULIN -> SNX27 -> RAB7A -> RAB2A -> GORASP2
+Unique Path #501 (Original #501): EGFR -> EPS15 -> GJA1 -> MAPK7
+Unique Path #502 (Original #502): EGFR -> CRK -> PPFIBP2
+Unique Path #503 (Original #503): EGFR -> CBL -> CRK -> PPFIBP2
+Unique Path #504 (Original #504): EGFR -> CRKL -> CRK -> PPFIBP2
+Unique Path #505 (Original #505): EGFR -> CBL -> SRC -> RHOA -> ARHGAP35 -> RASA1 -> EPHA5
+Unique Path #506 (Original #506): EGFR -> CRK -> SRC -> RHOA -> ARHGAP35 -> RASA1 -> EPHA5
+Unique Path #507 (Original #507): EGFR -> HSP90AA1 -> SRC -> RHOA -> ARHGAP35 -> RASA1 -> EPHA5
+Unique Path #508 (Original #508): EGFR -> ERBB4 -> DLG1 -> GRIA1 -> EPB41L1
+Unique Path #509 (Original #509): EGFR -> CBL -> PIK3R1 -> HRAS -> AFDN -> VDAC1 -> SLC25A6
+Unique Path #510 (Original #510): EGFR -> CRK -> PIK3R1 -> HRAS -> AFDN -> VDAC1 -> SLC25A6
+Unique Path #511 (Original #511): EGFR -> CRKL -> PIK3R1 -> HRAS -> AFDN -> VDAC1 -> SLC25A6
+Unique Path #512 (Original #512): EGFR -> SRC -> TLN1 -> ITGB1 -> FLNA -> FABP1 -> GOT2
+Unique Path #513 (Original #513): EGFR -> CBL -> CD2AP -> PRICKLE4 -> VANGL1
+Unique Path #514 (Original #514): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> STAU1 -> ZC3HAV1
+Unique Path #515 (Original #515): EGFR -> HSP90AB1 -> HSP90AA1 -> HSPA8 -> PABPC1 -> STAU1 -> ZC3HAV1
+Unique Path #516 (Original #516): EGFR -> SRC -> HSP90AA1 -> HSPA8 -> PABPC1 -> STAU1 -> ZC3HAV1
+Unique Path #517 (Original #517): EGFR -> GRB2 -> ARHGEF5
+Unique Path #518 (Original #518): EGFR -> CAV1 -> CAVIN1 -> CAV3 -> SNTB2
+Unique Path #519 (Original #519): EGFR -> NCK2 -> PAK1 -> FLNA -> FABP1 -> GOT2
+Unique Path #520 (Original #520): EGFR -> CAV1 -> CAVIN1 -> CAV3 -> SNTB1
+Unique Path #521 (Original #521): EGFR -> EPS15 -> HGS -> TSG101 -> CEP55 -> ANLN -> MYO1E
+Unique Path #522 (Original #522): EGFR -> CBL -> SRC -> CAV1 -> CAVIN1 -> CAV3 -> SNTB2
+Unique Path #523 (Original #523): EGFR -> CRK -> SRC -> CAV1 -> CAVIN1 -> CAV3 -> SNTB2
+Unique Path #524 (Original #524): EGFR -> CBL -> SHC1 -> ITGB4 -> PLEC -> VIM -> EPPK1
+Unique Path #525 (Original #525): EGFR -> GRB2 -> SHC1 -> ITGB4 -> PLEC -> VIM -> EPPK1
+Unique Path #526 (Original #526): EGFR -> PIK3R1 -> SHC1 -> ITGB4 -> PLEC -> VIM -> EPPK1
+Unique Path #527 (Original #527): EGFR -> SRC -> TLN1 -> FLNA -> FABP1 -> GOT2
+Unique Path #528 (Original #528): EGFR -> CBL -> GRB2 -> NCKIPSD -> EPB41L2 -> DDAH2 -> EPB41L1
+Unique Path #529 (Original #529): EGFR -> CBLB -> GRB2 -> NCKIPSD -> EPB41L2 -> DDAH2 -> EPB41L1
+Unique Path #530 (Original #530): EGFR -> CBL -> SRC -> CAV1 -> CAVIN1 -> CAV3 -> SNTB1
+Unique Path #531 (Original #531): EGFR -> CRK -> SRC -> CAV1 -> CAVIN1 -> CAV3 -> SNTB1
+Unique Path #532 (Original #532): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA8 -> PABPC1 -> G3BP1 -> SND1
+Unique Path #533 (Original #533): EGFR -> HSP90AB1 -> HSP90AA1 -> HSPA8 -> PABPC1 -> G3BP1 -> SND1
+Unique Path #534 (Original #534): EGFR -> SRC -> HSP90AA1 -> HSPA8 -> PABPC1 -> G3BP1 -> SND1
+Unique Path #535 (Original #535): EGFR -> CBL -> UBC -> ZRANB1 -> USP24
+Unique Path #536 (Original #536): EGFR -> EPS15 -> UBC -> ZRANB1 -> USP24
+Unique Path #537 (Original #537): EGFR -> HGS -> UBC -> ZRANB1 -> USP24
+Unique Path #538 (Original #538): EGFR -> CBL -> SHC1 -> SHCBP1 -> KIF23 -> ANLN -> MYO1E
+Unique Path #539 (Original #539): EGFR -> GRB2 -> SHC1 -> SHCBP1 -> KIF23 -> ANLN -> MYO1E
+Unique Path #540 (Original #540): EGFR -> ACTN4 -> PDLIM1 -> PRICKLE4 -> VANGL1
+Unique Path #541 (Original #541): EGFR -> NCK2 -> BAIAP2 -> DLG4 -> DLG3 -> DLG1 -> MPP7
+Unique Path #542 (Original #542): EGFR -> EPS15 -> HGS -> NF2 -> SPTBN1 -> SPTB -> EPB41
+Unique Path #543 (Original #543): EGFR -> CBL -> GRB2 -> NCKIPSD -> EPB41L2 -> SPTB -> EPB41
+Unique Path #544 (Original #544): EGFR -> CBLB -> GRB2 -> NCKIPSD -> EPB41L2 -> SPTB -> EPB41
+Unique Path #545 (Original #545): EGFR -> PTPN11 -> MAPK3 -> GJA1 -> TJP1 -> OCLN -> CLDN10
+Unique Path #546 (Original #546): EGFR -> HGS -> CHMP4B -> BROX
+Unique Path #547 (Original #547): EGFR -> NCK2 -> PAK1 -> PAK2 -> SCRIB -> VANGL1
+Unique Path #548 (Original #548): EGFR -> EPS15 -> HGS -> CHMP4B -> BROX
+Unique Path #549 (Original #549): EGFR -> CRK -> CBL -> UBC -> HGS -> CHMP4B -> BROX
+Unique Path #550 (Original #550): EGFR -> CTNND1 -> AFDN -> TJP1 -> OCLN -> CLDN10
+Unique Path #551 (Original #551): EGFR -> CBL -> GRB2 -> KHDRBS1 -> RBM15
+Unique Path #552 (Original #552): EGFR -> CBL -> PLCG1 -> KHDRBS1 -> RBM15
+Unique Path #553 (Original #553): EGFR -> CBL -> SRC -> KHDRBS1 -> RBM15
+Unique Path #554 (Original #554): EGFR -> CTNND1 -> AFDN -> TJP1 -> TJP2 -> OCLN -> CLDN10
+Unique Path #555 (Original #555): EGFR -> HSP90AA1 -> HSP90AB1 -> MYH9 -> ACTB -> EZR -> SLC12A2
+Unique Path #556 (Original #556): EGFR -> SRC -> CTTN -> ACTR3 -> ACTB -> EZR -> SLC12A2
+Unique Path #557 (Original #557): EGFR -> GAPDH -> ACTB -> EZR -> SLC12A2
+Unique Path #558 (Original #558): EGFR -> SRC -> SH3PXD2B
+Unique Path #559 (Original #559): EGFR -> PTPN11 -> MAPK3 -> MAPK14 -> TAB1 -> IRAK1 -> SIGIRR
+Unique Path #560 (Original #560): EGFR -> STAT3 -> MAPK1 -> MAPK14 -> TAB1 -> IRAK1 -> SIGIRR
+Unique Path #561 (Original #561): EGFR -> PTPN11 -> MAPK1 -> MAPK14 -> TAB1 -> IRAK1 -> SIGIRR
+Unique Path #562 (Original #562): EGFR -> ERBB4 -> ANK3 -> PALM2AKAP2
+Unique Path #563 (Original #563): EGFR -> CBL -> GRB2 -> ERBB4 -> ANK3 -> PALM2AKAP2
+Unique Path #564 (Original #564): EGFR -> CBL -> SHC1 -> ERBB4 -> ANK3 -> PALM2AKAP2
+Unique Path #565 (Original #565): EGFR -> HGS -> RAB10 -> SLC2A4 -> STX4
+Unique Path #566 (Original #566): EGFR -> EPS15 -> HGS -> RAB10 -> SLC2A4 -> STX4
+Unique Path #567 (Original #567): EGFR -> NCK2 -> SH3PXD2B
+Unique Path #568 (Original #568): EGFR -> CBL -> SRC -> YES1 -> CDCP1
+Unique Path #569 (Original #569): EGFR -> CRK -> SRC -> YES1 -> CDCP1
+Unique Path #570 (Original #570): EGFR -> SHC1 -> ARHGEF5
+Unique Path #571 (Original #571): EGFR -> TNK2 -> CLTC -> HGS -> RAB10 -> SLC2A4 -> STX4
+Unique Path #572 (Original #572): EGFR -> HSPA1B -> DNAJB1 -> GRPEL1 -> PALLD
+Unique Path #573 (Original #573): EGFR -> HSPA4 -> DNAJB1 -> GRPEL1 -> PALLD
+Unique Path #574 (Original #574): EGFR -> HSP90AA1 -> HSP90AB1 -> HSPA1B -> DNAJB1 -> GRPEL1 -> PALLD
+Unique Path #575 (Original #575): EGFR -> PTPN11 -> MAPK3 -> GJA1 -> TJP1 -> MARVELD2 -> LSR
+Unique Path #576 (Original #576): EGFR -> CTNND1 -> AFDN -> TJP1 -> MARVELD2 -> LSR
+Unique Path #577 (Original #577): EGFR -> SRC -> CTTN -> TJP1 -> MARVELD2 -> LSR
+Unique Path #578 (Original #578): EGFR -> ERBB4 -> DLG1 -> GRIA1 -> EPB41L1 -> MYO1C -> MYO1D
+Unique Path #579 (Original #579): EGFR -> GRB2 -> ANXA2 -> AHNAK -> S100A10 -> S100A11
+Unique Path #580 (Original #580): EGFR -> ANXA1 -> ANXA2 -> AHNAK -> S100A10 -> S100A11
+Unique Path #581 (Original #581): EGFR -> CBL -> PLCG1 -> ITPR1 -> AHCYL1 -> SLC4A4 -> SLC1A3
+Unique Path #582 (Original #582): EGFR -> GRB2 -> PLCG1 -> ITPR1 -> AHCYL1 -> SLC4A4 -> SLC1A3
+Unique Path #583 (Original #583): EGFR -> PLCG1 -> EPB41L2 -> DDAH2 -> EPB41L1 -> MYO1C -> MYO1D
+Unique Path #584 (Original #584): EGFR -> GRB2 -> EPB41L2 -> DDAH2 -> EPB41L1 -> MYO1C -> MYO1D
+Unique Path #585 (Original #585): EGFR -> PIK3R1 -> PLCG2 -> ITPR1 -> AHCYL1 -> SLC4A4 -> SLC1A3
+Unique Path #586 (Original #586): EGFR -> VAV2 -> RHOG -> ARHGEF5
+Unique Path #587 (Original #587): EGFR -> HGS -> CLTC -> OCRL -> PI4KB -> OSBP
+Unique Path #588 (Original #588): EGFR -> TNK2 -> CLTC -> OCRL -> PI4KB -> OSBP
+Unique Path #589 (Original #589): EGFR -> NCK2 -> PAK1 -> PAK2 -> SORBS3 -> TNS1
+Unique Path #590 (Original #590): EGFR -> EPS15 -> HGS -> CLTC -> OCRL -> PI4KB -> OSBP
+Unique Path #591 (Original #591): EGFR -> GRB2 -> TNK2 -> CDC42 -> PAK2 -> SORBS3 -> TNS1
+Unique Path #592 (Original #592): EGFR -> NCK2 -> ARHGEF7 -> PAK2 -> SORBS3 -> TNS1
+Unique Path #593 (Original #593): EGFR -> CTNND1 -> AFDN -> TJP1 -> OCLN -> PATJ -> MPP7
+Unique Path #594 (Original #594): EGFR -> SRC -> CTTN -> TJP1 -> OCLN -> PATJ -> MPP7
+Unique Path #595 (Original #595): EGFR -> SH3GL2 -> ADAM9 -> ADAM15 -> SH3PXD2B
+Unique Path #596 (Original #596): EGFR -> CAV1 -> CAVIN1 -> S100A10 -> S100A11
+Unique Path #597 (Original #597): EGFR -> ERBB4 -> DLG1 -> GRIA1 -> EPB41L1 -> RDX -> C6orf132
+Unique Path #598 (Original #598): EGFR -> PLCG1 -> EPB41L2 -> DDAH2 -> EPB41L1 -> RDX -> C6orf132
+Unique Path #599 (Original #599): EGFR -> GRB2 -> EPB41L2 -> DDAH2 -> EPB41L1 -> RDX -> C6orf132
+Unique Path #600 (Original #600): EGFR -> CTNNB1 -> MUC1 -> MUC5AC -> SPDEF -> AGR2 -> PRDX6

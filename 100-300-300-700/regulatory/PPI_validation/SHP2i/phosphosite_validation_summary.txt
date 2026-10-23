@@ -1,0 +1,199 @@
+======================================================================
+  PPI Phosphosite Validation — Text Summary
+  Generated: 2026-10-11 20:40:10
+======================================================================
+
+  Total analyzed PPI edges : 177
+  Grade A (exact match)   : 59 (33.3%)
+  Grade B (theoretical)   : 118 (66.7%)
+  Grade C (non-phospho)   : 0 (0.0%)
+  Grade D (no evidence)   : 0 (0.0%)
+
+──────────────────────────────────────────────────────────────────────
+  ✅ Grade A — observed ↔ DB match
+──────────────────────────────────────────────────────────────────────
+  EGFR         → CBLB          [score=0.90] Matched sites: Y709
+  SRC          → GRB2          [score=0.90] Matched sites: Y209
+  EGFR         → PLCG1         [score=1.00] Matched sites: Y771, Y783, Y1254, Y977
+  CISH         → STAT5A        [score=0.90] Matched sites: Y694
+  JAK2         → PLCG1         [score=1.00] Matched sites: Y771, Y783, Y977
+  SOCS3        → TYK2          [score=0.95] Matched sites: Y292, Y1054
+  SRC          → PTPRA         [score=0.90] Matched sites: Y798
+  PTPN1        → JAK2          [score=0.90] Matched sites: Y570
+  AKT1         → ACLY          [score=0.90] Matched sites: S481
+  TP53         → CCNK          [score=0.90] Matched sites: S324
+  SRC          → ANXA2         [score=0.90] Matched sites: Y42
+  SRC          → CTNNB1        [score=0.90] Matched sites: Y142
+  JAK1         → TYK2          [score=0.95] Matched sites: Y1054, Y292
+  EGFR         → JAK2          [score=0.90] Matched sites: Y570
+  STAT3        → STAT5A        [score=0.93] Matched sites: Y694
+  EGFR         → STAT3         [score=1.00] Matched sites: Y705, S727, Y704
+  JAK2         → STAT3         [score=1.00] Matched sites: Y705, Y704, S727
+  SRC          → STAT5A        [score=0.90] Matched sites: Y694
+  SOCS3        → JAK2          [score=0.90] Matched sites: Y570
+  EGFR         → GRB2          [score=0.90] Matched sites: Y209
+  EGFR         → GAB1          [score=0.95] Matched sites: Y406, Y689
+  EGFR         → ANXA1         [score=0.90] Matched sites: Y21
+  AKT1         → CYCS          [score=0.90] Matched sites: Y98
+  IFNGR1       → TYK2          [score=0.95] Matched sites: Y292, Y1054
+  SOCS1        → STAT5A        [score=0.90] Matched sites: Y694
+  JAK2         → STAT6         [score=0.93] Matched sites: Y641
+  EGFR         → CTNNB1        [score=0.90] Matched sites: Y142
+  STAT1        → STAT6         [score=0.90] Matched sites: Y641
+  IFNAR1       → TYK2          [score=0.95] Matched sites: Y292, Y1054
+  STAT4        → HNRNPA2B1     [score=0.90] Matched sites: S259
+  SHC1         → GRB2          [score=0.90] Matched sites: Y209
+  SRC          → PLCG1         [score=1.00] Matched sites: Y783, Y771, Y977
+  SOCS2        → TYK2          [score=0.95] Matched sites: Y292, Y1054
+  SOCS1        → TYK2          [score=0.95] Matched sites: Y292, Y1054
+  EGFR         → SHC1          [score=0.90] Matched sites: Y428
+  ERBB2        → PLCG1         [score=1.00] Matched sites: Y771, Y783, Y977
+  IL23R        → JAK2          [score=0.90] Matched sites: Y570
+  RHOA         → CFL1          [score=0.90] Matched sites: Y140
+  STAT4        → CFL1          [score=0.90] Matched sites: Y140
+  GNAI3        → LYN           [score=0.90] Matched sites: Y508
+  MET          → PLCG1         [score=1.00] Matched sites: Y771, Y783, Y977
+  BTK          → PLCG1         [score=1.00] Matched sites: Y783, Y771, Y977
+  SRC          → OCLN          [score=0.90] Matched sites: Y368
+  EGFR         → STAT5A        [score=0.90] Matched sites: Y694
+  JAK1         → STAT6         [score=0.90] Matched sites: Y641
+  PTPN1        → TYK2          [score=0.95] Matched sites: Y1054, Y292
+  JAK2         → STAT5A        [score=0.93] Matched sites: Y694
+  SRC          → STAT3         [score=1.00] Matched sites: Y705, Y704, S727
+  STAT5B       → STAT5A        [score=0.90] Matched sites: Y694
+  MYC          → HNRNPA2B1     [score=0.90] Matched sites: S259
+  MMP9         → OCLN          [score=0.90] Matched sites: Y368
+  MET          → JAK2          [score=0.90] Matched sites: Y570
+  AKT1         → CTNNB1        [score=0.90] Matched sites: Y142
+  SOCS1        → JAK2          [score=0.90] Matched sites: Y570
+  IL6          → JAK2          [score=0.90] Matched sites: Y570
+  STAT3        → STAT6         [score=0.93] Matched sites: Y641
+  IL6          → OCLN          [score=0.90] Matched sites: Y368
+  RAC1         → ABI2          [score=0.90] Matched sites: S183
+  STAT5A       → STAT3         [score=1.00] Matched sites: Y705, S727, Y704
+
+──────────────────────────────────────────────────────────────────────
+  ⚠️  Grade B — theoretical site
+──────────────────────────────────────────────────────────────────────
+  TYK2         → IFNAR1        [score=0.65] Theoretical sites: Y481, Y466, S535, UniProt:S495
+  INSR         → CBL           [score=0.65] Theoretical sites: Y371, Y700, Y774, UniProt:S439
+  PTK2         → TLN1          [score=0.60] Theoretical sites: UniProt:T167, UniProt:S405, UniProt:S425, UniProt:S446
+  GRB2         → GAB1          [score=0.60] Theoretical sites: UniProt:S251, UniProt:S253, UniProt:S266, UniProt:S304
+  JAK2         → PTK2          [score=0.60] Theoretical sites: UniProt:Y5, UniProt:T13, UniProt:S29, UniProt:S54
+  RHOA         → ACTB          [score=0.60] Theoretical sites: 
+  CDC42        → ACTB          [score=0.60] Theoretical sites: 
+  STAT6        → SOCS1         [score=0.60] Theoretical sites: 
+  SRC          → NTRK2         [score=0.65] Theoretical sites: Y707, Y706, UniProt:Y516, UniProt:Y702
+  PIK3R1       → AKT2          [score=0.60] Theoretical sites: UniProt:S34, UniProt:S126, UniProt:T309, UniProt:S447
+  AKT2         → GSK3A         [score=0.65] Theoretical sites: S21, UniProt:S2, UniProt:S72, UniProt:S77
+  SRC          → CRKL          [score=0.60] Theoretical sites: UniProt:Y127, UniProt:Y207
+  PIK3R1       → KRAS          [score=0.60] Theoretical sites: 
+  JAK2         → IFNGR1        [score=0.65] Theoretical sites: Y457, UniProt:S369, UniProt:T372, UniProt:S378
+  SRC          → IGF1R         [score=0.65] Theoretical sites: Y1165, Y1166, Y1161, Y980
+  STAT3        → IL6           [score=0.60] Theoretical sites: UniProt:S81
+  VAV2         → CDC42         [score=0.60] Theoretical sites: UniProt:Y64
+  CBL          → PIK3R1        [score=0.60] Theoretical sites: UniProt:S154, UniProt:S279, UniProt:Y467, UniProt:Y580
+  CSNK1A1      → TP53          [score=0.65] Theoretical sites: S20, S9, S37, T18
+  STAT3        → SOCS3         [score=0.60] Theoretical sites: 
+  STAT4        → ANXA2         [score=0.60] Theoretical sites: UniProt:Y24, UniProt:S26, UniProt:S184, UniProt:Y199
+  AXIN2        → CSNK1A1       [score=0.60] Theoretical sites: UniProt:S4, UniProt:S156, UniProt:T321
+  JAK2         → ERBB2         [score=0.60] Theoretical sites: UniProt:T182, UniProt:Y877, UniProt:S1054, UniProt:S1078
+  STAT5A       → SOCS3         [score=0.60] Theoretical sites: 
+  PIK3R1       → AKT3          [score=0.60] Theoretical sites: UniProt:T305, UniProt:T447, UniProt:S472
+  EGFR         → CRK           [score=0.65] Theoretical sites: Y221, Y251, UniProt:S40, UniProt:S41
+  NRAS         → AFDN          [score=0.60] Theoretical sites: UniProt:S216, UniProt:S246, UniProt:S256, UniProt:S391
+  CASP3        → SPTAN1        [score=0.60] Theoretical sites: UniProt:S587, UniProt:S924, UniProt:S982, UniProt:S999
+  STAT3        → ICOS          [score=0.60] Theoretical sites: 
+  PRKCA        → ACTB          [score=0.60] Theoretical sites: 
+  JAK2         → STAT4         [score=0.65] Theoretical sites: Y693, UniProt:S721
+  VAV2         → RHOA          [score=0.60] Theoretical sites: UniProt:S188
+  EGFR         → PTPN1         [score=0.65] Theoretical sites: Y66, UniProt:Y20, UniProt:S50, UniProt:S242
+  SRC          → HRAS          [score=0.65] Theoretical sites: Y32, Y64, Y96
+  GAB1         → PIK3CA        [score=0.60] Theoretical sites: 
+  SRC          → RAC1          [score=0.65] Theoretical sites: Y64, S71
+  CBLB         → PIK3R1        [score=0.60] Theoretical sites: UniProt:S154, UniProt:S279, UniProt:Y467, UniProt:Y580
+  STAT3        → CASP3         [score=0.60] Theoretical sites: UniProt:S26
+  EGFR         → STAT1         [score=0.65] Theoretical sites: Y701, UniProt:S708, UniProt:S727, UniProt:S745
+  STAT3        → IFNG          [score=0.60] Theoretical sites: 
+  IFNG         → IFNAR1        [score=0.60] Theoretical sites: UniProt:Y466, UniProt:Y481, UniProt:S495, UniProt:S535
+  PTK2         → CRKL          [score=0.60] Theoretical sites: UniProt:Y127, UniProt:Y207
+  JAK2         → IRS2          [score=0.60] Theoretical sites: UniProt:S306, UniProt:S346, UniProt:T350, UniProt:S365
+  CYCS         → CASP3         [score=0.60] Theoretical sites: UniProt:S26
+  PIK3R1       → AKT1          [score=0.65] Theoretical sites: S473, UniProt:S124, UniProt:S126, UniProt:S129
+  EGFR         → CBL           [score=0.65] Theoretical sites: Y700, Y731, Y774, Y371
+  STAT3        → MMP9          [score=0.60] Theoretical sites: 
+  CRK          → ABL1          [score=0.60] Theoretical sites: UniProt:S50, UniProt:Y70, UniProt:Y115, UniProt:Y128
+  EGFR         → AKT1          [score=0.60] Theoretical sites: UniProt:S124, UniProt:S126, UniProt:S129, UniProt:Y176
+  ICOS         → PIK3R1        [score=0.60] Theoretical sites: UniProt:S154, UniProt:S279, UniProt:Y467, UniProt:Y580
+  IRS2         → PIK3R1        [score=0.60] Theoretical sites: UniProt:S154, UniProt:S279, UniProt:Y467, UniProt:Y580
+  SRC          → VAV2          [score=0.65] Theoretical sites: Y172, UniProt:Y142, UniProt:Y159, UniProt:S576
+  STAT3        → CISH          [score=0.60] Theoretical sites: 
+  SRC          → CDC42         [score=0.65] Theoretical sites: Y64
+  PIK3R1       → BTK           [score=0.60] Theoretical sites: UniProt:S21, UniProt:Y40, UniProt:S55, UniProt:S115
+  MET          → PTK2          [score=0.65] Theoretical sites: Y576, Y861, Y407, Y577
+  PTPN1        → IGF1R         [score=0.60] Theoretical sites: UniProt:Y980, UniProt:Y1161, UniProt:Y1165, UniProt:Y1166
+  AKT3         → GSK3A         [score=0.65] Theoretical sites: S21, UniProt:S2, UniProt:S72, UniProt:S77
+  MET          → PIK3R1        [score=0.60] Theoretical sites: UniProt:S154, UniProt:S279, UniProt:Y467, UniProt:Y580
+  GAB1         → PIK3R1        [score=0.60] Theoretical sites: UniProt:S154, UniProt:S279, UniProt:Y467, UniProt:Y580
+  IGF1R        → GNAI3         [score=0.60] Theoretical sites: 
+  PTPN1        → ANXA2         [score=0.60] Theoretical sites: UniProt:Y24, UniProt:S26, UniProt:S184, UniProt:Y199
+  PTPN1        → INSR          [score=0.65] Theoretical sites: Y1355, Y1011, Y1189, Y1190
+  CTNNB1       → MYC           [score=0.60] Theoretical sites: UniProt:S21, UniProt:T23, UniProt:T73, UniProt:S77
+  HRAS         → PIK3R1        [score=0.60] Theoretical sites: UniProt:S154, UniProt:S279, UniProt:Y467, UniProt:Y580
+  STAT3        → MYC           [score=0.60] Theoretical sites: UniProt:S21, UniProt:T23, UniProt:T73, UniProt:S77
+  TP53         → SLC7A11       [score=0.60] Theoretical sites: UniProt:S26
+  SRC          → PTK2          [score=0.65] Theoretical sites: Y861, Y576, Y577, Y397
+  ERBB2        → PTK2          [score=0.65] Theoretical sites: Y861, Y397, UniProt:Y5, UniProt:T13
+  SRC          → PIK3R1        [score=0.65] Theoretical sites: Y607, Y688, Y307, Y337
+  AKT1         → PTPN1         [score=0.65] Theoretical sites: S50, UniProt:Y20, UniProt:Y66, UniProt:S242
+  RAC1         → IQGAP1        [score=0.60] Theoretical sites: UniProt:S2, UniProt:Y172, UniProt:S330, UniProt:S1441
+  INSR         → PIK3R1        [score=0.65] Theoretical sites: Y368, Y580, Y607, Y310
+  JAK2         → IRS1          [score=0.65] Theoretical sites: S323, UniProt:S3, UniProt:S99, UniProt:S270
+  GAB1         → CRK           [score=0.60] Theoretical sites: UniProt:S40, UniProt:S41, UniProt:S74, UniProt:S83
+  GRB2         → CBL           [score=0.60] Theoretical sites: UniProt:Y371, UniProt:S439, UniProt:S452, UniProt:S483
+  PIK3R1       → HRAS          [score=0.60] Theoretical sites: 
+  SHC1         → SRC           [score=0.60] Theoretical sites: UniProt:S17, UniProt:S75, UniProt:Y187, UniProt:Y419
+  VAV2         → RAC1          [score=0.60] Theoretical sites: UniProt:S71
+  PIK3R1       → RAC1          [score=0.60] Theoretical sites: UniProt:S71
+  MET          → PIK3R3        [score=0.60] Theoretical sites: UniProt:Y341
+  CBL          → MET           [score=0.65] Theoretical sites: Y1003, UniProt:S966, UniProt:T977, UniProt:S990
+  CASP3        → ACTB          [score=0.60] Theoretical sites: 
+  STAT5A       → SOCS2         [score=0.60] Theoretical sites: UniProt:S30, UniProt:S52
+  PTPN1        → SRC           [score=0.65] Theoretical sites: Y419, Y530, UniProt:S17, UniProt:S75
+  SRC          → IQGAP1        [score=0.65] Theoretical sites: Y1510, UniProt:S2, UniProt:Y172, UniProt:S330
+  SRC          → CRK           [score=0.60] Theoretical sites: UniProt:S40, UniProt:S41, UniProt:S74, UniProt:S83
+  KRAS         → AFDN          [score=0.60] Theoretical sites: UniProt:S216, UniProt:S246, UniProt:S256, UniProt:S391
+  STAT3        → SOCS1         [score=0.60] Theoretical sites: 
+  PIK3R1       → NRAS          [score=0.60] Theoretical sites: UniProt:S89
+  STAT5A       → SOCS1         [score=0.60] Theoretical sites: 
+  CTNNB1       → AXIN2         [score=0.60] Theoretical sites: 
+  CRK          → PTK2          [score=0.65] Theoretical sites: Y397, UniProt:Y5, UniProt:T13, UniProt:S29
+  JAK2         → PIK3R1        [score=0.60] Theoretical sites: UniProt:S154, UniProt:S279, UniProt:Y467, UniProt:Y580
+  EGFR         → SRC           [score=0.65] Theoretical sites: Y419, Y216, UniProt:S17, UniProt:S75
+  SRC          → TJP1          [score=0.60] Theoretical sites: UniProt:S125, UniProt:Y132, UniProt:S175, UniProt:S178
+  PTPN1        → IRS1          [score=0.60] Theoretical sites: UniProt:S3, UniProt:S99, UniProt:S270, UniProt:S307
+  JAK2         → PIK3CA        [score=0.60] Theoretical sites: 
+  JAK2         → STAT5B        [score=0.65] Theoretical sites: Y699, UniProt:Y90, UniProt:S128, UniProt:S193
+  PIK3CA       → PTK2          [score=0.60] Theoretical sites: UniProt:Y5, UniProt:T13, UniProt:S29, UniProt:S54
+  STAT3        → IL23R         [score=0.60] Theoretical sites: 
+  PLCG1        → VAV2          [score=0.60] Theoretical sites: UniProt:Y142, UniProt:Y159, UniProt:Y172, UniProt:S576
+  IQGAP1       → ACTB          [score=0.60] Theoretical sites: 
+  PIK3CA       → PIK3R1        [score=0.65] Theoretical sites: S608, S308, S338, UniProt:S154
+  SRC          → RHOA          [score=0.65] Theoretical sites: Y66, Y34, UniProt:S188
+  CBL          → PIK3CA        [score=0.60] Theoretical sites: 
+  EGFR         → VAV2          [score=0.65] Theoretical sites: Y172, Y142, Y159, UniProt:S576
+  CBL          → SRC           [score=0.65] Theoretical sites: Y419, UniProt:S17, UniProt:S75, UniProt:Y187
+  ABL1         → CRKL          [score=0.65] Theoretical sites: Y207, UniProt:Y127
+  HRAS         → AFDN          [score=0.60] Theoretical sites: UniProt:S216, UniProt:S246, UniProt:S256, UniProt:S391
+  IRS1         → PIK3R1        [score=0.60] Theoretical sites: UniProt:S154, UniProt:S279, UniProt:Y467, UniProt:Y580
+  CDC42        → IQGAP1        [score=0.60] Theoretical sites: UniProt:S2, UniProt:Y172, UniProt:S330, UniProt:S1441
+  PLCG1        → PRKCA         [score=0.60] Theoretical sites: UniProt:S10, UniProt:S226, UniProt:S319, UniProt:T494
+  CTNNB1       → SRC           [score=0.60] Theoretical sites: UniProt:S17, UniProt:S75, UniProt:Y187, UniProt:Y419
+  NTRK2        → SH2B1         [score=0.60] Theoretical sites: UniProt:S88, UniProt:S96, UniProt:S417, UniProt:S420
+  EGFR         → JAK1          [score=0.60] Theoretical sites: UniProt:Y3, UniProt:S228, UniProt:Y1034, UniProt:Y1035
+  AKT1         → GSK3A         [score=0.65] Theoretical sites: S21, UniProt:S2, UniProt:S72, UniProt:S77
+  JAK2         → PIK3R3        [score=0.60] Theoretical sites: UniProt:Y341
+
+──────────────────────────────────────────────────────────────────────
+  ❌ Grade D — false-positive risk
+──────────────────────────────────────────────────────────────────────

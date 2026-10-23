@@ -1,0 +1,131 @@
+=== Protein Pathway Simulator (STRING API v12.5) Run Log ===
+Input file: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/regulatory/HEK293T_regulatory.json
+Network type: regulatory
+Start time: 2026-10-09 08:11:42
+============================================================
+
+[08:11:46] [STRING] Official v12.5 pinned: https://version-12-5.string-db.org/api | regulatory
+[08:11:46] [PhosphoSite] Loading site information from JSON...
+[08:11:46] [PhosphoSite] Input schema: Temporal v2 interval model
+[08:11:46] [PhosphoSite] 695 proteins, 1030 sites loaded
+[08:11:46] [PhosphoSite] 1030 site combinations tracked
+[08:11:46] [Cell Context] Disabled.
+[08:11:46] [Start] Start proteins loaded from JSON: 1 loaded
+[08:11:46] [Input Schema] Temporal v2 interval model
+[08:11:46] === Start TEMPORAL interval pathway tracing (regulatory mode) ===
+[08:11:46]   [Temporal] Target mode: measured
+[08:11:46]   [Temporal] Bridge Depth D=1 means intermediate bridge nodes; max edges/interval=2
+[08:11:46]   [Temporal] Baseline availability is NOT treated as activation.
+[08:11:46]   [Temporal] D resets independently for every interval.
+[08:11:46]   [FINAL] No drug-name hard blocking; target-preserving adaptive temporal beam enabled.
+[08:11:48]   [Baseline Bridge Pool] 695 baseline-available genes loaded; used only as first-interval bridge candidates (not activation targets).
+[08:11:48]   [Q-Pool] No pretreatment baseline contrast; no condition-specific Q exclusion applied.
+[08:11:48] --- Temporal Start 1/1: EGFR ---
+[08:11:49] --- Interval 1/7: 0min-2min ---
+[08:11:49]   Measured=338, supporting=31, opposing=35, unresolved=289, mixed=1
+[08:11:49]   Q-low opposing-only this interval=34; condition-pool excluded=0
+[08:11:49]   Eligible targets (measured)=304, incoming source paths=1
+[08:11:49]   [Estimate] 1 source paths x 304 target genes = 304 pairs
+[08:11:50]   [Target-Preserving Temporal Beam] 83 unique routes -> 83 propagated states; targets preserved=28/28; K_base=300, K_eff=300, protected_union=54, routes/target quota=3, segment routes/pair=5.
+[08:11:50]   [Interval Done] reached genes=28, endpoint candidates=83, unique propagating routes=83
+[08:11:50]   [Speed Cache] ranked-neighbor hit/miss=15101/51, direct-lookup hit/miss=4516/15, segment hit/miss=0/303
+[08:11:50] --- Interval 2/7: 2min-4min ---
+[08:11:50]   Measured=338, supporting=22, opposing=30, unresolved=300, mixed=4
+[08:11:50]   Q-low opposing-only this interval=26; condition-pool excluded=0
+[08:11:50]   Eligible targets (measured)=312, incoming source paths=83
+[08:11:50]   [Estimate] 83 source paths x 312 target genes = 25896 pairs
+[08:11:51] [STRING Neighborhood] SAA1: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[08:11:51] [STRING Neighborhood] NDN: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[08:11:51] [STRING Neighborhood] IL21: 4 partners at score >= 700 (requested limit=10000, network=regulatory)
+[08:11:51] [STRING Neighborhood] SOCS5: 5 partners at score >= 700 (requested limit=10000, network=regulatory)
+[08:11:51] [STRING Neighborhood] LCN2: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[08:12:28]   [Exact Dedupe] 1240 candidate paths -> 1172 unique gene chains.
+[08:12:28]   [Target-Preserving Temporal Beam] 1172 unique routes -> 300 propagated states; targets preserved=40/40; K_base=300, K_eff=300, protected_union=40, routes/target quota=3, segment routes/pair=5.
+[08:12:28]   [Interval Done] reached genes=40, endpoint candidates=1240, unique propagating routes=300
+[08:12:28]   [Speed Cache] ranked-neighbor hit/miss=805773/353, direct-lookup hit/miss=4516/15, segment hit/miss=0/26177
+[08:12:28] --- Interval 3/7: 4min-8min ---
+[08:12:28]   Measured=323, supporting=24, opposing=21, unresolved=290, mixed=4
+[08:12:28]   Q-low opposing-only this interval=17; condition-pool excluded=0
+[08:12:29]   Eligible targets (measured)=306, incoming source paths=300
+[08:12:29]   [Estimate] 300 source paths x 306 target genes = 91800 pairs
+[08:13:45] [STRING Neighborhood] MGMT: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[08:13:45] [STRING Neighborhood] CCNK: 1 partners at score >= 700 (requested limit=10000, network=regulatory)
+[08:13:45] [STRING Neighborhood] POLR2A: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[08:13:46]   [Exact Dedupe] 2575 candidate paths -> 2568 unique gene chains.
+[08:13:46]   [Target-Preserving Temporal Beam] 2568 unique routes -> 300 propagated states; targets preserved=40/40; K_base=300, K_eff=300, protected_union=40, routes/target quota=3, segment routes/pair=5.
+[08:13:46]   [Interval Done] reached genes=40, endpoint candidates=2575, unique propagating routes=300
+[08:13:46]   [Speed Cache] ranked-neighbor hit/miss=2502590/493, direct-lookup hit/miss=4516/15, segment hit/miss=305/117507
+[08:13:46] --- Interval 4/7: 8min-16min ---
+[08:13:46]   Measured=213, supporting=9, opposing=24, unresolved=189, mixed=3
+[08:13:46]   Q-low opposing-only this interval=21; condition-pool excluded=0
+[08:13:46]   Eligible targets (measured)=192, incoming source paths=300
+[08:13:46]   [Estimate] 300 source paths x 192 target genes = 57600 pairs
+[08:14:24]   [Exact Dedupe] 1384 candidate paths -> 1376 unique gene chains.
+[08:14:24]   [Target-Preserving Temporal Beam] 1376 unique routes -> 300 propagated states; targets preserved=24/24; K_base=300, K_eff=300, protected_union=24, routes/target quota=3, segment routes/pair=5.
+[08:14:24]   [Interval Done] reached genes=24, endpoint candidates=1384, unique propagating routes=300
+[08:14:24]   [Speed Cache] ranked-neighbor hit/miss=3328513/539, direct-lookup hit/miss=4516/15, segment hit/miss=497/174802
+[08:14:24] --- Interval 5/7: 16min-32min ---
+[08:14:24]   Measured=174, supporting=15, opposing=19, unresolved=146, mixed=0
+[08:14:24]   Q-low opposing-only this interval=19; condition-pool excluded=0
+[08:14:24]   Eligible targets (measured)=155, incoming source paths=300
+[08:14:24]   [Estimate] 300 source paths x 155 target genes = 46500 pairs
+[08:15:02]   [Exact Dedupe] 1199 candidate paths -> 1175 unique gene chains.
+[08:15:02]   [Target-Preserving Temporal Beam] 1175 unique routes -> 300 propagated states; targets preserved=23/23; K_base=300, K_eff=300, protected_union=23, routes/target quota=3, segment routes/pair=5.
+[08:15:02]   [Interval Done] reached genes=23, endpoint candidates=1199, unique propagating routes=300
+[08:15:02]   [Speed Cache] ranked-neighbor hit/miss=4177618/580, direct-lookup hit/miss=4516/15, segment hit/miss=807/220914
+[08:15:02] --- Interval 6/7: 32min-64min ---
+[08:15:02]   Measured=149, supporting=9, opposing=14, unresolved=132, mixed=1
+[08:15:02]   Q-low opposing-only this interval=13; condition-pool excluded=0
+[08:15:02]   Eligible targets (measured)=136, incoming source paths=300
+[08:15:02]   [Estimate] 300 source paths x 136 target genes = 40800 pairs
+[08:15:13]   [Exact Dedupe] 970 candidate paths -> 909 unique gene chains.
+[08:15:13]   [Target-Preserving Temporal Beam] 909 unique routes -> 300 propagated states; targets preserved=18/18; K_base=300, K_eff=300, protected_union=18, routes/target quota=3, segment routes/pair=5.
+[08:15:13]   [Interval Done] reached genes=18, endpoint candidates=970, unique propagating routes=300
+[08:15:13]   [Speed Cache] ranked-neighbor hit/miss=4537147/586, direct-lookup hit/miss=4516/15, segment hit/miss=807/261600
+[08:15:13] --- Interval 7/7: 64min-128min ---
+[08:15:13]   Measured=237, supporting=15, opposing=29, unresolved=203, mixed=2
+[08:15:13]   Q-low opposing-only this interval=27; condition-pool excluded=0
+[08:15:13]   Eligible targets (measured)=210, incoming source paths=300
+[08:15:13]   [Estimate] 300 source paths x 210 target genes = 63000 pairs
+[08:15:31]   [Exact Dedupe] 1505 candidate paths -> 1234 unique gene chains.
+[08:15:31]   [Target-Preserving Temporal Beam] 1234 unique routes -> 300 propagated states; targets preserved=21/21; K_base=300, K_eff=300, protected_union=21, routes/target quota=3, segment routes/pair=5.
+[08:15:31]   [Interval Done] reached genes=21, endpoint candidates=1505, unique propagating routes=300
+[08:15:31]   [Speed Cache] ranked-neighbor hit/miss=5096585/596, direct-lookup hit/miss=4516/15, segment hit/miss=2897/322311
+[08:15:31] === Temporal tracing completed: 300 unique complete paths, 1096 intermediate paths ===
+[08:15:31]   - Temporal structured results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/regulatory\HEK293T_regulatory_STRING_v12_temporal_results.json
+[08:15:31]   - Interval summary: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/regulatory\HEK293T_regulatory_STRING_v12_interval_summary.csv
+[08:15:31]   - Node roles: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/regulatory\HEK293T_regulatory_STRING_v12_node_roles.csv
+[08:15:31]   - Edges: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/regulatory\HEK293T_regulatory_STRING_v12_edges.csv
+[08:15:32] [Snapshot] C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/regulatory\HEK293T_regulatory_STRING_v12_5_snapshot_regulatory_20261009_081531_927997700: 596 queries, 6503 neighbor records
+[08:16:07] [Cache] STRING cache saved.
+[08:16:07] 
+============================================================
+STRING API v12.5 Statistics (Network Type: regulatory):
+  API Base URL: https://version-12-5.string-db.org/api
+  Total API calls: 17
+  Cache hits: 2815
+  Cache misses: 17
+  Cache hit rate: 99.4%
+  Total API time: 3.39 sec
+  Retrieved edges: 10
+  Average Combined Score: 781.0/1000
+
+  === Regulatory Network Statistics ===
+  Regulatory edges: 10
+  Activation edges: 5
+  Inhibition edges: 5
+  Directional edges: 10
+============================================================
+[08:16:07] 
+[Phospho] Generating phosphorylation-site path results...
+[08:16:07] [Phospho FINAL] Temporal endpoint annotation mode; Cartesian site expansion disabled.
+[08:16:07] [Phospho] Complete path variants: 300, Intermediate path variants: 0 generated
+[08:16:07] Simulation complete.
+[08:16:07]   - Complete path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/regulatory\HEK293T_regulatory_STRING_v12_results.txt
+[08:16:07]   - All path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/regulatory\HEK293T_regulatory_STRING_v12_all_results.txt
+[08:16:07]   - Phospho path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/regulatory\HEK293T_regulatory_STRING_v12_all_Phospho_results.txt
+[08:16:07]   - Run log: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/regulatory\HEK293T_regulatory_STRING_v12_log.txt
+
+============================================================
+End time: 2026-10-09 08:16:07
+=== End of log ===

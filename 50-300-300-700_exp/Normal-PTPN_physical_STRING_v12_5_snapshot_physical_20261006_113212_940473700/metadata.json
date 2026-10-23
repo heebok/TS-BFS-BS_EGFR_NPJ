@@ -1,0 +1,43 @@
+{
+  "string_version": "12.5",
+  "release_channel": "official",
+  "api_base": "https://version-12-5.string-db.org/api",
+  "network_type": "physical",
+  "endpoint": "/json/interaction_partners",
+  "species": 9606,
+  "api_required_score": 0,
+  "created_at": "2026-10-06T11:32:15.237827-04:00",
+  "input_json_sha256": "f3b84ced4e9270807f40de59bd0b4a7a8d2e508ec9e43551bf5acbc7bffeabb3",
+  "input_json_name": "Normal-PTPN_physical.json",
+  "queried_gene_count": 2716,
+  "neighbor_records": 120143,
+  "origins": {
+    "v12.5_cache": 2716
+  },
+  "neighbors_sha256": "9fd9fe71d528733ce6c0fd850eeed17273f907442601b46c4f3fc1ccfc860d67",
+  "neighbor_csv_sha256": "6b80de03ca28d86512321f12e2fb78c9e68d84aa17acc2709df483703da88454",
+  "output_complete_paths": 300,
+  "search_parameters": {
+    "degree_cap": 50,
+    "beam_width": 300,
+    "max_paths_per_target": 300,
+    "min_string_score": 700,
+    "hub_blacklist": [],
+    "verbose": false,
+    "collapse_gene_level": true,
+    "no_immediate_backtrack": true,
+    "dedupe_gene_in_path": true,
+    "regulatory_weight_bonus": 0.0,
+    "temporal_segment_route_cap": 5,
+    "temporal_beam_width": 0,
+    "temporal_routes_per_target": 3,
+    "temporal_full_path_dedupe": true,
+    "temporal_anchor_mode": "measured",
+    "exclude_opposing_as_bridge": true
+  },
+  "min_string_score": 700,
+  "degree_cap_H": 50,
+  "bridge_depth_D": 1,
+  "cache_file": "string_cache_v12_5_fullpartners_cell.json",
+  "note": "Includes all returned candidates before minimum-score and beam pruning; cache entries are version-isolated."
+}

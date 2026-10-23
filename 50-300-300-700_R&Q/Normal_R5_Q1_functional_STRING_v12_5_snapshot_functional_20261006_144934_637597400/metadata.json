@@ -1,0 +1,43 @@
+{
+  "string_version": "12.5",
+  "release_channel": "official",
+  "api_base": "https://version-12-5.string-db.org/api",
+  "network_type": "functional",
+  "endpoint": "/json/interaction_partners",
+  "species": 9606,
+  "api_required_score": 0,
+  "created_at": "2026-10-06T14:49:39.851755-04:00",
+  "input_json_sha256": "fd1e736b1e7cabe80da50a7c9ba029f6f9e0b9c54cfb2b317ce8d258f4c0ddd1",
+  "input_json_name": "Normal_R5_Q1_functional.json",
+  "queried_gene_count": 4049,
+  "neighbor_records": 268032,
+  "origins": {
+    "v12.5_cache": 4049
+  },
+  "neighbors_sha256": "8182c69ead5fe3fdab2363147e748c7c23da4ad5d57e56779892685447516ff3",
+  "neighbor_csv_sha256": "f5a2cd63525daf592e6a3d061c8be306084f4f042fed6323b3ba4f9cdb2fb117",
+  "output_complete_paths": 300,
+  "search_parameters": {
+    "degree_cap": 50,
+    "beam_width": 300,
+    "max_paths_per_target": 300,
+    "min_string_score": 700,
+    "hub_blacklist": [],
+    "verbose": false,
+    "collapse_gene_level": true,
+    "no_immediate_backtrack": true,
+    "dedupe_gene_in_path": true,
+    "regulatory_weight_bonus": 0.0,
+    "temporal_segment_route_cap": 5,
+    "temporal_beam_width": 0,
+    "temporal_routes_per_target": 1,
+    "temporal_full_path_dedupe": true,
+    "temporal_anchor_mode": "measured",
+    "exclude_opposing_as_bridge": true
+  },
+  "min_string_score": 700,
+  "degree_cap_H": 50,
+  "bridge_depth_D": 1,
+  "cache_file": "string_cache_v12_5_fullpartners_cell.json",
+  "note": "Includes all returned candidates before minimum-score and beam pruning; cache entries are version-isolated."
+}

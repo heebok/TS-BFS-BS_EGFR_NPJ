@@ -1,0 +1,193 @@
+=== Protein Pathway Simulator (STRING API v12.5) Run Log ===
+Input file: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/50-300-300-700/regulatory/SHP2i_regulatory.json
+Network type: regulatory
+Start time: 2026-10-06 09:01:15
+============================================================
+
+[09:01:17] [STRING] Official v12.5 pinned: https://version-12-5.string-db.org/api | regulatory
+[09:01:17] [PhosphoSite] Loading site information from JSON...
+[09:01:17] [PhosphoSite] Input schema: Temporal v2 interval model
+[09:01:17] [PhosphoSite] 591 proteins, 953 sites loaded
+[09:01:17] [PhosphoSite] 953 site combinations tracked
+[09:01:17] [Cell Context] Cell line requested: MDA-MB-468
+[09:01:17] [Cell Context] Identity aliases resolved from metadata: MDAMB468, SIDM00628
+[09:01:17] [Cell Context] Official model-specific data: SIDM00628. The RNA/proteomics file is already scoped to one SIDM; a cell-line-name column inside the table is therefore not required.
+[09:01:17] [Cell Context] RNA parser columns: gene=gene_symbol, value=rsem_tpm, cell/model=model_name
+[09:01:18] [Cell Context] RNA loaded: expressed=13762, below-threshold=22676; source={'layout': 'cmp_model_specific_long', 'cell_column': 'model_name', 'gene_column': 'gene_symbol', 'value_column': 'rsem_tpm', 'matched_rows': 36439}
+[09:01:18] [Cell Context] Proteomics loaded: detected=5475, explicit-negative=0; source={'layout': 'cmp_model_specific_long', 'cell_column': 'model_id', 'gene_column': 'symbol', 'value_column': 'protein_intensity', 'matched_rows': 5475}
+[09:01:18] [Cell Context] Mode=conservative_union; RNA threshold=1; UNKNOWN bridge candidates are retained in conservative mode.
+[09:01:18] [Start] Start proteins loaded from JSON: 1 loaded
+[09:01:18] [Input Schema] Temporal v2 interval model
+[09:01:18] === Start TEMPORAL interval pathway tracing (regulatory mode) ===
+[09:01:18]   [Temporal] Target mode: measured
+[09:01:18]   [Temporal] Bridge Depth D=1 means intermediate bridge nodes; max edges/interval=2
+[09:01:18]   [Temporal] Baseline availability is NOT treated as activation.
+[09:01:18]   [Temporal] D resets independently for every interval.
+[09:01:18]   [FINAL] No drug-name hard blocking; target-preserving adaptive temporal beam enabled.
+[09:01:19] [Cell Context] Experimental-anchor protection list: 591 genes.
+[09:01:19]   [Baseline Bridge Pool] 591 baseline-available genes loaded; used only as first-interval bridge candidates (not activation targets).
+[09:01:19]   [Q-Pool] Pretreatment baseline contrast detected (pretreatment_vs_reference).
+[09:01:19]   [Q-Pool] supporting-only=13, mixed=5, unresolved-only=167, excluded opposing-only=19
+[09:01:19]   [Q-Pool] Excluded from condition-specific functional pool: APP, CTNND1, CTTN, DAPP1, EGFR, GAB2, GORASP2, MAPK1, MAPK3, NCK1, PLCG2, PRKCD, PTPN11, PTPN6, PTTG2, PXN, RASA1, SYK, YES1
+[09:01:19]   [Q-Pool Warning] Explicit start protein EGFR is opposing-only at baseline contrast; retained ONLY to initiate interval 1 because it is an explicit experimental source. It remains excluded as an ordinary bridge/target/later source.
+[09:01:19] --- Temporal Start 1/1: EGFR ---
+[09:01:19] --- Interval 1/3: 0min-5min ---
+[09:01:19]   Measured=345, supporting=28, opposing=34, unresolved=308, mixed=4
+[09:01:19]   Q-low opposing-only this interval=30; condition-pool excluded=19
+[09:01:19]   Eligible targets (measured)=304, incoming source paths=1
+[09:01:19]   [Estimate] 1 source paths x 304 target genes = 304 pairs
+[09:01:21]   [Target-Preserving Temporal Beam] 117 unique routes -> 117 propagated states; targets preserved=45/45; K_base=300, K_eff=300, protected_union=101, routes/target quota=3, segment routes/pair=5.
+[09:01:21]   [Interval Done] reached genes=45, endpoint candidates=117, unique propagating routes=117
+[09:01:21]   [Speed Cache] ranked-neighbor hit/miss=13340/45, direct-lookup hit/miss=6644/22, segment hit/miss=0/304
+[09:01:21] --- Interval 2/3: 5min-10min ---
+[09:01:21]   Measured=112, supporting=4, opposing=8, unresolved=104, mixed=0
+[09:01:21]   Q-low opposing-only this interval=8; condition-pool excluded=19
+[09:01:21]   Eligible targets (measured)=101, incoming source paths=117
+[09:01:21]   [Estimate] 117 source paths x 101 target genes = 11817 pairs
+[09:01:22] [STRING Neighborhood] LEF1: 5 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:22] [STRING Neighborhood] TCF7L2: 4 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:22] [STRING Neighborhood] AXIN2: 7 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:22] [STRING Neighborhood] TCF7: 1 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:23] [STRING Neighborhood] RUNX2: 11 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:23] [STRING Neighborhood] MMP7: 9 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:23] [STRING Neighborhood] TCF7L1: 1 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:23] [STRING Neighborhood] MSX1: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:23] [STRING Neighborhood] TCF3: 1 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:23] [STRING Neighborhood] CTNNA1: 6 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:24] [STRING Neighborhood] CTNNA2: 6 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:24] [STRING Neighborhood] CTNNA3: 7 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:24] [STRING Neighborhood] PAX3: 3 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:24] [STRING Neighborhood] POU5F1: 11 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:24] [STRING Neighborhood] HNF4A: 10 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:24] [STRING Neighborhood] CD44: 6 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:25] [STRING Neighborhood] MAGI2: 3 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:25] [STRING Neighborhood] CREBBP: 21 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:25] [STRING Neighborhood] EP300: 36 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:25] [STRING Neighborhood] GCG: 5 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:25] [STRING Neighborhood] MAGI3: 2 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:25] [STRING Neighborhood] PAX7: 2 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:25] [STRING Neighborhood] TCF4: 1 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:26] [STRING Neighborhood] EMX2: 3 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:26] [STRING Neighborhood] CDH17: 1 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:26] [STRING Neighborhood] KLF4: 8 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:26] [STRING Neighborhood] EOMES: 4 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:26] [STRING Neighborhood] GBX2: 3 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:26]     [BFS Done] CTNNB1 → PI4KA: 0 paths, expanded=41 (4.76 sec)
+[09:01:27] [STRING Neighborhood] PRMT5: 8 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:27] [STRING Neighborhood] EPOR: 3 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:27] [STRING Neighborhood] GHR: 2 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:27] [STRING Neighborhood] IFNGR1: 16 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:27] [STRING Neighborhood] LEPR: 2 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:28] [STRING Neighborhood] IFNGR2: 16 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:32] [STRING Neighborhood] IGF1R: 36 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:32] [STRING Neighborhood] INS: 49 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:34] [STRING Neighborhood] HNRNPK: 1 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:36] [STRING Neighborhood] KLF5: 1 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:37] [STRING Neighborhood] CXCL8: 2 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:37] [STRING Neighborhood] ADIPOQ: 7 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:37] [STRING Neighborhood] CIITA: 7 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:37] [STRING Neighborhood] CDKN2B: 5 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:37] [STRING Neighborhood] IL1B: 67 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:38] [STRING Neighborhood] EBF1: 2 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:01:38]     [BFS Done] CEBPB → PI4KA: 0 paths, expanded=12 (1.19 sec)
+[09:01:46]   [Exact Dedupe] 902 candidate paths -> 873 unique gene chains.
+[09:01:46]   [Target-Preserving Temporal Beam] 873 unique routes -> 300 propagated states; targets preserved=23/23; K_base=300, K_eff=300, protected_union=23, routes/target quota=3, segment routes/pair=5.
+[09:01:46]   [Interval Done] reached genes=23, endpoint candidates=902, unique propagating routes=300
+[09:01:46]   [Speed Cache] ranked-neighbor hit/miss=215506/297, direct-lookup hit/miss=6644/22, segment hit/miss=0/12095
+[09:01:46] --- Interval 3/3: 10min-30min ---
+[09:01:46]   Measured=207, supporting=8, opposing=14, unresolved=189, mixed=0
+[09:01:46]   Q-low opposing-only this interval=14; condition-pool excluded=19
+[09:01:46]   Eligible targets (measured)=188, incoming source paths=300
+[09:01:46]   [Estimate] 300 source paths x 188 target genes = 56400 pairs
+[09:02:02] [STRING Neighborhood] BAIAP2: 4 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:02] [STRING Neighborhood] WASF2: 9 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:02] [STRING Neighborhood] ENAH: 2 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:09] [STRING Neighborhood] ABI1: 7 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:13] [STRING Neighborhood] CFL1: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:21] [STRING Neighborhood] TIAM1: 4 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:21] [STRING Neighborhood] PATJ: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:21] [STRING Neighborhood] GSK3B: 65 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:28] [STRING Neighborhood] CSNK1A1: 9 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:29] [STRING Neighborhood] GLI3: 4 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:29] [STRING Neighborhood] GLI2: 5 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:29] [STRING Neighborhood] SMO: 7 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:29] [STRING Neighborhood] CDC25A: 14 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:29] [STRING Neighborhood] AXIN1: 9 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:29] [STRING Neighborhood] SUFU: 3 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:29]     [BFS Done] CSNK1A1 → PLCG1: 0 paths, expanded=9 (1.14 sec)
+[09:02:43] [STRING Neighborhood] SH2B1: 1 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:54] [STRING Neighborhood] GNAI3: 39 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:54] [STRING Neighborhood] ADCY5: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:54] [STRING Neighborhood] ADCY6: 2 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:54] [STRING Neighborhood] ADCY1: 3 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:54] [STRING Neighborhood] ADCY9: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:54] [STRING Neighborhood] ADCY2: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:55] [STRING Neighborhood] ADCY3: 3 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:55] [STRING Neighborhood] ADCY4: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:55] [STRING Neighborhood] ADCY8: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:55] [STRING Neighborhood] ADCY10: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:55] [STRING Neighborhood] FGR: 10 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:55] [STRING Neighborhood] HCK: 16 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:56] [STRING Neighborhood] KCNJ3: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:56] [STRING Neighborhood] KCNJ5: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:56] [STRING Neighborhood] KCNJ6: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:56] [STRING Neighborhood] KCNJ9: 0 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:56] [STRING Neighborhood] PIK3R5: 7 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:56] [STRING Neighborhood] PIK3R6: 7 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:57] [STRING Neighborhood] PLCB1: 4 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:57] [STRING Neighborhood] PLCB2: 4 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:57] [STRING Neighborhood] PLCB3: 4 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:57] [STRING Neighborhood] PLCB4: 4 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:57] [STRING Neighborhood] RAPGEF3: 12 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:57] [STRING Neighborhood] RAPGEF4: 16 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:57] [STRING Neighborhood] MMP14: 8 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:58] [STRING Neighborhood] MMP15: 3 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:58] [STRING Neighborhood] MMP16: 4 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:58] [STRING Neighborhood] MMP17: 1 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:58] [STRING Neighborhood] MMP24: 1 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:59] [STRING Neighborhood] MMP25: 1 partners at score >= 700 (requested limit=10000, network=regulatory)
+[09:02:59]     [BFS Done] GNAI3 → PLCG1: 3 paths, expanded=38 (5.22 sec)
+[09:02:59]   [Exact Dedupe] 3016 candidate paths -> 2973 unique gene chains.
+[09:02:59]   [Target-Preserving Temporal Beam] 2973 unique routes -> 300 propagated states; targets preserved=21/21; K_base=300, K_eff=300, protected_union=21, routes/target quota=3, segment routes/pair=5.
+[09:02:59]   [Interval Done] reached genes=21, endpoint candidates=3016, unique propagating routes=300
+[09:02:59]   [Speed Cache] ranked-neighbor hit/miss=1011818/357, direct-lookup hit/miss=6644/22, segment hit/miss=752/67630
+[09:02:59] === Temporal tracing completed: 300 unique complete paths, 392 intermediate paths ===
+[09:02:59]   - Temporal structured results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/50-300-300-700/regulatory\SHP2i_regulatory_STRING_v12_temporal_results.json
+[09:02:59]   - Interval summary: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/50-300-300-700/regulatory\SHP2i_regulatory_STRING_v12_interval_summary.csv
+[09:02:59]   - Node roles: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/50-300-300-700/regulatory\SHP2i_regulatory_STRING_v12_node_roles.csv
+[09:02:59]   - Edges: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/50-300-300-700/regulatory\SHP2i_regulatory_STRING_v12_edges.csv
+[09:02:59]   - Cell-context bridge audit: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/50-300-300-700/regulatory\SHP2i_regulatory_STRING_v12_cell_context_audit.csv
+[09:02:59] [Cell Context Summary] checked=15695471, allowed=15695471, blocked=0, unknown-retained=3179345
+[09:03:00] [Snapshot] C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/50-300-300-700/regulatory\SHP2i_regulatory_STRING_v12_5_snapshot_regulatory_20261006_090259_970750300: 357 queries, 4794 neighbor records
+[09:03:27] [Cache] STRING cache saved.
+[09:03:27] 
+============================================================
+STRING API v12.5 Statistics (Network Type: regulatory):
+  API Base URL: https://version-12-5.string-db.org/api
+  Total API calls: 92
+  Cache hits: 2080
+  Cache misses: 92
+  Cache hit rate: 95.8%
+  Total API time: 16.37 sec
+  Retrieved edges: 693
+  Average Combined Score: 806.1/1000
+
+  === Regulatory Network Statistics ===
+  Regulatory edges: 693
+  Activation edges: 469
+  Inhibition edges: 100
+  Directional edges: 693
+============================================================
+[09:03:27] 
+[Phospho] Generating phosphorylation-site path results...
+[09:03:27] [Phospho FINAL] Temporal endpoint annotation mode; Cartesian site expansion disabled.
+[09:03:27] [Phospho] Complete path variants: 300, Intermediate path variants: 0 generated
+[09:03:27] Simulation complete.
+[09:03:27]   - Complete path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/50-300-300-700/regulatory\SHP2i_regulatory_STRING_v12_results.txt
+[09:03:27]   - All path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/50-300-300-700/regulatory\SHP2i_regulatory_STRING_v12_all_results.txt
+[09:03:27]   - Phospho path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/50-300-300-700/regulatory\SHP2i_regulatory_STRING_v12_all_Phospho_results.txt
+[09:03:27]   - Run log: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/50-300-300-700/regulatory\SHP2i_regulatory_STRING_v12_log.txt
+
+============================================================
+End time: 2026-10-06 09:03:27
+=== End of log ===

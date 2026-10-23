@@ -1,0 +1,988 @@
+*** All Path Results (Complete + Intermediate) - STRING API v12.5 (regulatory) ***
+======================================================================
+  RUN CONFIGURATION
+======================================================================
+  Run Date/Time        : 2026-10-06 13:37:12
+  Input File           : C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/50-300-300-700/regulatory/HEK293T_regulatory.json
+  Network Type         : regulatory
+  STRING API Base      : https://version-12-5.string-db.org/api
+  Bridge Depth D       : 1 (intermediate nodes; max edges/interval=2)
+  Species ID           : 9606
+  Min STRING Score     : 700
+  Degree Cap H         : 50
+  Segment Beam K       : 300 BFS frontier
+  Max Paths/Target N   : 300 (legacy/non-temporal)
+  Temporal Seg Routes  : 5 per source-target pair
+  Temporal Base K      : 300
+  Temporal Adaptive K  : max(Base K, reached target genes)
+  Target Preservation  : >=1 route per reached target
+  Temporal Routes/Tgt  : 3
+  Temporal Full Dedupe : True
+  Regulatory Wt Bonus  : 0.0
+  Hub Blacklist        : (none)
+  Collapse by Gene     : True
+  No Backtracking      : True
+  Dedupe Genes in Path : True
+  Verbose Logging      : False
+  Cell Context Filter  : False
+  Cell Context Mode    : conservative_union
+  Cell Line            : (none)
+  RNA Bulk File        : (none)
+  Proteomics Bulk File : (none)
+  RNA Threshold        : 1.0
+  Start Proteins       : EGFR
+  Input Schema         : Temporal v2 interval model
+  Temporal Target Mode : measured
+  Time Points/Intervals: 7
+  Inhibitor Drugs      : (none)
+  Total Elapsed Time   : 220.4 sec
+======================================================================
+
+(Total elapsed time: 220.4 sec)
+
+=== Complete Paths (300 items) ===
+(Paths that reached the end through all time points)
+
+Complete Path #1 (Length 8): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #2 (Length 5): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──→ TBC1D4
+Complete Path #3 (Length 4): EGFR ──▶ PTK2 ──▶ CRK ──▶ PXN
+Complete Path #4 (Length 6): EGFR ──▶ JAK1 ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+Complete Path #5 (Length 6): EGFR ──▶ SHC3 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN
+Complete Path #6 (Length 7): EGFR ──▶ PTPN11 ──→ LCK ──▶ CD247 ──▶ SYK ──▶ LAT2 ──▶ GRB2
+Complete Path #7 (Length 9): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #8 (Length 5): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK
+Complete Path #9 (Length 6): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ MAPK13
+Complete Path #10 (Length 4): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK
+Complete Path #11 (Length 5): EGFR ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #12 (Length 5): EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK ──▶ PXN
+Complete Path #13 (Length 8): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+Complete Path #14 (Length 5): EGFR ──→ CRK ──▶ ABL1 ──▶ GRB2 ──▶ CBL
+Complete Path #15 (Length 8): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #16 (Length 8): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #17 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ LCK ──▶ CD247 ──→ FYN ──→ PRKCD ──⊣ MARCKS
+Complete Path #18 (Length 7): EGFR ──▶ SRC ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #19 (Length 7): EGFR ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #20 (Length 6): EGFR ──▶ PTPN11 ──→ SRC ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+Complete Path #21 (Length 7): EGFR ──▶ PTPN11 ──→ SRC ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN
+Complete Path #22 (Length 5): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT3 ──⊣ GSK3A
+Complete Path #23 (Length 8): EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ GRB2
+Complete Path #24 (Length 6): EGFR ──→ CRK ──▶ MAP3K1 ──▶ MAP2K7 ──▶ MAPK8 ──⊣ IRS4
+Complete Path #25 (Length 8): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+Complete Path #26 (Length 7): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #27 (Length 9): EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──⊣ RHOA ──▶ ROCK1 ──▶ PTEN ──⊣ PTK2 ──▶ WASL
+Complete Path #28 (Length 7): EGFR ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN
+Complete Path #29 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──▶ SRC ──▶ PXN
+Complete Path #30 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+Complete Path #31 (Length 7): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #32 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──▶ MAPK11 ──▶ JUN
+Complete Path #33 (Length 7): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #34 (Length 7): EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #35 (Length 5): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT3 ──▶ TBC1D4
+Complete Path #36 (Length 7): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──⊣ EZH2 ──→ CDKN1A ──▶ RB1
+Complete Path #37 (Length 6): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK
+Complete Path #38 (Length 6): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK
+Complete Path #39 (Length 6): EGFR ──▶ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #40 (Length 5): EGFR ──▶ PTPN11 ──→ LCK ──▶ LAT ──▶ GRB2
+Complete Path #41 (Length 9): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT2 ──⊣ GSK3A ──→ AKT1 ──⊣ EZH2 ──→ CDKN1A ──▶ RB1
+Complete Path #42 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #43 (Length 6): EGFR ──▶ STAT3 ──→ HSP90AA1 ──→ ERBB2 ──▶ GRB2 ──▶ CBL
+Complete Path #44 (Length 7): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ WASL
+Complete Path #45 (Length 5): EGFR ──▶ STAT3 ──→ HSP90AA1 ──⊣ NR3C1 ──⊣ JUN
+Complete Path #46 (Length 6): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+Complete Path #47 (Length 6): EGFR ──▶ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+Complete Path #48 (Length 7): EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ WASL
+Complete Path #49 (Length 5): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT2 ──⊣ GSK3A
+Complete Path #50 (Length 6): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #51 (Length 6): EGFR ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #52 (Length 6): EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ GRB2 ──▶ CBL
+Complete Path #53 (Length 5): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT2 ──→ TBC1D4
+Complete Path #54 (Length 5): EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ WASL
+Complete Path #55 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+Complete Path #56 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+Complete Path #57 (Length 5): EGFR ──→ CRK ──▶ PXN ──▶ CDC42 ──▶ MAPK13
+Complete Path #58 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──▶ SRC ──▶ GRB2
+Complete Path #59 (Length 8): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #60 (Length 5): EGFR ──▶ PTPN11 ──→ LCK ──▶ SHC1 ──▶ GRB2
+Complete Path #61 (Length 6): EGFR ──▶ PTPN11 ──⊣ PTK2 ──→ CTTN ──▶ CRK ──▶ PXN
+Complete Path #62 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──→ CTTN ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #63 (Length 6): EGFR ──▶ PTPN11 ──→ LCK ──▶ LAT ──▶ GRB2 ──▶ CBL
+Complete Path #64 (Length 7): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #65 (Length 5): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ CRK
+Complete Path #66 (Length 9): EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──⊣ RHOA ──▶ ROCK1 ──▶ PTEN ──⊣ PTK2 ──▶ CRK
+Complete Path #67 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ BCAR1 ──▶ CRKL
+Complete Path #68 (Length 10): EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──⊣ RHOA ──▶ ROCK1 ──▶ PTEN ──⊣ PTK2 ──▶ SRC ──▶ PXN
+Complete Path #69 (Length 7): EGFR ──▶ PTPN11 ──→ LCK ──▶ CD247 ──▶ SYK ──▶ LCP2 ──▶ GRB2
+Complete Path #70 (Length 6): EGFR ──▶ PTK2 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #71 (Length 5): EGFR ──▶ PTK2 ──▶ PXN ──▶ BCAR1 ──▶ CRK
+Complete Path #72 (Length 7): EGFR ──▶ SHC3 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #73 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #74 (Length 8): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ GRB2 ──▶ CBL
+Complete Path #75 (Length 5): EGFR ──▶ PTK2 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #76 (Length 8): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #77 (Length 8): EGFR ──▶ PTPN11 ──⊣ PTK2 ──→ CTTN ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #78 (Length 4): EGFR ──→ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #79 (Length 9): EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──⊣ RHOA ──▶ ROCK1 ──▶ PTEN ──⊣ PTK2 ──▶ GRB2
+Complete Path #80 (Length 4): EGFR ──▶ PTK2 ──▶ PXN ──▶ CRK
+Complete Path #81 (Length 5): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK
+Complete Path #82 (Length 5): EGFR ──▶ PTPN11 ──⊣ PTK2 ──→ CTTN ──▶ CRK
+Complete Path #83 (Length 4): EGFR ──▶ PTK2 ──▶ BCAR1 ──▶ CRK
+Complete Path #84 (Length 4): EGFR ──▶ PTK2 ──→ CTTN ──▶ CRK
+Complete Path #85 (Length 6): EGFR ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+Complete Path #86 (Length 7): EGFR ──▶ PTPN11 ──→ LCK ──▶ CD247 ──→ FYN ──→ PRKCD ──⊣ MARCKS
+Complete Path #87 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #88 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #89 (Length 6): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK
+Complete Path #90 (Length 6): EGFR ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+Complete Path #91 (Length 7): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #92 (Length 5): EGFR ──▶ PTK2 ──→ CTTN ──▶ CRK ──▶ PXN
+Complete Path #93 (Length 7): EGFR ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ SRC ──▶ PXN
+Complete Path #94 (Length 4): EGFR ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+Complete Path #95 (Length 7): EGFR ──▶ PTK2 ──▶ PXN ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #96 (Length 7): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ GRB2
+Complete Path #97 (Length 6): EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ SRC ──▶ KHDRBS1
+Complete Path #98 (Length 9): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #99 (Length 7): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #100 (Length 6): EGFR ──▶ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #101 (Length 8): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+Complete Path #102 (Length 6): EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #103 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN
+Complete Path #104 (Length 6): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ BCAR1 ──▶ CRK
+Complete Path #105 (Length 10): EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──⊣ RHOA ──▶ ROCK1 ──▶ PTEN ──⊣ PTK2 ──▶ SRC ──▶ GRB2
+Complete Path #106 (Length 6): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN
+Complete Path #107 (Length 3): EGFR ──→ CRK ──▶ PXN
+Complete Path #108 (Length 6): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #109 (Length 7): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #110 (Length 5): EGFR ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #111 (Length 6): EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK
+Complete Path #112 (Length 7): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #113 (Length 8): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #114 (Length 6): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN
+Complete Path #115 (Length 5): EGFR ──→ CRK ──▶ PXN ──▶ BCAR1 ──▶ CRKL
+Complete Path #116 (Length 6): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN
+Complete Path #117 (Length 5): EGFR ──→ CRK ──▶ PXN ──▶ CDC42 ──▶ PARD3
+Complete Path #118 (Length 7): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN
+Complete Path #119 (Length 3): EGFR ──▶ PTK2 ──▶ CRK
+Complete Path #120 (Length 7): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+Complete Path #121 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #122 (Length 5): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK
+Complete Path #123 (Length 5): EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ CRKL
+Complete Path #124 (Length 5): EGFR ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #125 (Length 5): EGFR ──▶ PTPN11 ──→ LCK ──→ LCP2 ──▶ GRB2
+Complete Path #126 (Length 9): EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──⊣ RHOA ──▶ ROCK1 ──▶ PTEN ──⊣ PTK2 ──▶ PXN
+Complete Path #127 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #128 (Length 4): EGFR ──→ CRK ──▶ PTK2 ──▶ WASL
+Complete Path #129 (Length 6): EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+Complete Path #130 (Length 5): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN
+Complete Path #131 (Length 8): EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #132 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──▶ GRB2 ──▶ CBL
+Complete Path #133 (Length 7): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+Complete Path #134 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #135 (Length 6): EGFR ──▶ CBL ──⊣ MET ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+Complete Path #136 (Length 6): EGFR ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ BCAR1 ──▶ CRKL
+Complete Path #137 (Length 6): EGFR ──→ CRK ──▶ PTK2 ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #138 (Length 7): EGFR ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #139 (Length 7): EGFR ──▶ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #140 (Length 9): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #141 (Length 7): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #142 (Length 6): EGFR ──▶ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #143 (Length 6): EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN
+Complete Path #144 (Length 8): EGFR ──▶ CBL ──⊣ MET ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #145 (Length 6): EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ SRC ──▶ PXN
+Complete Path #146 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #147 (Length 5): EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+Complete Path #148 (Length 5): EGFR ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN
+Complete Path #149 (Length 6): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ WASL
+Complete Path #150 (Length 6): EGFR ──▶ PTK2 ──▶ PXN ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #151 (Length 7): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN
+Complete Path #152 (Length 9): EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #153 (Length 7): EGFR ──▶ STAT3 ──→ HSP90AA1 ──→ ERBB2 ──▶ PTK2 ──▶ SRC ──▶ KHDRBS1
+Complete Path #154 (Length 6): EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK ──▶ PTK2 ──▶ GRB2
+Complete Path #155 (Length 6): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #156 (Length 7): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──⊣ EZH2 ──→ CDKN1A ──⊣ CCNL2
+Complete Path #157 (Length 6): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN
+Complete Path #158 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #159 (Length 7): EGFR ──→ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #160 (Length 5): EGFR ──▶ SHC3 ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+Complete Path #161 (Length 6): EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ PTK2B ──→ PXN
+Complete Path #162 (Length 8): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ MAP3K1 ──▶ MAP2K7 ──▶ MAPK9 ──⊣ IRS4
+Complete Path #163 (Length 8): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ BCAR1 ──▶ CRKL
+Complete Path #164 (Length 6): EGFR ──→ CRK ──▶ PXN ──▶ ARHGEF7 ──▶ CDC42 ──▶ PARD3
+Complete Path #165 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──▶ PTK2B ──→ PXN
+Complete Path #166 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #167 (Length 9): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT2 ──⊣ GSK3A ──→ AKT1 ──⊣ EZH2 ──→ CDKN1A ──⊣ CCNL2
+Complete Path #168 (Length 9): EGFR ──▶ PTPN11 ──→ LCK ──▶ CD247 ──→ FYN ──▶ CDC42 ──▶ PARD3 ──⊣ GSK3B ──→ DPYSL2
+Complete Path #169 (Length 6): EGFR ──▶ STAT3 ──→ HSP90AA1 ──→ ERBB2 ──▶ PTK2 ──▶ WASL
+Complete Path #170 (Length 6): EGFR ──▶ PTK2 ──→ CTTN ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #171 (Length 7): EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ GRB2
+Complete Path #172 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #173 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──▶ PXN ──▶ CRKL
+Complete Path #174 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──→ CTTN ──▶ CRKL
+Complete Path #175 (Length 6): EGFR ──▶ JAK1 ──▶ PTPN11 ──→ LCK ──▶ SHC1 ──▶ GRB2
+Complete Path #176 (Length 7): EGFR ──▶ PTPN11 ──→ LCK ──▶ CD247 ──▶ SYK ──▶ LAT ──▶ GRB2
+Complete Path #177 (Length 6): EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ SRC ──▶ GRB2
+Complete Path #178 (Length 7): EGFR ──▶ CBL ──⊣ MET ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN
+Complete Path #179 (Length 6): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ LCK ──▶ LAT ──▶ GRB2
+Complete Path #180 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──▶ SRC ──▶ KHDRBS1
+Complete Path #181 (Length 5): EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ GRB2
+Complete Path #182 (Length 8): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #183 (Length 5): EGFR ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #184 (Length 8): EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ WASL
+Complete Path #185 (Length 7): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN
+Complete Path #186 (Length 5): EGFR ──▶ PTK2 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #187 (Length 5): EGFR ──▶ STAT3 ──→ HSP90AA1 ──→ ERBB2 ──▶ GRB2
+Complete Path #188 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN
+Complete Path #189 (Length 8): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #190 (Length 4): EGFR ──→ CRK ──▶ PXN ──▶ CRKL
+Complete Path #191 (Length 5): EGFR ──▶ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #192 (Length 8): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #193 (Length 4): EGFR ──→ CRK ──▶ PTK2 ──▶ CRKL
+Complete Path #194 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──▶ BCAR1 ──▶ CRKL
+Complete Path #195 (Length 4): EGFR ──→ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #196 (Length 6): EGFR ──→ CRK ──▶ PTK2 ──▶ FYN ──→ PRKCD ──⊣ MARCKS
+Complete Path #197 (Length 6): EGFR ──→ CRK ──▶ MAP3K1 ──▶ MAP2K7 ──▶ MAPK9 ──⊣ IRS4
+Complete Path #198 (Length 5): EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ MAPK13
+Complete Path #199 (Length 9): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #200 (Length 6): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #201 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #202 (Length 5): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK
+Complete Path #203 (Length 8): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #204 (Length 6): EGFR ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN
+Complete Path #205 (Length 7): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #206 (Length 8): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #207 (Length 7): EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #208 (Length 6): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ LCK ──▶ SHC1 ──▶ GRB2
+Complete Path #209 (Length 5): EGFR ──→ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #210 (Length 6): EGFR ──→ CRK ──▶ PTK2 ──▶ PXN ──▶ CDC42 ──▶ MAPK13
+Complete Path #211 (Length 8): EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #212 (Length 7): EGFR ──▶ JAK1 ──▶ PTPN11 ──→ LCK ──▶ LAT ──▶ GRB2 ──▶ CBL
+Complete Path #213 (Length 7): EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #214 (Length 9): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT3 ──⊣ GSK3A ──→ AKT1 ──⊣ EZH2 ──→ CDKN1A ──▶ RB1
+Complete Path #215 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──→ CDC42 ──▶ WASL
+Complete Path #216 (Length 7): EGFR ──▶ PTK2 ──→ CTTN ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #217 (Length 4): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK
+Complete Path #218 (Length 6): EGFR ──▶ STAT3 ──→ HSP90AA1 ──→ ERBB2 ──▶ PTK2 ──▶ CRK
+Complete Path #219 (Length 5): EGFR ──▶ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN
+Complete Path #220 (Length 6): EGFR ──▶ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN
+Complete Path #221 (Length 7): EGFR ──▶ STAT3 ──→ HSP90AA1 ──→ ERBB2 ──▶ PTK2 ──▶ SRC ──▶ PXN
+Complete Path #222 (Length 6): EGFR ──▶ JAK1 ──▶ PTPN11 ──→ LCK ──▶ LAT ──▶ GRB2
+Complete Path #223 (Length 5): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN
+Complete Path #224 (Length 6): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #225 (Length 6): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #226 (Length 7): EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+Complete Path #227 (Length 9): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #228 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ WASL
+Complete Path #229 (Length 7): EGFR ──▶ PTPN11 ──→ LCK ──▶ CD247 ──▶ SYK ──▶ SHC3 ──▶ GRB2
+Complete Path #230 (Length 6): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ CRKL
+Complete Path #231 (Length 9): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT3 ──⊣ GSK3A ──→ AKT1 ──⊣ EZH2 ──→ CDKN1A ──⊣ CCNL2
+Complete Path #232 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──▶ BCAR1 ──→ PXN
+Complete Path #233 (Length 4): EGFR ──→ CRK ──▶ PTK2 ──▶ PXN
+Complete Path #234 (Length 10): EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──⊣ RHOA ──▶ ROCK1 ──▶ PTEN ──⊣ PTK2 ──▶ SRC ──▶ KHDRBS1
+Complete Path #235 (Length 7): EGFR ──▶ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #236 (Length 6): EGFR ──▶ STAT3 ──→ HSP90AA1 ──→ ERBB2 ──▶ PTK2 ──▶ GRB2
+Complete Path #237 (Length 5): EGFR ──▶ CBL ──⊣ LCK ──▶ SHC1 ──▶ GRB2
+Complete Path #238 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ FYN ──▶ LCK ──▶ LAT ──▶ GRB2
+Complete Path #239 (Length 8): EGFR ──▶ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #240 (Length 7): EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK ──▶ PTK2 ──▶ SRC ──▶ PXN
+Complete Path #241 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──▶ MAPK13 ──▶ JUN
+Complete Path #242 (Length 7): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #243 (Length 7): EGFR ──→ CRK ──▶ PTK2 ──▶ BCAR1 ──→ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #244 (Length 8): EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+Complete Path #245 (Length 7): EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #246 (Length 6): EGFR ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #247 (Length 7): EGFR ──▶ JAK2 ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN
+Complete Path #248 (Length 8): EGFR ──→ CRK ──▶ PXN ──▶ ARHGEF7 ──▶ CDC42 ──▶ PARD3 ──⊣ GSK3B ──→ DPYSL2
+Complete Path #249 (Length 8): EGFR ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #250 (Length 3): EGFR ──▶ GAB1 ──▶ CRK
+Complete Path #251 (Length 7): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ GRB2 ──▶ CBL
+Complete Path #252 (Length 7): EGFR ──▶ STAT3 ──→ HSP90AA1 ──→ ERBB2 ──▶ PTK2 ──▶ SRC ──▶ GRB2
+Complete Path #253 (Length 6): EGFR ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+Complete Path #254 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #255 (Length 6): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+Complete Path #256 (Length 8): EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #257 (Length 4): EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK
+Complete Path #258 (Length 7): EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #259 (Length 8): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ PXN ──▶ CDC42 ──▶ WASL
+Complete Path #260 (Length 5): EGFR ──▶ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK
+Complete Path #261 (Length 6): EGFR ──→ CRK ──▶ PTK2 ──▶ GRB2 ──▶ MAPK3 ──▶ JUN
+Complete Path #262 (Length 4): EGFR ──→ CRK ──▶ PTK2 ──▶ GRB2
+Complete Path #263 (Length 6): EGFR ──▶ JAK2 ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+Complete Path #264 (Length 5): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──▶ JUN
+Complete Path #265 (Length 4): EGFR ──→ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #266 (Length 5): EGFR ──→ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+Complete Path #267 (Length 7): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ LCK ──▶ LAT ──▶ GRB2 ──▶ CBL
+Complete Path #268 (Length 5): EGFR ──▶ PTK2 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #269 (Length 7): EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK ──▶ PTK2 ──▶ SRC ──▶ GRB2
+Complete Path #270 (Length 8): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #271 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──▶ MAPK12 ──▶ JUN
+Complete Path #272 (Length 6): EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK
+Complete Path #273 (Length 5): EGFR ──▶ SRC ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+Complete Path #274 (Length 7): EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN
+Complete Path #275 (Length 2): EGFR ──→ CRK
+Complete Path #276 (Length 6): EGFR ──→ CRK ──▶ PTK2 ──▶ PXN ──▶ CDC42 ──▶ PARD3
+Complete Path #277 (Length 6): EGFR ──▶ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #278 (Length 7): EGFR ──▶ JAK1 ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN
+Complete Path #279 (Length 6): EGFR ──▶ PTK2 ──▶ CRK ──▶ PXN ──▶ BCAR1 ──▶ CRKL
+Complete Path #280 (Length 5): EGFR ──▶ CBL ──⊣ LCK ──▶ LAT ──▶ GRB2
+Complete Path #281 (Length 5): EGFR ──→ CRK ──▶ PTK2 ──▶ SHC3 ──▶ GRB2
+Complete Path #282 (Length 6): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ LCK ──→ LCP2 ──▶ GRB2
+Complete Path #283 (Length 4): EGFR ──→ CRK ──▶ PTK2 ──▶ MAPK13
+Complete Path #284 (Length 6): EGFR ──▶ PTPN11 ──→ LCK ──▶ SHC1 ──▶ GRB2 ──▶ CBL
+Complete Path #285 (Length 6): EGFR ──▶ STAT3 ──→ HSP90AA1 ──→ ERBB2 ──▶ PTK2 ──▶ PXN
+Complete Path #286 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ GRB2
+Complete Path #287 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ CRK ──▶ ABL1 ──▶ CBL
+Complete Path #288 (Length 5): EGFR ──▶ PTPN11 ──→ LCK ──▶ CD28 ──▶ GRB2
+Complete Path #289 (Length 5): EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK
+Complete Path #290 (Length 6): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL
+Complete Path #291 (Length 4): EGFR ──▶ GAB1 ──▶ CRK ──▶ PXN
+Complete Path #292 (Length 7): EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ BCAR1 ──▶ CRKL
+Complete Path #293 (Length 6): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ GRB2
+Complete Path #294 (Length 8): EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+Complete Path #295 (Length 6): EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+Complete Path #296 (Length 8): EGFR ──→ CRK ──▶ PTK2 ──▶ FYN ──▶ CDC42 ──▶ PARD3 ──⊣ GSK3B ──→ DPYSL2
+Complete Path #297 (Length 5): EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──⊣ GSK3A
+Complete Path #298 (Length 6): EGFR ──▶ SRC ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN
+Complete Path #299 (Length 5): EGFR ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+Complete Path #300 (Length 8): EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+
+
+=== Intermediate Paths (1152 items) ===
+
+--- Length 10 (2 items) ---
+  1. EGFR ──▶ PTPN11 ──→ MAPK3 ──▶ JUN ──▶ TGFB1 ──▶ ZEB1 ──⊣ CDH1 ──▶ CTNNB1 ──→ MITF ──→ MCM2
+  2. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN ──▶ TNF ──▶ PSME3
+
+--- Length 9 (8 items) ---
+  1. EGFR ──▶ PTPN11 ──→ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN ──▶ TNF ──▶ PSME3
+  2. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+  3. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN ──▶ TNF ──▶ PSME3
+  4. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN ──▶ TNF ──▶ PSME3
+  5. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+  6. EGFR ──▶ PTPN11 ──→ MAPK3 ──⊣ MAP2K1 ──▶ MAPK14 ──⊣ AKT1 ──▶ JUN ──▶ TNF ──▶ PSME3
+  7. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ MAPK3 ──▶ JUN ──▶ TGFB1 ──▶ ZEB1 ──⊣ CDH1 ──▶ CTNNB1
+  8. EGFR ──▶ PTPN11 ──→ MAPK1 ──⊣ MAP2K1 ──▶ MAPK14 ──⊣ AKT1 ──▶ JUN ──▶ TNF ──▶ PSME3
+
+--- Length 8 (98 items) ---
+  1. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+  2. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+  3. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  4. EGFR ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ MAPK3 ──▶ JUN ──▶ TNF ──▶ PSME3
+  5. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+  6. EGFR ──▶ PTPN11 ──→ MAPK3 ──▶ JUN ──▶ TGFB1 ──▶ ZEB1 ──⊣ CDH1 ──▶ CTNNB1
+  7. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  8. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  9. EGFR ──▶ PTPN11 ──→ MAPK3 ──⊣ MAP2K1 ──▶ MAPK14 ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  10. EGFR ──▶ JAK2 ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  11. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ MAP3K1 ──▶ MAP2K7 ──▶ MAPK9 ──⊣ IRS4
+  12. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ BCAR1 ──▶ CRKL
+  13. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  14. EGFR ──▶ PTPN11 ──⊣ ZAP70 ──▶ MAPK14 ──⊣ AKT1 ──▶ JUN ──▶ TNF ──▶ PSME3
+  15. EGFR ──▶ PTPN11 ──→ MAPK1 ──⊣ MAP2K1 ──▶ MAPK14 ──▶ JUN ──▶ TNF ──▶ PSME3
+  16. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  17. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  18. EGFR ──▶ PTPN11 ──→ MAPK3 ──⊣ MAP2K1 ──▶ MAPK14 ──⊣ AKT1 ──▶ CTNNB1 ──▶ JUN
+  19. EGFR ──▶ PTPN11 ──→ MAPK1 ──⊣ MAP2K1 ──▶ MAPK14 ──▶ JUN ──▶ IFNG ──▶ PSME3
+  20. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ MAPK1 ──▶ MAPK14 ──▶ JUN ──▶ TNF ──▶ PSME3
+  21. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+  22. EGFR ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  23. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ CD247 ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  24. EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──⊣ RHOA ──▶ ROCK1 ──▶ PTEN ──⊣ PTK2
+  25. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  26. EGFR ──▶ PTPN11 ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN ──▶ TNF ──▶ PSME3
+  27. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+  28. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ FYN ──▶ LCK ──▶ CD247 ──▶ SYK
+  29. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  30. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  31. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ BCAR1 ──▶ CRKL
+  32. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  33. EGFR ──▶ JAK2 ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ BCAR1
+  34. EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+  35. EGFR ──▶ PTPN11 ──→ SRC ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  36. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  37. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ BCAR1
+  38. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ ZAP70 ──▶ MAPK14 ──▶ JUN ──▶ TNF ──▶ PSME3
+  39. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ CD247 ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  40. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ CD247 ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  41. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1 ──→ YBX1
+  42. EGFR ──▶ JAK1 ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  43. EGFR ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ BCAR1
+  44. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  45. EGFR ──▶ PTPN11 ──→ MAPK1 ──⊣ MAP2K1 ──▶ MAPK14 ──⊣ AKT1 ──▶ CTNNB1 ──▶ JUN
+  46. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ MAPK1 ──▶ MAPK14 ──⊣ AKT1 ──▶ CTNNB1 ──▶ JUN
+  47. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+  48. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  49. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN ──▶ BCAR1
+  50. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+  51. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ ACTB
+  52. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+  53. EGFR ──▶ CBL ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN ──▶ TNF ──▶ PSME3
+  54. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+  55. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+  56. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  57. EGFR ──▶ JAK1 ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ BCAR1
+  58. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ CD247 ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  59. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+  60. EGFR ──▶ PTPN11 ──→ SRC ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ BCAR1
+  61. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+  62. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1 ──→ YBX1
+  63. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ ZAP70 ──▶ MAPK14 ──⊣ AKT1 ──▶ CTNNB1 ──▶ JUN
+  64. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+  65. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ ACTB
+  66. EGFR ──▶ CBL ──⊣ MET ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  67. EGFR ──▶ PTPN11 ──→ MAPK1 ──▶ MAPK14 ──⊣ AKT1 ──▶ JUN ──▶ TNF ──▶ PSME3
+  68. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  69. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ ZAP70 ──▶ MAPK14 ──▶ JUN ──▶ TNF ──▶ PSME3
+  70. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  71. EGFR ──▶ PTPN11 ──→ MAPK3 ──⊣ MAP2K1 ──▶ MAPK14 ──▶ JUN ──▶ TNF ──▶ PSME3
+  72. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ ACTB
+  73. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  74. EGFR ──▶ PTPN11 ──→ MAPK3 ──⊣ MAP2K1 ──▶ MAPK14 ──▶ JUN ──▶ IFNG ──▶ PSME3
+  75. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ ACTB
+  76. EGFR ──▶ PTPN11 ──→ MAPK1 ──▶ JUN ──▶ TGFB1 ──▶ ZEB1 ──⊣ CDH1 ──▶ CTNNB1
+  77. EGFR ──▶ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN ──▶ TNF ──▶ PSME3
+  78. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  79. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ LCK ──▶ CD247 ──→ FYN ──→ PRKCD ──⊣ MARCKS
+  80. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ GRB2
+  81. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+  82. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ FYN ──▶ LCK ──▶ CD247 ──▶ SYK
+  83. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  84. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ ACTB
+  85. EGFR ──▶ CBL ──⊣ MET ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ BCAR1
+  86. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  87. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+  88. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  89. EGFR ──▶ PTPN11 ──→ MAPK1 ──⊣ MAP2K1 ──▶ MAPK14 ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  90. EGFR ──▶ PTPN11 ──→ MAPK3 ──⊣ MAP2K1 ──▶ MAPK14 ──▶ JUN ──▶ CDK5 ──▶ DPYSL2
+  91. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  92. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  93. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  94. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ MAPK1 ──▶ MAPK14 ──▶ JUN ──▶ TNF ──▶ PSME3
+  95. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  96. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+  97. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  98. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ GRB2
+
+--- Length 7 (261 items) ---
+  1. EGFR ──▶ SHC3 ──▶ GRB2 ──▶ MAPK3 ──▶ JUN ──▶ TNF ──▶ PSME3
+  2. EGFR ──▶ SHC1 ──▶ MAPK3 ──▶ FOS ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  3. EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  4. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ BCAR1
+  5. EGFR ──▶ PTPN11 ──→ MAPK1 ──▶ ESR1 ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  6. EGFR ──▶ PTPN11 ──⊣ PTK2 ──→ CTTN ──▶ CRK ──▶ PXN ──▶ CRKL
+  7. EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──▶ CTNNB1 ──▶ SRC ──⊣ CAV1
+  8. EGFR ──▶ PTPN11 ──→ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  9. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+  10. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ MAPK1 ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  11. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ BCAR1
+  12. EGFR ──▶ PTPN11 ──→ MAPK1 ──⊣ MAP2K1 ──▶ MAPK14 ──⊣ AKT1 ──▶ JUN
+  13. EGFR ──▶ SRC ──▶ SHC1 ──▶ MAPK3 ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  14. EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──▶ CTNNB1 ──→ MITF ──→ MCM2
+  15. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN
+  16. EGFR ──▶ PTPN11 ──⊣ CD247 ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  17. EGFR ──▶ PTPN11 ──→ MAPK1 ──▶ FOS ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  18. EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──▶ CTNNB1 ──▶ SRC ──▶ BCAR1
+  19. EGFR ──▶ SHC3 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+  20. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ FYN ──▶ CDK5 ──▶ DPYSL2
+  21. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ MAPK3 ──▶ JUN ──▶ CDK5 ──▶ DPYSL2
+  22. EGFR ──▶ GRB2 ──▶ CBL ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  23. EGFR ──▶ PTPN11 ──→ SRC ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  24. EGFR ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  25. EGFR ──▶ PTPN11 ──⊣ STAT3 ──▶ FOS ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  26. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ CRK ──▶ ABL1 ──▶ GRB2
+  27. EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ GRB2
+  28. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ CRK ──▶ ABL1 ──→ CRKL
+  29. EGFR ──▶ JAK2 ──▶ STAT3 ──▶ FOS ──▶ JUN ──▶ TNF ──▶ PSME3
+  30. EGFR ──▶ PTPN11 ──→ LCK ──▶ CD247 ──▶ SYK ──▶ LAT ──▶ GRB2
+  31. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ GRB2 ──▶ MAPK3 ──▶ JUN
+  32. EGFR ──▶ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN ──▶ BCAR1
+  33. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ MAPK1 ──▶ MAPK14 ──▶ MAPKAPK2 ──→ HSF1
+  34. EGFR ──▶ PTPN11 ──→ MAPK3 ──▶ FOS ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  35. EGFR ──▶ JAK2 ──▶ STAT3 ──▶ FOS ──▶ JUN ──▶ IFNG ──▶ PSME3
+  36. EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  37. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  38. EGFR ──▶ PTPN11 ──→ MAPK1 ──▶ MAPK14 ──⊣ AKT1 ──▶ CTNNB1 ──▶ JUN
+  39. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+  40. EGFR ──▶ PTPN11 ──→ LCK ──▶ CD247 ──▶ SYK ──▶ SHC3 ──▶ GRB2
+  41. EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+  42. EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──▶ CTNNB1 ──▶ SRC ──▶ PTK2
+  43. EGFR ──▶ PTPN11 ──⊣ PTK2 ──→ CTTN ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  44. EGFR ──▶ SRC ──▶ SHC1 ──▶ MAPK3 ──▶ JUN ──▶ CDK5 ──▶ DPYSL2
+  45. EGFR ──▶ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ ACTB
+  46. EGFR ──▶ GAB1 ──▶ PTPN11 ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  47. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ MAPK3 ──▶ JUN
+  48. EGFR ──▶ PTK2 ──▶ PXN ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  49. EGFR ──▶ PTPN11 ──→ MAPK1 ──⊣ MAP2K1 ──▶ MAPK14 ──⊣ AKT1 ──▶ CTNNB1
+  50. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN
+  51. EGFR ──▶ GAB1 ──▶ PTPN11 ──→ MAPK1 ──▶ JUN ──▶ TNF ──▶ PSME3
+  52. EGFR ──▶ CBL ──⊣ MET ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  53. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ BCAR1 ──▶ CRKL
+  54. EGFR ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ BCAR1
+  55. EGFR ──▶ PTPN11 ──⊣ PTK2 ──→ CTTN ──▶ CRK ──▶ PXN ──▶ ACTB
+  56. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ FYN ──▶ LCK ──▶ CD247 ──▶ SYK
+  57. EGFR ──▶ PTPN11 ──→ MAPK3 ──▶ RPS6KB1 ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  58. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ CRKL
+  59. EGFR ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ JUN ──▶ TNF ──▶ PSME3
+  60. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  61. EGFR ──▶ PTPN11 ──→ MAPK1 ──▶ MAPK14 ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  62. EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+  63. EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ CRKL
+  64. EGFR ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  65. EGFR ──▶ JAK1 ──▶ PTPN11 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  66. EGFR ──▶ CBL ──⊣ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  67. EGFR ──▶ JAK2 ──▶ STAT3 ──▶ MYC ──▶ SIRT1 ──⊣ SREBF1 ──▶ ACLY
+  68. EGFR ──▶ PTPN11 ──⊣ ZAP70 ──▶ MAPK14 ──▶ JUN ──▶ TNF ──▶ PSME3
+  69. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN
+  70. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ CRKL
+  71. EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ ACTB
+  72. EGFR ──▶ PTPN11 ──→ LCK ──▶ CD247 ──▶ SYK ──▶ LCP2 ──▶ GRB2
+  73. EGFR ──▶ SHC3 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  74. EGFR ──▶ PTPN11 ──⊣ ZAP70 ──▶ MAPK14 ──▶ JUN ──▶ IFNG ──▶ PSME3
+  75. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  76. EGFR ──▶ CBL ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1 ──→ YBX1
+  77. EGFR ──▶ SHC1 ──▶ MAPK3 ──▶ FOS ──▶ JUN ──▶ TNF ──▶ PSME3
+  78. EGFR ──▶ PTPN11 ──→ MAPK3 ──⊣ MAP2K1 ──▶ MAPK14 ──▶ MAPKAPK2 ──→ HSF1
+  79. EGFR ──▶ PTPN11 ──→ MAPK3 ──→ SMAD3 ──→ JUN ──▶ IL6 ──⊣ TJP1
+  80. EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT3 ──⊣ GSK3A ──→ AKT1 ──⊣ EZH2
+  81. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ ZAP70 ──▶ MAPK14 ──⊣ AKT1 ──▶ CTNNB1
+  82. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ GRB2 ──▶ MAPK3 ──▶ RPS6KA1
+  83. EGFR ──▶ PTPN11 ──→ MAPK1 ──→ SMAD3 ──→ JUN ──▶ TNF ──▶ PSME3
+  84. EGFR ──▶ PTPN11 ──→ MAPK1 ──→ SMAD3 ──→ JUN ──▶ IFNG ──▶ PSME3
+  85. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ MAPK3 ──▶ RPS6KA1
+  86. EGFR ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PTK2
+  87. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ LCK ──▶ CD247 ──→ FYN ──→ CAV1
+  88. EGFR ──→ CRK ──▶ MAP3K1 ──▶ MAP2K7 ──▶ MAPK9 ──⊣ IRS4 ──▶ GRB2
+  89. EGFR ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  90. EGFR ──▶ GAB1 ──▶ PTPN11 ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  91. EGFR ──▶ JAK2 ──▶ PTPN11 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  92. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ MAPK3 ──▶ RPS6KA1
+  93. EGFR ──▶ PTPN11 ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1 ──→ YBX1
+  94. EGFR ──▶ CBL ──⊣ MET ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  95. EGFR ──▶ JAK1 ──▶ PTPN11 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  96. EGFR ──▶ SHC3 ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ BCAR1
+  97. EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+  98. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ FYN ──▶ LCK ──▶ LAT ──▶ GRB2
+  99. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ GRB2 ──▶ MAPK3 ──▶ RPS6KA1
+  100. EGFR ──▶ PTPN11 ──→ MAPK3 ──▶ MYC ──▶ SIRT1 ──▶ STK11 ──→ MARK2
+  ... additional 161 more
+
+--- Length 6 (246 items) ---
+  1. EGFR ──→ CRK ──▶ MAP3K1 ──▶ MAP2K7 ──▶ MAPK8 ──⊣ IRS4
+  2. EGFR ──▶ CBLB ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  3. EGFR ──▶ JAK2 ──→ MAPK3 ──▶ JUN ──▶ TNF ──▶ PSME3
+  4. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──▶ GRB2
+  5. EGFR ──→ CRK ──▶ ABL1 ──▶ GRB2 ──▶ MAPK3 ──→ STMN1
+  6. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ CBL
+  7. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK
+  8. EGFR ──▶ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+  9. EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  10. EGFR ──▶ GRB2 ──▶ GAB2 ──▶ PTPN11 ──→ MAPK3 ──▶ JUN
+  11. EGFR ──▶ PTK2 ──▶ FYN ──▶ LCK ──▶ CD247 ──▶ SYK
+  12. EGFR ──▶ PTK2 ──▶ SRC ──▶ GRB2 ──▶ MAPK3 ──▶ RPS6KA1
+  13. EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ BCAR1 ──▶ CRKL
+  14. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRKL
+  15. EGFR ──▶ STAT3 ──▶ FOS ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  16. EGFR ──▶ PTPN11 ──→ MAPK3 ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  17. EGFR ──▶ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  18. EGFR ──▶ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  19. EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ BCAR1 ──→ PXN
+  20. EGFR ──▶ JAK2 ──→ MAPK3 ──▶ JUN ──▶ IFNG ──▶ PSME3
+  21. EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN
+  22. EGFR ──▶ PTK2 ──▶ PXN ──▶ CRK ──▶ ABL1 ──→ CRKL
+  23. EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK ──▶ PTK2 ──▶ GRB2
+  24. EGFR ──▶ HRAS ──▶ MAPK1 ──▶ JUN ──▶ TNF ──▶ PSME3
+  25. EGFR ──→ CRK ──▶ PXN ──▶ ARHGEF7 ──▶ CDC42 ──▶ PARD3
+  26. EGFR ──→ CRK ──▶ PTK2 ──▶ GRB2 ──▶ MAPK3 ──→ STMN1
+  27. EGFR ──▶ HRAS ──▶ MAPK1 ──▶ JUN ──▶ IFNG ──▶ PSME3
+  28. EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──→ PXN ──▶ ACTB
+  29. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ SYK ──▶ SHC1
+  30. EGFR ──▶ JAK2 ──▶ PTPN11 ──▶ GRB2 ──▶ MAPK3 ──▶ JUN
+  31. EGFR ──→ CRK ──▶ MAP3K1 ──▶ MAP2K7 ──▶ MAPK9 ──⊣ IRS4
+  32. EGFR ──▶ JAK2 ──→ MAPK1 ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  33. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN ──▶ CRKL
+  34. EGFR ──▶ PTPN11 ──→ MAPK1 ──▶ MAPK14 ──▶ MAPKAPK2 ──→ HSF1
+  35. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ GRB2 ──▶ SHC1
+  36. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ LCK ──→ PTPN6 ──⊣ SYK
+  37. EGFR ──▶ PTK2 ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN
+  38. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ GRB2 ──▶ CBL
+  39. EGFR ──→ CRK ──▶ MAP3K1 ──▶ MAP2K7 ──▶ MAPK9 ──→ CTNNB1
+  40. EGFR ──▶ PTPN11 ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  41. EGFR ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+  42. EGFR ──▶ JAK1 ──▶ PTPN11 ──▶ GRB2 ──▶ MAPK3 ──▶ RPS6KA1
+  43. EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──▶ CDK5 ──▶ DPYSL2
+  44. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1 ──▶ CRK
+  45. EGFR ──▶ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+  46. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRKL
+  47. EGFR ──▶ GRB2 ──▶ CBL ──⊣ LCK ──▶ CD247 ──▶ SYK
+  48. EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──→ PXN ──▶ ARHGEF7
+  49. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ GRB2 ──▶ CBL
+  50. EGFR ──▶ PTK2 ──▶ SRC ──▶ GRB2 ──▶ MAPK3 ──▶ JUN
+  51. EGFR ──▶ SRC ──▶ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  52. EGFR ──▶ JAK2 ──→ MAPK3 ──▶ JUN ──▶ CDK5 ──▶ DPYSL2
+  53. EGFR ──▶ PTPN11 ──→ MAPK1 ──▶ MAPK14 ──⊣ CASP3 ──⊣ SPTAN1
+  54. EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK ──▶ PTK2 ──▶ BCAR1
+  55. EGFR ──▶ GRB2 ──▶ MAPK3 ──▶ JUN ──▶ IFNG ──▶ PSME3
+  56. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+  57. EGFR ──▶ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL ──▶ PXN
+  58. EGFR ──→ CRK ──▶ PTK2 ──▶ GRB2 ──▶ GAB1 ──▶ CRKL
+  59. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ SHC1
+  60. EGFR ──▶ SRC ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  61. EGFR ──▶ SHC3 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  62. EGFR ──▶ PTPN11 ──→ MAPK1 ──▶ MAPK14 ──⊣ AKT2 ──▶ CTNNB1
+  63. EGFR ──▶ STAT3 ──▶ MYC ──▶ SIRT1 ──⊣ SREBF1 ──▶ ACLY
+  64. EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──→ PRKCD ──⊣ MARCKS
+  65. EGFR ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+  66. EGFR ──▶ SHC1 ──▶ MAPK3 ──▶ JUN ──▶ IL6 ──⊣ TJP1
+  67. EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  68. EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK ──▶ PXN ──▶ BCAR1
+  69. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ PXN
+  70. EGFR ──▶ PTPN11 ──⊣ ZAP70 ──▶ MAPK14 ──▶ MAPKAPK2 ──→ HSF1
+  71. EGFR ──→ CRK ──▶ PTK2 ──▶ FYN ──▶ CDC42 ──▶ PARD3
+  72. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ LCK ──▶ CD247 ──→ FYN
+  73. EGFR ──▶ KRAS ──▶ MAPK1 ──▶ JUN ──▶ TNF ──▶ PSME3
+  74. EGFR ──▶ CBL ──⊣ MET ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+  75. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK ──▶ ABL1 ──▶ ABI1
+  76. EGFR ──▶ PTPN11 ──⊣ SYK ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  77. EGFR ──▶ JAK1 ──▶ PTPN11 ──▶ GRB2 ──▶ MAPK3 ──▶ JUN
+  78. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ SYK ──▶ SHC1
+  79. EGFR ──▶ GRB2 ──▶ GAB2 ──▶ PTPN11 ──→ MAPK1 ──▶ JUN
+  80. EGFR ──▶ JAK2 ──▶ STAT3 ──▶ MYC ──▶ SIRT1 ──→ XRCC6
+  81. EGFR ──▶ PTK2 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  82. EGFR ──▶ PTK2 ──→ CTTN ──▶ CRK ──▶ ABL1 ──→ CRKL
+  83. EGFR ──▶ PTPN11 ──→ SRC ──▶ GRB2 ──▶ MAPK3 ──▶ JUN
+  84. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──▶ LCK
+  85. EGFR ──→ CRK ──▶ PTK2 ──▶ FYN ──→ PRKCD ──⊣ MARCKS
+  86. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ GRB2 ──▶ SHC1
+  87. EGFR ──▶ PTPN11 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  88. EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2
+  89. EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ CRKL
+  90. EGFR ──▶ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN ──▶ ACTB
+  91. EGFR ──▶ SRC ──▶ BCAR1 ──▶ CRK ──▶ PTK2 ──▶ CRKL
+  92. EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──⊣ RHOA ──▶ ROCK1
+  93. EGFR ──▶ SRC ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  94. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ FYN ──⊣ CTNNB1
+  95. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ SYK ──▶ SHC1
+  96. EGFR ──▶ SHC3 ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA1
+  97. EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN ──⊣ RHOA ──▶ PKN2
+  98. EGFR ──▶ PTPN11 ──→ MAPK3 ──▶ JUN ──▶ TGFB1 ──▶ ZEB1
+  99. EGFR ──▶ PTPN11 ──→ MAPK3 ──▶ JUN ──▶ IL2 ──▶ STAT5A
+  100. EGFR ──⊣ CTNND1 ──▶ CDC42 ──▶ MAPK14 ──⊣ AKT1 ──▶ CTNNB1
+  ... additional 146 more
+
+--- Length 5 (296 items) ---
+  1. EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK ──▶ PXN
+  2. EGFR ──▶ SHC3 ──▶ GRB2 ──▶ GAB2 ──▶ PTPN11
+  3. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ FYN
+  4. EGFR ──▶ JAK1 ──▶ PTPN11 ──▶ GRB2 ──▶ CBL
+  5. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ MAPK3 ──▶ JUN
+  6. EGFR ──▶ CBL ──⊣ LCK ──→ PTPN6 ──⊣ SYK
+  7. EGFR ──▶ PTK2 ──▶ SRC ──▶ SYK ──▶ SHC1
+  8. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2B ──▶ BCAR1
+  9. EGFR ──▶ PTPN11 ──→ LCK ──▶ LAT ──▶ GRB2
+  10. EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──⊣ EZH2
+  11. EGFR ──▶ JAK2 ──▶ STAT3 ──▶ SOCS1 ──⊣ IRS4
+  12. EGFR ──▶ JAK2 ──→ MAPK1 ──⊣ MAP2K1 ──▶ MAPK14
+  13. EGFR ──▶ SRC ──▶ CTNND1 ──▶ CDC42 ──▶ MAPK14
+  14. EGFR ──▶ CBL ──⊣ LCK ──▶ CD247 ──▶ SYK
+  15. EGFR ──▶ PTPN11 ──→ MAPK1 ──→ MITF ──→ LIG1
+  16. EGFR ──▶ PTPN11 ──→ LCK ──▶ SHC1 ──▶ GRB2
+  17. EGFR ──▶ PTPN11 ──→ MAPK1 ──▶ MYC ──▶ SIRT1
+  18. EGFR ──▶ CBL ──⊣ MET ──▶ GRB2 ──▶ SHC1
+  19. EGFR ──▶ PTK2 ──▶ PXN ──▶ BCAR1 ──▶ CRK
+  20. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ MAPK14
+  21. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1
+  22. EGFR ──▶ SHC1 ──▶ MAPK3 ──⊣ MAP2K1 ──▶ MAPK14
+  23. EGFR ──▶ JAK2 ──▶ STAT5A ──▶ SOCS3 ──⊣ IRS4
+  24. EGFR ──▶ GAB1 ──▶ PTPN11 ──→ SRC ──▶ SYK
+  25. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ FYN ──▶ LCK
+  26. EGFR ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2 ──▶ SHC1
+  27. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2
+  28. EGFR ──▶ JAK2 ──→ MAPK1 ──▶ FOS ──▶ JUN
+  29. EGFR ──▶ PTK2 ──▶ GRB2 ──▶ MAPK3 ──▶ RPS6KA1
+  30. EGFR ──→ CRK ──▶ PXN ──▶ BCAR1 ──▶ CRKL
+  31. EGFR ──▶ PTPN11 ──→ MAPK1 ──⊣ MAP2K2 ──▶ MAPK14
+  32. EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT2 ──→ C2CD5
+  33. EGFR ──▶ PTPN11 ──⊣ CD247 ──▶ SYK ──▶ SHC1
+  34. EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ CRKL
+  35. EGFR ──▶ SOS1 ──▶ RRAS2 ──▶ ARHGEF6 ──▶ GIT1
+  36. EGFR ──▶ CBL ──⊣ LCK ──▶ TYROBP ──▶ SYK
+  37. EGFR ──▶ GAB1 ──▶ PTPN11 ──⊣ ZAP70 ──▶ MAPK14
+  38. EGFR ──▶ SOS2 ──▶ RRAS2 ──⊣ BRAP ──⊣ KSR1
+  39. EGFR ──▶ SRC ──▶ CTNND1 ──▶ CDC42 ──▶ ABLIM1
+  40. EGFR ──▶ GRB2 ──▶ SHC1 ──▶ MAPK3 ──▶ JUN
+  41. EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ RIPK3 ──▶ DNM1L
+  42. EGFR ──▶ GRB2 ──▶ CBL ──⊣ SYK ──▶ SHC1
+  43. EGFR ──▶ PTK2 ──▶ CRK ──▶ PXN ──▶ ACTB
+  44. EGFR ──▶ GRB2 ──▶ CBL ──⊣ SRC ──▶ KHDRBS1
+  45. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ MAPK1 ──▶ JUN
+  46. EGFR ──▶ GAB1 ──▶ CRK ──▶ PTK2 ──▶ PXN
+  47. EGFR ──▶ JAK2 ──▶ PTPN11 ──▶ GRB2 ──▶ SHC1
+  48. EGFR ──▶ JAK2 ──▶ STAT3 ──▶ FOS ──▶ JUN
+  49. EGFR ──▶ SHC1 ──▶ MAPK3 ──▶ RPS6KA5 ──→ H3-4
+  50. EGFR ──▶ SRC ──▶ CTNND1 ──▶ RAC2 ──⊣ ABI2
+  51. EGFR ──▶ GAB1 ──▶ CRK ──▶ PXN ──▶ ARHGEF7
+  52. EGFR ──▶ PTPN11 ──⊣ SYK ──▶ SHC1 ──▶ GRB2
+  53. EGFR ──▶ GRB2 ──▶ GAB1 ──▶ CRK ──▶ PTK2
+  54. EGFR ──▶ PTPN11 ──→ MAPK3 ──▶ ESR1 ──▶ JUN
+  55. EGFR ──▶ PTK2 ──▶ CRK ──▶ ABL1 ──→ CRKL
+  56. EGFR ──▶ GRB2 ──▶ MAPK3 ──▶ RPS6KA1 ──→ YBX1
+  57. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ CRK
+  58. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ FYN ──⊣ CTNNB1
+  59. EGFR ──▶ PTPN11 ──→ SRC ──▶ SYK ──▶ SHC1
+  60. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ RHOA ──▶ PKN2
+  61. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ PTK2 ──▶ GRB2
+  62. EGFR ──▶ PTPN11 ──→ MAPK3 ──⊣ MAP2K1 ──▶ MAPK14
+  63. EGFR ──▶ PTK2 ──▶ BCAR1 ──▶ CRK ──▶ PXN
+  64. EGFR ──▶ SHC1 ──▶ MAPK3 ──▶ FOS ──▶ JUN
+  65. EGFR ──▶ JAK2 ──▶ STAT5A ──▶ SOCS2 ──⊣ IRS4
+  66. EGFR ──▶ SRC ──▶ GRB2 ──▶ MAPK3 ──▶ RPS6KA1
+  67. EGFR ──→ CRK ──▶ DOCK1 ──▶ RAC1 ──▶ ABI1
+  68. EGFR ──▶ AKT1 ──▶ JUN ──▶ TNF ──▶ PSME3
+  69. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ SRC ──▶ GRB2
+  70. EGFR ──▶ MAPK3 ──▶ JUN ──▶ TNF ──▶ PSME3
+  71. EGFR ──▶ SRC ──▶ GRB2 ──▶ GAB2 ──▶ PTPN11
+  72. EGFR ──▶ PIK3CB ──▶ PTK2 ──▶ SRC ──▶ BCAR1
+  73. EGFR ──▶ STAT3 ──→ HSP90AA1 ──→ ERBB2 ──▶ PTK2
+  74. EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──⊣ BAD
+  75. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ MAPK14 ──▶ JUN
+  76. EGFR ──▶ PTPN11 ──→ LCK ──▶ CD28 ──▶ GRB2
+  77. EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1 ──▶ CRK
+  78. EGFR ──▶ PTPN11 ──→ MAPK3 ──▶ MYC ──▶ CCNL2
+  79. EGFR ──▶ PTPN11 ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+  80. EGFR ──▶ CBL ──⊣ LCK ──▶ CD247 ──→ FYN
+  81. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ PXN ──▶ BCAR1
+  82. EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1 ──▶ CRK
+  83. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ FYN ──▶ SHC1
+  84. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ MAPK1 ──⊣ ERF
+  85. EGFR ──▶ PTK2 ──▶ GRB2 ──▶ MAPK3 ──▶ JUN
+  86. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ SRC ──▶ SYK
+  87. EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──⊣ KHSRP
+  88. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ PXN ──▶ BCAR1
+  89. EGFR ──▶ GAB1 ──▶ PTPN11 ──⊣ IRS1 ──▶ GRB2
+  90. EGFR ──▶ PTK2 ──▶ CRK ──▶ ABL1 ──▶ YAP1
+  91. EGFR ──▶ PTPN11 ──▶ GRB2 ──▶ SOS1 ──▶ RRAS2
+  92. EGFR ──▶ AKT1 ──▶ JUN ──▶ IFNG ──▶ PSME3
+  93. EGFR ──→ CRK ──▶ PXN ──▶ ARHGEF7 ──▶ GIT1
+  94. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ MAPK1 ──▶ MAPK14
+  95. EGFR ──▶ JAK1 ──▶ PTPN11 ──⊣ SYK ──▶ SHC1
+  96. EGFR ──▶ PTPN11 ──→ MAPK1 ──▶ RPS6KB1 ──▶ JUN
+  97. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ SRC ──▶ BCAR1
+  98. EGFR ──▶ STAT3 ──→ HSP90AA1 ──▶ AKT1 ──▶ CTNNB1
+  99. EGFR ──▶ PTPN11 ──→ MAPK3 ──▶ FOS ──▶ JUN
+  100. EGFR ──▶ PTK2 ──▶ FYN ──▶ CDK5 ──▶ DPYSL2
+  ... additional 196 more
+
+--- Length 4 (144 items) ---
+  1. EGFR ──▶ PTK2 ──▶ FYN ──⊣ CTNNB1
+  2. EGFR ──▶ HRAS ──▶ MAPK1 ──▶ MAPK14
+  3. EGFR ──▶ CBL ──⊣ SRC ──▶ SYK
+  4. EGFR ──▶ PIK3CB ──▶ PTK2 ──▶ BCAR1
+  5. EGFR ──▶ PTK2 ──▶ PXN ──▶ BCAR1
+  6. EGFR ──▶ SRC ──▶ SHC1 ──▶ GRB2
+  7. EGFR ──▶ PLCG1 ──▶ CALM3 ──▶ CAMK1
+  8. EGFR ──▶ GRB2 ──▶ SOS1 ──▶ RRAS2
+  9. EGFR ──▶ STAT3 ──▶ SOCS1 ──⊣ IRS4
+  10. EGFR ──▶ JAK2 ──▶ PTPN11 ──▶ GRB2
+  11. EGFR ──▶ PLCG1 ──▶ CALML5 ──▶ CAMK1
+  12. EGFR ──→ CRK ──▶ ABL1 ──▶ ABI1
+  13. EGFR ──▶ SRC ──▶ SYK ──▶ SHC1
+  14. EGFR ──▶ CBL ──⊣ SRC ──▶ GRB2
+  15. EGFR ──▶ PTK2 ──▶ RHOA ──▶ PKN2
+  16. EGFR ──▶ PTK2 ──→ CTTN ──▶ CRK
+  17. EGFR ──▶ GRB2 ──▶ GAB1 ──▶ CRK
+  18. EGFR ──▶ SHC1 ──▶ MAPK1 ──▶ JUN
+  19. EGFR ──▶ PTPN11 ──→ MAPK1 ──⊣ ERF
+  20. EGFR ──▶ PLCG1 ──▶ PRKCA ──⊣ EGLN1
+  21. EGFR ──▶ PTPN11 ──→ SRC ──▶ BCAR1
+  22. EGFR ──▶ PTK2 ──▶ SHC1 ──▶ GRB2
+  23. EGFR ──▶ CBLB ──⊣ SYK ──▶ SHC1
+  24. EGFR ──▶ PTK2 ──▶ SRC ──▶ BCAR1
+  25. EGFR ──→ CRK ──▶ PXN ──▶ ARHGEF7
+  26. EGFR ──→ CRK ──▶ PXN ──▶ CRKL
+  27. EGFR ──→ CRK ──▶ PTK2 ──▶ CRKL
+  28. EGFR ──▶ PTK2 ──▶ SHC3 ──▶ GRB2
+  29. EGFR ──▶ PIK3CA ──▶ PTK2 ──▶ BCAR1
+  30. EGFR ──→ CRK ──▶ PTK2 ──▶ PXN
+  31. EGFR ──▶ PTPN11 ──⊣ CD247 ──→ FYN
+  32. EGFR ──▶ SHC1 ──▶ SRC ──▶ SYK
+  33. EGFR ──▶ JAK2 ──▶ SHC1 ──▶ GRB2
+  34. EGFR ──▶ JAK2 ──→ MAPK1 ──⊣ ERF
+  35. EGFR ──▶ GAB1 ──▶ CRK ──▶ PXN
+  36. EGFR ──▶ PTK2 ──▶ CRK ──▶ PXN
+  37. EGFR ──▶ PLCG1 ──▶ PRKCG ──⊣ EGLN1
+  38. EGFR ──▶ GRB2 ──▶ CBL ──⊣ SYK
+  39. EGFR ──▶ PTPN11 ──⊣ LCP2 ──▶ GRB2
+  40. EGFR ──▶ STAT3 ──▶ MYC ──▶ CCNL2
+  41. EGFR ──▶ JAK2 ──→ MAPK1 ──▶ JUN
+  42. EGFR ──▶ PTPN11 ──⊣ ZAP70 ──▶ MAPK14
+  43. EGFR ──▶ CBL ──⊣ MET ──▶ GRB2
+  44. EGFR ──▶ PTPN11 ──→ SRC ──▶ KHDRBS1
+  45. EGFR ──▶ JAK1 ──▶ PTPN11 ──▶ GRB2
+  46. EGFR ──▶ KRAS ──▶ MAPK1 ──▶ JUN
+  47. EGFR ──▶ PTK2 ──▶ SRC ──▶ KHDRBS1
+  48. EGFR ──▶ GRB2 ──▶ SOS2 ──▶ RRAS2
+  49. EGFR ──⊣ CTNND1 ──▶ RAC3 ──⊣ ABI2
+  50. EGFR ──▶ PLCG1 ──▶ PRKCB ──⊣ EGLN1
+  51. EGFR ──▶ PTPN11 ──⊣ SYK ──▶ SHC1
+  52. EGFR ──→ CRK ──▶ PXN ──▶ ACTB
+  53. EGFR ──▶ SHC3 ──▶ GRB2 ──▶ SHC1
+  54. EGFR ──▶ PTPN11 ──▶ KRAS ──▶ MAPK14
+  55. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ MAPK14
+  56. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ LCK
+  57. EGFR ──▶ PTPN11 ──→ PXN ──▶ BCAR1
+  58. EGFR ──▶ PTPN11 ──⊣ PTK2 ──▶ BCAR1
+  59. EGFR ──▶ CBL ──⊣ SYK ──▶ SHC1
+  60. EGFR ──→ CRK ──▶ ABL1 ──→ CRKL
+  61. EGFR ──▶ PTK2 ──▶ GRB2 ──▶ SHC1
+  62. EGFR ──▶ SRC ──▶ GRB2 ──▶ SHC1
+  63. EGFR ──⊣ CTNND1 ──⊣ RHOA ──▶ PKN2
+  64. EGFR ──▶ CBL ──⊣ ERBB2 ──▶ GRB2
+  65. EGFR ──▶ GRB2 ──▶ MAPK3 ──▶ JUN
+  66. EGFR ──→ CRK ──▶ MAP3K1 ──▶ MAP2K7
+  67. EGFR ──▶ PTPN11 ──→ MAPK1 ──▶ JUN
+  68. EGFR ──▶ PTPN11 ──▶ GRB2 ──▶ SHC1
+  69. EGFR ──▶ STAT3 ──▶ FOS ──▶ JUN
+  70. EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ CRK
+  71. EGFR ──→ CRK ──▶ PTK2 ──▶ GRB2
+  72. EGFR ──▶ PTPN11 ──⊣ GAB1 ──▶ GRB2
+  73. EGFR ──▶ SHC1 ──▶ GRB2 ──▶ CBL
+  74. EGFR ──▶ GAB1 ──▶ PTPN11 ──⊣ SYK
+  75. EGFR ──▶ GAB1 ──▶ GRB2 ──▶ CBL
+  76. EGFR ──▶ HRAS ──▶ MAPK1 ──⊣ ERF
+  77. EGFR ──▶ SRC ──▶ GRB2 ──▶ CBL
+  78. EGFR ──▶ KRAS ──▶ MAPK1 ──▶ MAPK14
+  79. EGFR ──→ CRK ──▶ ABL1 ──▶ STAT5A
+  80. EGFR ──▶ CBL ──⊣ SRC ──▶ BCAR1
+  81. EGFR ──→ CRK ──▶ ABL1 ──▶ YAP1
+  82. EGFR ──▶ GAB1 ──▶ PTPN11 ──▶ GRB2
+  83. EGFR ──▶ PTPN11 ──▶ JAK2 ──▶ IRS4
+  84. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ PAG1
+  85. EGFR ──▶ PTK2 ──▶ PTK2B ──▶ BCAR1
+  86. EGFR ──▶ PTPN11 ──▶ NRAS ──▶ MAPK14
+  87. EGFR ──▶ PTK2 ──▶ PXN ──▶ CRK
+  88. EGFR ──▶ SHC1 ──▶ SRC ──▶ GRB2
+  89. EGFR ──▶ JAK2 ──▶ PTPN11 ──→ PAG1
+  90. EGFR ──▶ PTPN11 ──→ SRC ──▶ SYK
+  91. EGFR ──▶ GRB2 ──▶ MAPK3 ──▶ RPS6KA1
+  92. EGFR ──→ CRK ──▶ PXN ──▶ BCAR1
+  93. EGFR ──→ CRK ──▶ PTK2 ──▶ BCAR1
+  94. EGFR ──▶ PTPN11 ──→ PXN ──▶ CRK
+  95. EGFR ──▶ PTK2 ──▶ SRC ──▶ SYK
+  96. EGFR ──▶ GRB2 ──▶ GAB2 ──▶ PTPN11
+  97. EGFR ──▶ PTPN11 ──⊣ INSR ──▶ IRS4
+  98. EGFR ──▶ PTK2 ──▶ SRC ──▶ GRB2
+  99. EGFR ──▶ JAK1 ──▶ PTPN11 ──→ LCK
+  100. EGFR ──▶ JAK2 ──▶ PTPN11 ──⊣ SYK
+  ... additional 44 more
+
+--- Length 3 (83 items) ---
+  1. EGFR ──▶ CBLB ──⊣ SYK
+  2. EGFR ──→ CRK ──▶ DOCK1
+  3. EGFR ──▶ KRAS ──▶ MAPK14
+  4. EGFR ──▶ PTK2 ──▶ MAPK14
+  5. EGFR ──▶ PTK2 ──▶ BCAR1
+  6. EGFR ──▶ MAPK3 ──▶ STAT3
+  7. EGFR ──▶ CBL ──⊣ LCK
+  8. EGFR ──▶ PTPN11 ──⊣ STAT3
+  9. EGFR ──▶ PTPN11 ──→ PAG1
+  10. EGFR ──▶ PTK2 ──▶ FYN
+  11. EGFR ──▶ GRB2 ──▶ SHC1
+  12. EGFR ──▶ PTPN11 ──⊣ PTK2
+  13. EGFR ──▶ SHC1 ──▶ GRB2
+  14. EGFR ──▶ PIK3CB ──▶ PLCG1
+  15. EGFR ──▶ STAT3 ──→ STAT5A
+  16. EGFR ──▶ ERBB2 ──⊣ CTNND1
+  17. EGFR ──▶ SOS1 ──▶ RRAS2
+  18. EGFR ──▶ PIK3CA ──▶ PLCG1
+  19. EGFR ──▶ STAT3 ──→ HSP90AA1
+  20. EGFR ──▶ MYC ──▶ HNRNPA2B1
+  21. EGFR ──▶ HRAS ──▶ MAPK14
+  22. EGFR ──▶ PTPN11 ──⊣ SYK
+  23. EGFR ──▶ GAB1 ──▶ CRK
+  24. EGFR ──▶ GAB1 ──▶ GRB2
+  25. EGFR ──▶ JAK2 ──▶ IRS4
+  26. EGFR ──▶ PIK3CB ──▶ PTK2
+  27. EGFR ──▶ NRAS ──▶ MAPK14
+  28. EGFR ──▶ PTPN11 ──→ MAPK3
+  29. EGFR ──▶ PIK3CA ──▶ PTK2
+  30. EGFR ──▶ SRC ──▶ SYK
+  31. EGFR ──▶ AKT1 ──▶ JUN
+  32. EGFR ──▶ SRC ──▶ GRB2
+  33. EGFR ──▶ PIK3CD ──▶ PLCG1
+  34. EGFR ──▶ STAT5A ──→ STAT3
+  35. EGFR ──▶ MAPK3 ──▶ STAT5A
+  36. EGFR ──▶ JAK2 ──▶ SHC1
+  37. EGFR ──▶ CBL ──⊣ SYK
+  38. EGFR ──▶ AKT1 ──⊣ BAD
+  39. EGFR ──▶ PTPN11 ──→ MAPK1
+  40. EGFR ──▶ KRAS ──▶ AFDN
+  41. EGFR ──▶ SRC ──▶ STAT5A
+  42. EGFR ──▶ KRAS ──▶ MAPK1
+  43. EGFR ──▶ MAPK3 ──⊣ ERF
+  44. EGFR ──▶ SOS2 ──▶ RRAS2
+  45. EGFR ──▶ SHC1 ──▶ MAPK3
+  46. EGFR ──▶ SRC ──▶ SHC1
+  47. EGFR ──▶ GRB2 ──▶ CBL
+  48. EGFR ──▶ PTK2 ──▶ DOCK1
+  49. EGFR ──▶ PTPN11 ──⊣ GAB1
+  50. EGFR ──▶ PTPN11 ──▶ GRB2
+  51. EGFR ──▶ HRAS ──▶ AFDN
+  52. EGFR ──▶ HRAS ──▶ MAPK1
+  53. EGFR ──▶ GRB2 ──▶ MAPK3
+  54. EGFR ──▶ PTK2 ──▶ CRK
+  55. EGFR ──▶ NRAS ──▶ AFDN
+  56. EGFR ──▶ MAPK3 ──⊣ BAD
+  57. EGFR ──▶ PTK2 ──▶ GRB2
+  58. EGFR ──▶ JAK2 ──▶ PLCG1
+  59. EGFR ──▶ JAK2 ──▶ PTPN11
+  60. EGFR ──▶ JAK2 ──▶ STAT3
+  61. EGFR ──→ CRK ──▶ PTK2
+  62. EGFR ──▶ SRC ──▶ CTNND1
+  63. EGFR ──▶ CBLB ──⊣ LCK
+  64. EGFR ──▶ GAB1 ──▶ PTPN11
+  65. EGFR ──▶ ERBB2 ──▶ GAB1
+  66. EGFR ──▶ MAPK3 ──→ STMN1
+  67. EGFR ──▶ SRC ──▶ BCAR1
+  68. EGFR ──▶ JAK2 ──→ MAPK3
+  69. EGFR ──▶ SHC3 ──▶ GRB2
+  70. EGFR ──▶ PTK2 ──▶ SHC1
+  71. EGFR ──▶ PTPN1 ──⊣ IRS4
+  72. EGFR ──→ CRK ──▶ PXN
+  73. EGFR ──▶ MAPK3 ──▶ JUN
+  74. EGFR ──▶ MAPK3 ──→ LCK
+  75. EGFR ──▶ JAK3 ──▶ PTPN11
+  76. EGFR ──▶ GRB2 ──▶ GAB1
+  77. EGFR ──▶ PTPN11 ──→ LCK
+  78. EGFR ──▶ JAK2 ──▶ STAT5A
+  79. EGFR ──▶ JAK1 ──▶ PTPN11
+  80. EGFR ──▶ JAK2 ──→ MAPK1
+  81. EGFR ──▶ SHC1 ──▶ MAPK1
+  82. EGFR ──▶ STAT3 ──▶ DNMT1
+  83. EGFR ──▶ SRC ──▶ KHDRBS1
+
+--- Length 2 (14 items) ---
+  1. EGFR ──▶ SHC1
+  2. EGFR ──▶ MAPK3
+  3. EGFR ──⊣ CTNND1
+  4. EGFR ──▶ PLCG1
+  5. EGFR ──▶ PTPN11
+  6. EGFR ──▶ STAT3
+  7. EGFR ──▶ PTK2
+  8. EGFR ──▶ CBL
+  9. EGFR ──▶ CBLB
+  10. EGFR ──→ CRK
+  11. EGFR ──▶ EPS15
+  12. EGFR ──▶ STAT5A
+  13. EGFR ──▶ GAB1
+  14. EGFR ──▶ GRB2
+
+
+*** Path Statistics Summary ***
+Network type: regulatory
+Complete path count: 300
+Intermediate path count: 1152
+Total path count: 1452
+
+*** Regulatory Relationship Statistics ***
+Collected regulatory relationships: 5690
+Activation edges: 3814
+Inhibition edges: 961
+Directional edges: 5690

@@ -1,0 +1,136 @@
+=== Protein Pathway Simulator (STRING API v12.5) Run Log ===
+Input file: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/physical/Washout_physical.json
+Network type: physical
+Start time: 2026-10-09 11:46:22
+============================================================
+
+[11:46:26] [STRING] Official v12.5 pinned: https://version-12-5.string-db.org/api | physical
+[11:46:26] [PhosphoSite] Loading site information from JSON...
+[11:46:26] [PhosphoSite] Input schema: Temporal v2 interval model
+[11:46:26] [PhosphoSite] 591 proteins, 953 sites loaded
+[11:46:26] [PhosphoSite] 953 site combinations tracked
+[11:46:26] [Cell Context] Cell line requested: MDA-MB-468
+[11:46:26] [Cell Context] Identity aliases resolved from metadata: MDAMB468, SIDM00628
+[11:46:26] [Cell Context] Official model-specific data: SIDM00628. The RNA/proteomics file is already scoped to one SIDM; a cell-line-name column inside the table is therefore not required.
+[11:46:26] [Cell Context] RNA parser columns: gene=gene_symbol, value=rsem_tpm, cell/model=model_name
+[11:46:27] [Cell Context] RNA loaded: expressed=13762, below-threshold=22676; source={'layout': 'cmp_model_specific_long', 'cell_column': 'model_name', 'gene_column': 'gene_symbol', 'value_column': 'rsem_tpm', 'matched_rows': 36439}
+[11:46:27] [Cell Context] Proteomics loaded: detected=5475, explicit-negative=0; source={'layout': 'cmp_model_specific_long', 'cell_column': 'model_id', 'gene_column': 'symbol', 'value_column': 'protein_intensity', 'matched_rows': 5475}
+[11:46:27] [Cell Context] Mode=conservative_union; RNA threshold=1; UNKNOWN bridge candidates are retained in conservative mode.
+[11:46:27] [Start] Start proteins loaded from JSON: 1 loaded
+[11:46:27] [Input Schema] Temporal v2 interval model
+[11:46:27] === Start TEMPORAL interval pathway tracing ===
+[11:46:27]   [Temporal] Target mode: measured
+[11:46:27]   [Temporal] Bridge Depth D=1 means intermediate bridge nodes; max edges/interval=2
+[11:46:27]   [Temporal] Baseline availability is NOT treated as activation.
+[11:46:27]   [Temporal] D resets independently for every interval.
+[11:46:27]   [FINAL] No drug-name hard blocking; target-preserving adaptive temporal beam enabled.
+[11:46:28] [Cell Context] Experimental-anchor protection list: 591 genes.
+[11:46:28]   [Baseline Bridge Pool] 591 baseline-available genes loaded; used only as first-interval bridge candidates (not activation targets).
+[11:46:28]   [Q-Pool] No pretreatment baseline contrast; no condition-specific Q exclusion applied.
+[11:46:28] --- Temporal Start 1/1: EGFR ---
+[11:46:28] --- Interval 1/3: 0min-5min ---
+[11:46:28]   Measured=471, supporting=34, opposing=44, unresolved=431, mixed=7
+[11:46:28]   Q-low opposing-only this interval=37; condition-pool excluded=0
+[11:46:28]   Eligible targets (measured)=434, incoming source paths=1
+[11:46:28]   [Estimate] 1 source paths x 434 target genes = 434 pairs
+[11:46:37]   [Adaptive Temporal Beam] Base K=300 expanded to K_eff=581 because 192 target genes were reached and 581 protected target/baseline histories were required.
+[11:46:37]   [Target-Preserving Temporal Beam] 656 unique routes -> 581 propagated states; targets preserved=192/192; K_base=300, K_eff=581, protected_union=581, routes/target quota=3, segment routes/pair=5.
+[11:46:37]   [Interval Done] reached genes=192, endpoint candidates=656, unique propagating routes=581
+[11:46:37]   [Speed Cache] ranked-neighbor hit/miss=39087/96, direct-lookup hit/miss=29317/68, segment hit/miss=0/433
+[11:46:37] --- Interval 2/3: 5min-10min ---
+[11:46:37]   Measured=73, supporting=6, opposing=7, unresolved=61, mixed=0
+[11:46:37]   Q-low opposing-only this interval=7; condition-pool excluded=0
+[11:46:37]   Eligible targets (measured)=66, incoming source paths=581
+[11:46:37]   [Estimate] 581 source paths x 66 target genes = 38346 pairs
+[11:47:56] [STRING Neighborhood] ZNF292: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:47:56] [STRING Neighborhood] NARS2: 5 partners at score >= 700 (requested limit=10000, network=physical)
+[11:49:30] [STRING Neighborhood] EMILIN1: 6 partners at score >= 700 (requested limit=10000, network=physical)
+[11:49:30] [STRING Neighborhood] SEMA7A: 6 partners at score >= 700 (requested limit=10000, network=physical)
+[11:49:30] [STRING Neighborhood] ANGPT2: 5 partners at score >= 700 (requested limit=10000, network=physical)
+[11:49:31] [STRING Neighborhood] COL4A3: 8 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:38] [STRING Neighborhood] ZNF567: 2 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:38] [STRING Neighborhood] ZNF445: 3 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:39] [STRING Neighborhood] ZNF250: 3 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:39] [STRING Neighborhood] ZNF738: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:39] [STRING Neighborhood] ZNF382: 2 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:39] [STRING Neighborhood] ZNF304: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:40] [STRING Neighborhood] ZNF223: 2 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:40] [STRING Neighborhood] ZNF785: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:40] [STRING Neighborhood] ZNF682: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:40] [STRING Neighborhood] ZNF2: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:40] [STRING Neighborhood] ZNF324: 2 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:40] [STRING Neighborhood] ZNF543: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:41] [STRING Neighborhood] ZNF624: 2 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:41] [STRING Neighborhood] ZNF799: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:41] [STRING Neighborhood] ZNF136: 2 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:41] [STRING Neighborhood] ZNF480: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:41] [STRING Neighborhood] ZNF84: 2 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:41] [STRING Neighborhood] ZNF333: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:42] [STRING Neighborhood] ZNF133: 4 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:42] [STRING Neighborhood] ZNF417: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:42] [STRING Neighborhood] ZFP90: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:42] [STRING Neighborhood] ZKSCAN8: 15 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:42] [STRING Neighborhood] ZNF140: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:42] [STRING Neighborhood] ZNF160: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:43] [STRING Neighborhood] ZNF20: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:43] [STRING Neighborhood] ZNF256: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:43] [STRING Neighborhood] ZNF419: 2 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:43] [STRING Neighborhood] ZNF441: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:43] [STRING Neighborhood] ZNF614: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:43] [STRING Neighborhood] ZNF736: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:43] [STRING Neighborhood] ZNF749: 1 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:44] [STRING Neighborhood] POGK: 2 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:44] [STRING Neighborhood] ZNF264: 5 partners at score >= 700 (requested limit=10000, network=physical)
+[11:50:44]     [BFS Done] TRIM28 → GOT2: 0 paths, expanded=101 (5.89 sec)
+[11:52:50]   [Exact Dedupe] 14518 candidate paths -> 14469 unique gene chains.
+[11:52:50]   [Target-Preserving Temporal Beam] 14469 unique routes -> 300 propagated states; targets preserved=56/56; K_base=300, K_eff=300, protected_union=56, routes/target quota=3, segment routes/pair=5.
+[11:52:50]   [Interval Done] reached genes=56, endpoint candidates=14518, unique propagating routes=300
+[11:52:50]   [Speed Cache] ranked-neighbor hit/miss=2084127/3134, direct-lookup hit/miss=29317/68, segment hit/miss=0/38720
+[11:52:50] --- Interval 3/3: 10min-30min ---
+[11:52:50]   Measured=167, supporting=9, opposing=11, unresolved=151, mixed=0
+[11:52:50]   Q-low opposing-only this interval=11; condition-pool excluded=0
+[11:52:50]   Eligible targets (measured)=156, incoming source paths=300
+[11:52:50]   [Estimate] 300 source paths x 156 target genes = 46800 pairs
+[11:59:14] [STRING Neighborhood] CDR2L: 3 partners at score >= 700 (requested limit=10000, network=physical)
+[11:59:14] [STRING Neighborhood] ZNF574: 10 partners at score >= 700 (requested limit=10000, network=physical)
+[11:59:14]     [BFS Done] RPSA → WASL: 1 paths, expanded=100 (1.47 sec)
+[12:00:09] [STRING Neighborhood] LPP: 3 partners at score >= 700 (requested limit=10000, network=physical)
+[12:00:10] [STRING Neighborhood] TIMP2: 6 partners at score >= 700 (requested limit=10000, network=physical)
+[12:01:13]   [Exact Dedupe] 17170 candidate paths -> 17149 unique gene chains.
+[12:01:13]   [Target-Preserving Temporal Beam] 17149 unique routes -> 300 propagated states; targets preserved=130/130; K_base=300, K_eff=300, protected_union=130, routes/target quota=3, segment routes/pair=5.
+[12:01:13]   [Interval Done] reached genes=130, endpoint candidates=17170, unique propagating routes=300
+[12:01:13]   [Speed Cache] ranked-neighbor hit/miss=4394538/3448, direct-lookup hit/miss=29317/68, segment hit/miss=1089/84323
+[12:01:13] === Temporal tracing completed: 300 unique complete paths, 863 intermediate paths ===
+[12:01:13]   - Temporal structured results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/physical\Washout_physical_STRING_v12_temporal_results.json
+[12:01:13]   - Interval summary: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/physical\Washout_physical_STRING_v12_interval_summary.csv
+[12:01:13]   - Node roles: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/physical\Washout_physical_STRING_v12_node_roles.csv
+[12:01:13]   - Edges: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/physical\Washout_physical_STRING_v12_edges.csv
+[12:01:14]   - Cell-context bridge audit: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/physical\Washout_physical_STRING_v12_cell_context_audit.csv
+[12:01:14] [Cell Context Summary] checked=203066632, allowed=203066632, blocked=0, unknown-retained=31054589
+[12:01:16] [Snapshot] C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/physical\Washout_physical_STRING_v12_5_snapshot_physical_20261009_120114_075969900: 3451 queries, 150245 neighbor records
+[12:01:59] [Cache] STRING cache saved.
+[12:01:59] 
+============================================================
+STRING API v12.5 Statistics (Network Type: physical):
+  API Base URL: https://version-12-5.string-db.org/api
+  Total API calls: 46
+  Cache hits: 13789
+  Cache misses: 46
+  Cache hit rate: 99.7%
+  Total API time: 9.43 sec
+  Retrieved edges: 120
+  Average Combined Score: 871.7/1000
+============================================================
+[12:01:59] 
+[Phospho] Generating phosphorylation-site path results...
+[12:01:59] [Phospho FINAL] Temporal endpoint annotation mode; Cartesian site expansion disabled.
+[12:01:59] [Phospho] Complete path variants: 300, Intermediate path variants: 0 generated
+[12:01:59] Simulation complete.
+[12:01:59]   - Complete path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/physical\Washout_physical_STRING_v12_results.txt
+[12:01:59]   - All path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/physical\Washout_physical_STRING_v12_all_results.txt
+[12:01:59]   - Phospho path results: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/physical\Washout_physical_STRING_v12_all_Phospho_results.txt
+[12:01:59]   - Run log: C:/Users/LG/OneDrive/Desktop/Data_Mining/Data_Mining_4_CAGE/2026_PPI_Revision_II/Revision_II_DATA_v125_New/100-300-300-700(New)/physical\Washout_physical_STRING_v12_log.txt
+
+============================================================
+End time: 2026-10-09 12:01:59
+=== End of log ===
