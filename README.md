@@ -1,5 +1,7 @@
 # TS-BFS-BS_EGFR_NPJ
+
 All raw data for the paper
+
 #100-300-300-700
  H=100, Ks=300 Kt=300 Tau=700 (R=5 Q=3)
  -experiments\ Normal- CBL-SRC, Normal-PTPN, Normal-Random, functional, physical, regulatory 
